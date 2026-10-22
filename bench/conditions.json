@@ -16,14 +16,6 @@
     "hardware": "Desktop PC, NVIDIA RTX 4060 8 GB, AMD Ryzen 9 7900X, 32 GB DDR5, Windows 11",
     "engine": "llama.cpp llama-server (CUDA), Q4_K_M GGUF"
   },
-  "rented_rtx4090": {
-    "backend": "openai_compat",
-    "base_url": "http://127.0.0.1:8080/v1",
-    "model": "llama-3.1-8b-instruct-q4_k_m",
-    "api_key_env": null,
-    "hardware": "Rented cloud GPU, NVIDIA RTX 4090 24 GB (RunPod/Vast.ai), Linux",
-    "engine": "llama.cpp llama-server (CUDA), Q4_K_M GGUF"
-  },
   "api_deepinfra": {
     "backend": "openai_compat",
     "base_url": "https://openrouter.ai/api/v1",
@@ -126,5 +118,13 @@
     },
     "hardware": "Hosted API via OpenRouter, provider Cloudflare Workers AI (fp8)",
     "engine": "provider-managed"
+  },
+  "rented_colab_gpu": {
+    "backend": "openai_compat",
+    "base_url": "http://127.0.0.1:8080/v1",
+    "model": "llama-3.1-8b-instruct-q4_k_m",
+    "api_key_env": null,
+    "hardware": "Rented cloud GPU: Google Colab Pro runtime (GPU model from nvidia-smi is written to the run meta line)",
+    "engine": "llama.cpp llama-server (CUDA, built from source in the notebook), Q4_K_M GGUF"
   }
 }

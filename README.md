@@ -19,7 +19,7 @@ prompts at the same concurrency levels:
 |---|---|---|
 | `mac_m4pro` | MacBook Pro M4 Pro 24 GB, llama.cpp (Metal) | Q4_K_M GGUF |
 | `pc_rtx4060` | Desktop, RTX 4060 8 GB, llama.cpp (CUDA) | Q4_K_M GGUF |
-| `rented_rtx4090` | Rented cloud GPU (RunPod / Vast.ai), llama.cpp (CUDA) | Q4_K_M GGUF |
+| `rented_colab_gpu` | Rented cloud GPU (Google Colab Pro, L4 class), llama.cpp (CUDA) | Q4_K_M GGUF |
 | `api_deepinfra` | OpenRouter, provider pinned to DeepInfra | fp8 |
 | `api_groq` | OpenRouter, provider pinned to Groq | provider-managed |
 | `api_coreweave` | OpenRouter, provider pinned to CoreWeave | bf16 |
@@ -46,7 +46,7 @@ bench/            harness and helper scripts
   serve_mac.sh      llama-server command used on the Mac
   pilot_mac.sh      the pilot protocol
   windows/          the same for the Windows PC (serve_pc.ps1, power_pc.ps1, run_pc.ps1)
-  cloud/            setup script for the rented GPU
+  cloud/            Colab notebook for the rented GPU condition (and a RunPod script, not used)
 data/
   raw/              Alpaca (alpaca_data.json) and GSM8K test (gsm8k_test.jsonl) as downloaded
   prompts/          the fixed subsets: throughput_{pilot,main}.jsonl, quality_{pilot,main}.jsonl

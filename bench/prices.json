@@ -20,30 +20,115 @@
     "pc_rtx4060": {
       "price_usd": 1361,
       "components_usd": {
-        "AMD Ryzen 9 7900X": [306, "Amazon via buildcores.com"],
-        "Gigabyte X870 Eagle WiFi7": [212, "esaitech.com (US reseller)"],
-        "Asus Dual RTX 4060 OC 8 GB": [436, "Amazon via buildcores.com"],
-        "Kingston Fury Beast 32 GB DDR5-6000": [137, "newegg.com"],
-        "Gigabyte UD750GM 750 W Gold": [100, "typical Amazon price reported by slickdeals.net, Jan 2026"],
-        "1 TB NVMe SSD (assumed)": [90, "team assumption, model not recorded"],
-        "ATX case (assumed)": [80, "team assumption, model not recorded"]
+        "AMD Ryzen 9 7900X": [
+          306,
+          "Amazon via buildcores.com"
+        ],
+        "Gigabyte X870 Eagle WiFi7": [
+          212,
+          "esaitech.com (US reseller)"
+        ],
+        "Asus Dual RTX 4060 OC 8 GB": [
+          436,
+          "Amazon via buildcores.com"
+        ],
+        "Kingston Fury Beast 32 GB DDR5-6000": [
+          137,
+          "newegg.com"
+        ],
+        "Gigabyte UD750GM 750 W Gold": [
+          100,
+          "typical Amazon price reported by slickdeals.net, Jan 2026"
+        ],
+        "1 TB NVMe SSD (assumed)": [
+          90,
+          "team assumption, model not recorded"
+        ],
+        "ATX case (assumed)": [
+          80,
+          "team assumption, model not recorded"
+        ]
       },
       "source": "Sum of current US prices of the team's build without monitor and peripherals; see components_usd",
       "idle_watts_assumed": 60,
       "load_watts_measured": null,
       "load_watts_source": "nvidia-smi power.draw (GPU only) plus 80 W assumed for the rest of the system under load"
     },
-    "rented_rtx4090": {
-      "usd_per_hour": 0.34,
-      "source": "RunPod Community Cloud RTX 4090 on-demand price USD 0.34/h (runpod.io/gpu-cloud/pricing, July 2026 page)"
+    "pc_rtx4060_budget": {
+      "price_usd": 1063,
+      "derived_from": "pc_rtx4060",
+      "components_usd": {
+        "AMD Ryzen 5 7600X": [
+          200,
+          "Amazon/Newegg early 2026 via slickdeals.net (177 to 210 USD)"
+        ],
+        "MSI PRO B650M-P (micro-ATX)": [
+          120,
+          "Amazon price history, 11.07.2026"
+        ],
+        "Kingston Fury Beast 32 GB DDR5-6000": [
+          137,
+          "newegg.com"
+        ],
+        "Asus Dual RTX 4060 OC 8 GB": [
+          436,
+          "Amazon via buildcores.com"
+        ],
+        "550 W Bronze PSU (assumed)": [
+          60,
+          "team assumption"
+        ],
+        "500 GB NVMe SSD (assumed)": [
+          50,
+          "team assumption"
+        ],
+        "micro-ATX case (assumed)": [
+          60,
+          "team assumption"
+        ]
+      },
+      "source": "Minimal inference box with the same GPU as the team's PC: mid-range CPU, B650 board, air cooling. Throughput and power are taken from the pc_rtx4060 measurements because all 33 layers run on the GPU and the CPU is almost idle during decoding; this is a cost scenario, not a separately measured machine.",
+      "idle_watts_assumed": 45,
+      "load_watts_measured": null,
+      "load_watts_source": "same GPU power log as pc_rtx4060 plus 60 W assumed for the rest of the system"
+    },
+    "rented_colab_gpu": {
+      "usd_per_hour": null,
+      "compute_units_per_hour": null,
+      "usd_per_compute_unit": 0.1999,
+      "source": "Google Colab Pro: 19.99 USD per month for 100 compute units (colab.research.google.com/signup); compute units per hour of the L4 runtime are read from the Colab Resources panel during the run and entered here"
     }
   },
   "api_usd_per_million_tokens": {
-    "api_deepinfra": {"input": 0.02, "output": 0.04, "source": "openrouter.ai/api/v1/models/meta-llama/llama-3.1-8b-instruct/endpoints"},
-    "api_novita": {"input": 0.02, "output": 0.05, "source": "same"},
-    "api_groq": {"input": 0.05, "output": 0.08, "source": "same"},
-    "api_cloudflare": {"input": 0.152, "output": 0.287, "source": "same"},
-    "api_coreweave": {"input": 0.22, "output": 0.22, "source": "same"},
-    "api_claude_haiku": {"input": 0.10, "output": 0.50, "source": "Anthropic price list for claude-haiku-5-5"}
+    "api_deepinfra": {
+      "input": 0.02,
+      "output": 0.04,
+      "source": "openrouter.ai/api/v1/models/meta-llama/llama-3.1-8b-instruct/endpoints"
+    },
+    "api_novita": {
+      "input": 0.02,
+      "output": 0.05,
+      "source": "same"
+    },
+    "api_groq": {
+      "input": 0.05,
+      "output": 0.08,
+      "source": "same"
+    },
+    "api_cloudflare": {
+      "input": 0.152,
+      "output": 0.287,
+      "source": "same"
+    },
+    "api_coreweave": {
+      "input": 0.22,
+      "output": 0.22,
+      "source": "same"
+    },
+    "api_claude_haiku": {
+      "input": 0.1,
+      "output": 0.5,
+      "source": "Anthropic price list for claude-haiku-5-5"
+    }
   }
 }
