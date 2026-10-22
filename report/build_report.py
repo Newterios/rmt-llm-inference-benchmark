@@ -29,7 +29,8 @@ COND = json.load(open(ROOT / "bench" / "conditions.json"))
 
 LABEL = {"mac_m4pro": "L-Mac: MacBook Pro M4 Pro 24 GB, llama.cpp, Q4_K_M",
          "pc_rtx4060": "L-PC: desktop RTX 4060 8 GB, llama.cpp, Q4_K_M",
-         "rented_rtx4090": "R-GPU: rented RTX 4090, llama.cpp, Q4_K_M",
+         "pc_rtx4060_budget": "L-PCb: minimal RTX 4060 box, cost scenario derived from L-PC",
+         "rented_colab_gpu": "R-GPU: rented Google Colab Pro GPU, llama.cpp, Q4_K_M",
          "api_deepinfra": "API-DI: OpenRouter, DeepInfra, fp8",
          "api_novita": "API-NV: OpenRouter, Novita, fp8",
          "api_cloudflare": "API-CF: OpenRouter, Cloudflare, fp8",
@@ -302,7 +303,7 @@ p("Step 5, hosted pilots (01:34 to about 02:00). The same protocol was run again
 p("Step 6, main runs (24 to 26.10.2026). Each condition receives the 200 main throughput prompts at concurrency "
   "1, 4 and 16 with three repeats, and the 100 main GSM8K items at concurrency 4 with two repeats. Local runs are "
   "accompanied by a power log (nvidia-smi once per second on the PC and the rented GPU, powermetrics on the Mac). "
-  "The PC is operated by the team with the scripts in bench/windows; the rented GPU runs bench/cloud/runpod_setup.sh. "
+  "The PC is operated by the team with the scripts in bench/windows; the rented GPU condition runs in the public Colab notebook bench/cloud/colab_benchmark.ipynb. "
   f"Figure {FIG_N + 1} shows the raw data file of one run exactly as it is stored.")
 f_raw = fig(FIG / "fig_raw_jsonl.png",
             "Head of a raw run file (runs/mac_m4pro/*.jsonl): the meta line with the server configuration, then "
@@ -433,7 +434,7 @@ table([
     ["bench/run.py", "Sends prompts, measures, writes raw data", LINKS["github"] + "/blob/main/bench/run.py", f"Figure {f_pilot} (console), Figure {f_raw} (raw file)"],
     ["bench/make_prompts.py", "Builds the fixed prompt sets and their card with checksums", LINKS["github"] + "/blob/main/bench/make_prompts.py", "data/prompts/prompt_sets_card.json"],
     ["bench/summarize.py, bench/cost_model.py, bench/make_figures.py", "Processing, cost model, plots", LINKS["github"] + "/tree/main/bench", "results/*.csv, figures/*.png"],
-    ["bench/serve_mac.sh, bench/windows/*.ps1, bench/cloud/runpod_setup.sh", "Identical server configuration on three kinds of machine", LINKS["github"] + "/tree/main/bench", f"Figure {f_server}"],
+    ["bench/serve_mac.sh, bench/windows/*.ps1, bench/cloud/colab_benchmark.ipynb", "Identical server configuration on three kinds of machine", LINKS["github"] + "/tree/main/bench", f"Figure {f_server}"],
 ], widths=[4, 4.5, 5, 3.5], font=8)
 
 h("T4. Block D: Technical study and benchmark", 2)

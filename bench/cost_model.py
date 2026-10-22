@@ -37,6 +37,14 @@ def local_cost_1000(h, V, cap_per_day, attribution):
 def main(set_name="main"):
     cnd = pd.read_csv(ROOT / "results" / "summary_by_condition.csv")
     th = cnd[(cnd.task == "throughput") & (cnd.set == set_name)]
+    # derived cost-only conditions reuse the measurements of the machine they are derived from
+    extra = []
+    for name, h in PRICES["hardware"].items():
+        src = h.get("derived_from")
+        if src and src in set(th.condition):
+            g = th[th.condition == src].copy(); g["condition"] = name; extra.append(g)
+    if extra:
+        th = pd.concat([th] + extra, ignore_index=True)
     rows, breakeven = [], []
     api_cost = {}
     for cond, g in th.groupby("condition"):
@@ -61,10 +69,11 @@ def main(set_name="main"):
                 if cond in api_cost:
                     r["cost_per_1000_usd"] = api_cost[cond]; r["servable"] = True
                     r["basis"] = "provider-reported usage.cost x 1000" if pd.notna(cap_row.cost_usd) else "list price x measured tokens"
-                elif cond == "rented_rtx4090":
+                elif cond.startswith("rented_"):
                     h = PRICES["hardware"][cond]
-                    r["cost_per_1000_usd"] = 24 * h["usd_per_hour"] / V * 1000 if V <= cap else None
-                    r["basis"] = "24 h rent / volume"
+                    hourly = h.get("usd_per_hour") or ((h.get("compute_units_per_hour") or 0) * h.get("usd_per_compute_unit", 0))
+                    r["cost_per_1000_usd"] = 24 * hourly / V * 1000 if (V <= cap and hourly) else None
+                    r["basis"] = f"24 h x {hourly:.3f} USD/h / volume"
                 else:
                     h = PRICES["hardware"][cond]
                     r["cost_per_1000_usd"] = local_cost_1000(h, V, cap, attribution)
@@ -75,8 +84,11 @@ def main(set_name="main"):
                 h = PRICES["hardware"][cond]
                 be = None
                 for V in GRID:
-                    c = (24 * h["usd_per_hour"] / V * 1000 if V <= cap else None) if cond == "rented_rtx4090" \
-                        else local_cost_1000(h, int(V), cap, attribution)
+                    if cond.startswith("rented_"):
+                        hourly = h.get("usd_per_hour") or ((h.get("compute_units_per_hour") or 0) * h.get("usd_per_compute_unit", 0))
+                        c = (24 * hourly / V * 1000) if (V <= cap and hourly) else None
+                    else:
+                        c = local_cost_1000(h, int(V), cap, attribution)
                     if c is not None and c < api_cost[baseline]:
                         be = int(V); break
                 breakeven.append({"condition": cond, "scenario": scen, "baseline": baseline,

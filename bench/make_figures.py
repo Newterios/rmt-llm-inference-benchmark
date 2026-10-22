@@ -10,7 +10,7 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parent.parent
 FIG = ROOT / "figures"
 FIG.mkdir(exist_ok=True)
-LABELS = {"mac_m4pro": "Mac M4 Pro (local)", "pc_rtx4060": "PC RTX 4060 (local)", "rented_rtx4090": "Rented RTX 4090",
+LABELS = {"mac_m4pro": "Mac M4 Pro (local)", "pc_rtx4060": "PC RTX 4060 (local)", "pc_rtx4060_budget": "Budget box RTX 4060 (cost scenario)", "rented_colab_gpu": "Rented GPU (Colab Pro)",
           "api_deepinfra": "API DeepInfra fp8", "api_novita": "API Novita fp8", "api_groq": "API Groq",
           "api_cloudflare": "API Cloudflare fp8", "api_coreweave": "API CoreWeave bf16", "api_claude_haiku": "API Claude Haiku 5.5"}
 
