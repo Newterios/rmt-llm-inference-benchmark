@@ -1,2 +1,11 @@
 writing runs/api_cloudflare/20261023-013727_throughput_pilot.jsonl
 [api_cloudflare] throughput/pilot c=1 r=1: ok=50/50 wall=379.9s req/s=0.1316 out_tok/s=15.37 p50_lat=4.32s p50_ttft=0.474s cost=$0.002072
+[api_cloudflare] throughput/pilot c=1 r=2: ok=50/50 wall=397.1s req/s=0.1259 out_tok/s=14.83 p50_lat=4.35s p50_ttft=0.507s cost=$0.002088
+[api_cloudflare] throughput/pilot c=4 r=1: ok=50/50 wall=93.1s req/s=0.537 out_tok/s=63.08 p50_lat=4.24s p50_ttft=0.477s cost=$0.002083
+[api_cloudflare] throughput/pilot c=4 r=2: ok=50/50 wall=82.7s req/s=0.6044 out_tok/s=70.9 p50_lat=3.46s p50_ttft=0.46s cost=$0.00208
+[api_cloudflare] throughput/pilot c=16 r=1: ok=50/50 wall=26.2s req/s=1.9062 out_tok/s=224.82 p50_lat=3.58s p50_ttft=0.487s cost=$0.00209
+[api_cloudflare] throughput/pilot c=16 r=2: ok=50/50 wall=33.0s req/s=1.5174 out_tok/s=181.03 p50_lat=3.77s p50_ttft=0.475s cost=$0.002109
+done: runs/api_cloudflare/20261023-013727_throughput_pilot.jsonl
+writing runs/api_cloudflare/20261023-015427_quality_pilot.jsonl
+[api_cloudflare] quality/pilot c=4 r=1: ok=30/30 wall=67.7s req/s=0.443 out_tok/s=54.67 p50_lat=6.01s p50_ttft=0.474s cost=$0.001532 acc=0.8667
+done: runs/api_cloudflare/20261023-015427_quality_pilot.jsonl

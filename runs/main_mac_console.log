@@ -1,1 +1,2 @@
 writing runs/mac_m4pro/20261023-014315_throughput_main.jsonl
+[mac_m4pro] throughput/main c=1 r=1: ok=200/200 wall=552.2s req/s=0.3622 out_tok/s=42.74 p50_lat=1.75s p50_ttft=0.229s cost=$None

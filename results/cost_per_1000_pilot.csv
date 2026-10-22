@@ -1,0 +1,19 @@
+condition,scenario,volume_per_day,capacity_req_per_day,servable,prompt_tok_mean,out_tok_mean,cost_per_1000_usd,basis
+api_claude_haiku,n/a,1000,621843,True,62.4,144.3,0.07839,provider-reported usage.cost x 1000
+api_claude_haiku,n/a,10000,621843,True,62.4,144.3,0.07839,provider-reported usage.cost x 1000
+api_claude_haiku,n/a,100000,621843,True,62.4,144.3,0.07839,provider-reported usage.cost x 1000
+api_cloudflare,n/a,1000,148246,True,52.3,118.6,0.04199,provider-reported usage.cost x 1000
+api_cloudflare,n/a,10000,148246,True,52.3,118.6,0.04199,provider-reported usage.cost x 1000
+api_cloudflare,n/a,100000,148246,True,52.3,118.6,0.04199,provider-reported usage.cost x 1000
+api_coreweave,n/a,1000,958977,True,52.3,118.7,0.0376,provider-reported usage.cost x 1000
+api_coreweave,n/a,10000,958977,True,52.3,118.7,0.0376,provider-reported usage.cost x 1000
+api_coreweave,n/a,100000,958977,True,52.3,118.7,0.0376,provider-reported usage.cost x 1000
+api_groq,n/a,1000,2304029,True,71.3,118.1,0.013,provider-reported usage.cost x 1000
+api_groq,n/a,10000,2304029,True,71.3,118.1,0.013,provider-reported usage.cost x 1000
+api_groq,n/a,100000,2304029,True,71.3,118.1,0.013,provider-reported usage.cost x 1000
+mac_m4pro,dedicated,1000,77327,True,71.3,115.2,1.84057,1.00 x 1999 USD / 3 y + electricity
+mac_m4pro,dedicated,10000,77327,True,71.3,115.2,0.18388,1.00 x 1999 USD / 3 y + electricity
+mac_m4pro,dedicated,100000,77327,False,71.3,115.2,,1.00 x 1999 USD / 3 y + electricity
+mac_m4pro,shared_dev_machine,1000,77327,True,71.3,115.2,0.47139,0.25 x 1999 USD / 3 y + electricity
+mac_m4pro,shared_dev_machine,10000,77327,True,71.3,115.2,0.04696,0.25 x 1999 USD / 3 y + electricity
+mac_m4pro,shared_dev_machine,100000,77327,False,71.3,115.2,,0.25 x 1999 USD / 3 y + electricity
