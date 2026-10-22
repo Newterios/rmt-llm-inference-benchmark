@@ -1,0 +1,34 @@
+condition,scenario,volume_per_day,capacity_req_per_day,servable,prompt_tok_mean,out_tok_mean,cost_per_1000_usd,basis
+api_claude_haiku,n/a,1000,747353,True,57.5,145.3,0.07843,provider-reported usage.cost x 1000
+api_claude_haiku,n/a,10000,747353,True,57.5,145.3,0.07843,provider-reported usage.cost x 1000
+api_claude_haiku,n/a,100000,747353,True,57.5,145.3,0.07843,provider-reported usage.cost x 1000
+api_cloudflare,n/a,1000,185960,True,49.0,120.1,0.04192,provider-reported usage.cost x 1000
+api_cloudflare,n/a,10000,185960,True,49.0,120.1,0.04192,provider-reported usage.cost x 1000
+api_cloudflare,n/a,100000,185960,True,49.0,120.1,0.04192,provider-reported usage.cost x 1000
+api_coreweave,n/a,1000,1081498,True,49.0,118.2,0.03678,provider-reported usage.cost x 1000
+api_coreweave,n/a,10000,1081498,True,49.0,118.2,0.03678,provider-reported usage.cost x 1000
+api_coreweave,n/a,100000,1081498,True,49.0,118.2,0.03678,provider-reported usage.cost x 1000
+api_deepinfra,n/a,1000,16983,True,48.0,112.2,0.00544,provider-reported usage.cost x 1000
+api_deepinfra,n/a,10000,16983,True,48.0,112.2,0.00544,provider-reported usage.cost x 1000
+api_deepinfra,n/a,100000,16983,True,48.0,112.2,0.00544,provider-reported usage.cost x 1000
+api_groq,n/a,1000,3698627,True,68.0,119.1,0.01292,provider-reported usage.cost x 1000
+api_groq,n/a,10000,3698627,True,68.0,119.1,0.01292,provider-reported usage.cost x 1000
+api_groq,n/a,100000,3698627,True,68.0,119.1,0.01292,provider-reported usage.cost x 1000
+mac_m4pro,dedicated,1000,102096,True,68.0,117.8,1.84097,1.00 x 1999 USD / 3 y + electricity
+mac_m4pro,dedicated,10000,102096,True,68.0,117.8,0.18428,1.00 x 1999 USD / 3 y + electricity
+mac_m4pro,dedicated,100000,102096,True,68.0,117.8,0.01861,1.00 x 1999 USD / 3 y + electricity
+mac_m4pro,shared_dev_machine,1000,102096,True,68.0,117.8,0.47179,0.25 x 1999 USD / 3 y + electricity
+mac_m4pro,shared_dev_machine,10000,102096,True,68.0,117.8,0.04736,0.25 x 1999 USD / 3 y + electricity
+mac_m4pro,shared_dev_machine,100000,102096,True,68.0,117.8,0.00492,0.25 x 1999 USD / 3 y + electricity
+mac_m4pro_loaded,dedicated,1000,106859,True,68.0,117.4,1.84096,1.00 x 1999 USD / 3 y + electricity
+mac_m4pro_loaded,dedicated,10000,106859,True,68.0,117.4,0.18427,1.00 x 1999 USD / 3 y + electricity
+mac_m4pro_loaded,dedicated,100000,106859,True,68.0,117.4,0.0186,1.00 x 1999 USD / 3 y + electricity
+mac_m4pro_loaded,shared_dev_machine,1000,106859,True,68.0,117.4,0.47178,0.25 x 1999 USD / 3 y + electricity
+mac_m4pro_loaded,shared_dev_machine,10000,106859,True,68.0,117.4,0.04735,0.25 x 1999 USD / 3 y + electricity
+mac_m4pro_loaded,shared_dev_machine,100000,106859,True,68.0,117.4,0.00491,0.25 x 1999 USD / 3 y + electricity
+mac_m4pro_q8,dedicated,1000,104687,True,68.0,122.0,1.84097,1.00 x 1999 USD / 3 y + electricity
+mac_m4pro_q8,dedicated,10000,104687,True,68.0,122.0,0.18427,1.00 x 1999 USD / 3 y + electricity
+mac_m4pro_q8,dedicated,100000,104687,True,68.0,122.0,0.0186,1.00 x 1999 USD / 3 y + electricity
+mac_m4pro_q8,shared_dev_machine,1000,104687,True,68.0,122.0,0.47179,0.25 x 1999 USD / 3 y + electricity
+mac_m4pro_q8,shared_dev_machine,10000,104687,True,68.0,122.0,0.04736,0.25 x 1999 USD / 3 y + electricity
+mac_m4pro_q8,shared_dev_machine,100000,104687,True,68.0,122.0,0.00491,0.25 x 1999 USD / 3 y + electricity

@@ -66,7 +66,9 @@ def main():
     req["t1"] = req["t0"] + pd.to_timedelta(req.latency_s, unit="s")
     out = []
     for k, g in req.groupby(["condition", "task", "set", "concurrency", "repeat"]):
-        pw = power[power.condition == k[0]]
+        # power logs live in the folder of the physical machine; derived conditions share it
+        base = k[0].replace("_loaded", "").replace("_q8", "")
+        pw = power[power.condition == base]
         if pw.empty:
             continue
         a, b = g.t0.min(), g.t1.max()

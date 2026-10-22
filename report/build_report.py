@@ -532,7 +532,28 @@ if not LVL.empty:
 # ================================================================ SEGMENT 4
 h("Segment 4. Expected Against Observed. Preliminary comparison", 1)
 h("T1. Completion table", 2)
-table([["Data to be collected", "Planned", "Collected (at report date)"]] + S4["completion"], widths=[6, 5, 6])
+def completion_rows():
+    rows = []
+    if LVL.empty:
+        return rows
+    for cond in [c for c in LABEL if c in set(LVL.condition)]:
+        g = LVL[LVL.condition == cond]
+        def n(task, s):
+            gg = g[(g.task == task) & (g.set == s)]
+            return int(gg.n_ok.sum()), int(gg["n"].sum())
+        tm, tmn = n("throughput", "main"); tp, tpn = n("throughput", "pilot")
+        qm, qmn = n("quality", "main"); qp, qpn = n("quality", "pilot")
+        planned = "1,800 throughput + 200 quality requests (main); 300 + 30 (pilot)"
+        if cond in ("mac_m4pro_q8",):
+            planned = "800 throughput (c=1, c=16 x 2) + 200 quality (main); no pilot"
+        if cond in ("mac_m4pro_loaded",):
+            planned = "not planned (observation)"
+        rows.append([SHORT[cond] + ": " + LABEL[cond].split(": ", 1)[1], planned,
+                     f"main: {tm}/{tmn} throughput, {qm}/{qmn} quality; pilot: {tp}/{tpn} throughput, {qp}/{qpn} quality (ok/sent)"])
+    for extra in S4.get("completion", []):
+        rows.append(extra)
+    return rows
+table([["Data to be collected", "Planned", "Collected (at report date)"]] + completion_rows(), widths=[6, 5, 6], font=8)
 h("T2. Comparison", 2)
 table([["Expected result", "What actual data shows", "Verdict", "Where it can be found"]] + S4["comparison"],
       widths=[4.5, 6, 2.5, 4], font=8)
