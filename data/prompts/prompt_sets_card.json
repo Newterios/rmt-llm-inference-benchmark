@@ -1,0 +1,30 @@
+{
+  "seed": 42,
+  "alpaca": {
+    "file": "data/raw/alpaca_data.json",
+    "sha256": "2eddafc6b977608d778aaab8dfc7e50e547b3af9826dfb9e909d9fc362e4a419",
+    "records_total": 52002,
+    "records_after_length_filter": 47221,
+    "length_filter_chars": [
+      40,
+      600
+    ],
+    "pilot": 50,
+    "main": 200,
+    "source": "https://github.com/tatsu-lab/stanford_alpaca",
+    "license": "CC BY-NC 4.0"
+  },
+  "gsm8k": {
+    "file": "data/raw/gsm8k_test.jsonl",
+    "sha256": "3730d312f6e3440559ace48831e51066acaca737f6eabec99bccb9e4b3c39d14",
+    "records_total": 1319,
+    "pilot": 30,
+    "main": 100,
+    "source": "https://github.com/openai/grade-school-math",
+    "license": "MIT"
+  },
+  "disjoint_check": {
+    "alpaca_overlap": 0,
+    "gsm8k_overlap": 0
+  }
+}

@@ -1,0 +1,50 @@
+{"source": "alpaca", "source_index": 15773, "prompt": "Change the following sentence into the negative form.\n\nHe is travelling to London.", "id": "alp-000"}
+{"source": "alpaca", "source_index": 13069, "prompt": "Provide an example of an appropriate output for the sentence \"Please recommend some books to read\".", "id": "alp-001"}
+{"source": "alpaca", "source_index": 51716, "prompt": "Rewrite the following sentences with more formal and polite language.\n\nHey, what's up?", "id": "alp-002"}
+{"source": "alpaca", "source_index": 35489, "prompt": "For what reason would someone be denied entry to the United States?", "id": "alp-003"}
+{"source": "alpaca", "source_index": 21133, "prompt": "Add 5 traits to the following list\n\n- Courage\n- Self-control\n- Respect", "id": "alp-004"}
+{"source": "alpaca", "source_index": 41005, "prompt": "Resolve the following relationship issue.\n\nCouple disagreeing on how to celebrate their anniversary.", "id": "alp-005"}
+{"source": "alpaca", "source_index": 50556, "prompt": "Please give the past participle of the verb \"drink\".", "id": "alp-006"}
+{"source": "alpaca", "source_index": 39282, "prompt": "Insert the proper punctuations in the following sentence:\n\nThe scientists took a sample of the soil", "id": "alp-007"}
+{"source": "alpaca", "source_index": 48934, "prompt": "Suggest a rephrased sentence that conveys the same meaning.\n\nShe ran faster than anyone in the race.", "id": "alp-008"}
+{"source": "alpaca", "source_index": 17875, "prompt": "Take the given sentence and detect out all the proper nouns\n\nJohn, Paul and George went by train to London", "id": "alp-009"}
+{"source": "alpaca", "source_index": 3517, "prompt": "Pretend you are talking to a 10-year-old. Explain what artificial intelligence is in simple terms.", "id": "alp-010"}
+{"source": "alpaca", "source_index": 50891, "prompt": "Derive the equation for calculating compound interest.", "id": "alp-011"}
+{"source": "alpaca", "source_index": 25166, "prompt": "Draft a letter expressing appreciation to someone who helped you in a difficult situation.", "id": "alp-012"}
+{"source": "alpaca", "source_index": 15178, "prompt": "Summarize the biggest limitation of a Neural Network algorithm.", "id": "alp-013"}
+{"source": "alpaca", "source_index": 28415, "prompt": "Explain what supervised learning is and why it is important.", "id": "alp-014"}
+{"source": "alpaca", "source_index": 50022, "prompt": "Describe the mitigation strategies in place for cyber security.", "id": "alp-015"}
+{"source": "alpaca", "source_index": 29689, "prompt": "List the chemical elements that have an atomic number of 30", "id": "alp-016"}
+{"source": "alpaca", "source_index": 17702, "prompt": "Summarize the following article into a tweet (140 characters max).\n\nAccording to a new study conducted in the U.S. and Canada, dogs have the ability to understand their human partner’s point of view. Dogs can recognize the difference between a situation familiar to them and one that is new to them, and adjust their behavior accordingly.", "id": "alp-017"}
+{"source": "alpaca", "source_index": 40283, "prompt": "Describe a time you used your problem solving skills to solve an issue.", "id": "alp-018"}
+{"source": "alpaca", "source_index": 9797, "prompt": "Describe the key features of a REST API.", "id": "alp-019"}
+{"source": "alpaca", "source_index": 47972, "prompt": "Classify the time-series chart below in one word.\n\nTime-Series Chart", "id": "alp-020"}
+{"source": "alpaca", "source_index": 21629, "prompt": "Generate a list of tips for improving your concentration.", "id": "alp-021"}
+{"source": "alpaca", "source_index": 45098, "prompt": "Compose a tweet of no more than 280 characters that mentions the keyword \"automation\".", "id": "alp-022"}
+{"source": "alpaca", "source_index": 37881, "prompt": "Identify the cases with nominative, accusative, and dative.\n\nThe cat plays with the mouse.", "id": "alp-023"}
+{"source": "alpaca", "source_index": 15820, "prompt": "Given some data, train a sentiment analysis model to predict sentiment.\n\nThe following tweets about a new movie:\n1. \"I just saw the new movie and it's the best thing I've ever seen!\"\n2. \"The new movie was terrible - it was the worst movie I've ever seen.\"\n3. \"Meh, it was okay. I wouldn't say it was great or terrible.\"", "id": "alp-024"}
+{"source": "alpaca", "source_index": 17369, "prompt": "Who wrote the novel To Kill a Mockingbird?", "id": "alp-025"}
+{"source": "alpaca", "source_index": 15119, "prompt": "Categorize this text into one of the four categories sports, science, literature, or history.\n\nThe Battle of Gettysburg was an important event of the Civil War.", "id": "alp-026"}
+{"source": "alpaca", "source_index": 48126, "prompt": "Rewrite this sentence: \"A wicked man saved by his courage\"\n\nA wicked man saved by his courage", "id": "alp-027"}
+{"source": "alpaca", "source_index": 13332, "prompt": "Summarize the following topic into 200 words or less.\n\nVaccines", "id": "alp-028"}
+{"source": "alpaca", "source_index": 12889, "prompt": "Translate the statement below into French\n\nLaughter is the best medicine.", "id": "alp-029"}
+{"source": "alpaca", "source_index": 16696, "prompt": "Describe how can data be a powerful tool for decision-making.", "id": "alp-030"}
+{"source": "alpaca", "source_index": 27842, "prompt": "Deduct a major theme from the given book review\n\nThe book ‘A Doll’s House’ is an enlightening read that provides valuable insights into gender equality, marriage and other social conventions.", "id": "alp-031"}
+{"source": "alpaca", "source_index": 28921, "prompt": "Describe strategy for converting the RGB colorspace to the CMYK colorspace.", "id": "alp-032"}
+{"source": "alpaca", "source_index": 47884, "prompt": "Pick a popular book title from the 20th century.", "id": "alp-033"}
+{"source": "alpaca", "source_index": 20618, "prompt": "Convert this Hexadecimal string to its corresponding binary number.\n\n2F35", "id": "alp-034"}
+{"source": "alpaca", "source_index": 807, "prompt": "Given a list of ingredients, create a recipe for a vegan curry.\n\n2 cans of chickpeas, 1 onion, 1 clove of garlic, 1 inch ginger, 1 teaspoon cumin, 1 teaspoon curry powder, 1 teaspoon turmeric", "id": "alp-035"}
+{"source": "alpaca", "source_index": 14418, "prompt": "Generate an algorithm for solving the given problem\n\nGiven a 2D array of characters, print all valid words that can be formed in the array.", "id": "alp-036"}
+{"source": "alpaca", "source_index": 20459, "prompt": "Categorize the following list of items into two groups based on the criteria you choose.\n\napples, oranges, peaches, bananas, pears", "id": "alp-037"}
+{"source": "alpaca", "source_index": 35490, "prompt": "Name two physical conditions that could lead to arthritis.", "id": "alp-038"}
+{"source": "alpaca", "source_index": 42559, "prompt": "Sort the following countries by land area (from largest to smallest)\n\nSwitzerland, Norway, Monaco, Denmark", "id": "alp-039"}
+{"source": "alpaca", "source_index": 44177, "prompt": "How can open source software help business operations?", "id": "alp-040"}
+{"source": "alpaca", "source_index": 50497, "prompt": "Create a story using the following words: hat, rainbow, castle, dragon", "id": "alp-041"}
+{"source": "alpaca", "source_index": 40872, "prompt": "Assess the relevancy of the given document with respect to the query.\n\nQuery: \"Role of information technology in education\"\nDocument: Information technology is the use of computer systems to store and organize data.", "id": "alp-042"}
+{"source": "alpaca", "source_index": 25063, "prompt": "Insert appropriate conjunctions and parantheses to improve the sentence structure.\n\nAlthough I said one thing she said something else.", "id": "alp-043"}
+{"source": "alpaca", "source_index": 31500, "prompt": "Create a new acronym from the given words.\n\nCity, Intellect, Teen", "id": "alp-044"}
+{"source": "alpaca", "source_index": 35375, "prompt": "Format the following text into an html table.\n\nTable title | Col1 | Col2\nAhmed | 10 | 15\nBob | 20 | 25\nSamantha | 30 | 35\nJohn | 40 | 45", "id": "alp-045"}
+{"source": "alpaca", "source_index": 27826, "prompt": "Compose a musical lead-in to a jazzy song", "id": "alp-046"}
+{"source": "alpaca", "source_index": 11209, "prompt": "Find the mean of the following numbers: 2, 4, 6, 8, 10.", "id": "alp-047"}
+{"source": "alpaca", "source_index": 43212, "prompt": "Choose a topic and create a creative approach for a marketing campaign for it.\n\nVeganism", "id": "alp-048"}
+{"source": "alpaca", "source_index": 51112, "prompt": "Generate a content for a children's story for 3 to 5 year olds about a little girl meeting a robot", "id": "alp-049"}
