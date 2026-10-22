@@ -1,0 +1,200 @@
+{"source": "alpaca", "source_index": 24773, "prompt": "Create a dialogue that would be spoken between two robots.", "id": "alp-050"}
+{"source": "alpaca", "source_index": 3420, "prompt": "Generate a list of criteria that can be used in selecting a suitable job", "id": "alp-051"}
+{"source": "alpaca", "source_index": 33135, "prompt": "Refactor the following code fragment to square a number without using multiplication.\n\nint result = number * number;", "id": "alp-052"}
+{"source": "alpaca", "source_index": 2728, "prompt": "What type of government does Spain currently have?", "id": "alp-053"}
+{"source": "alpaca", "source_index": 32000, "prompt": "Describe the user's current feelings in one phrase.\n\nAngry at the longest waiting time ever", "id": "alp-054"}
+{"source": "alpaca", "source_index": 7516, "prompt": "Classify the text as positive, neutral of negative.\n\nI absolutely hate this new program.", "id": "alp-055"}
+{"source": "alpaca", "source_index": 49450, "prompt": "Collect five important takeaways from South Africa's 2019 election.", "id": "alp-056"}
+{"source": "alpaca", "source_index": 28392, "prompt": "Create a new list that contains only the even numbers from the given list.\n\n[3, 8, 13, 4, 17, 30]", "id": "alp-057"}
+{"source": "alpaca", "source_index": 41781, "prompt": "Generate a short vacation story that takes place in a forest.", "id": "alp-058"}
+{"source": "alpaca", "source_index": 28105, "prompt": "Compare and contrast the artistic styles of impressionism and expressionism.", "id": "alp-059"}
+{"source": "alpaca", "source_index": 5416, "prompt": "Analyze how a character changes in the course of the story.\n\nA young man struggles to find his place between his traditional father and modern friends.", "id": "alp-060"}
+{"source": "alpaca", "source_index": 21126, "prompt": "Generate a set of instructions for solving the given logical puzzle.\n\nLogical Puzzle: Trains A & B are 120 km apart and start travelling towards each other. Train A is travelling at 54 km/h and train B is travelling at 42 km/h.", "id": "alp-061"}
+{"source": "alpaca", "source_index": 40196, "prompt": "Tell me the moral of this fable in a sentence.\n\nOnce upon a time a hare and a tortoise had a race.", "id": "alp-062"}
+{"source": "alpaca", "source_index": 10869, "prompt": "What is the best value for the hyperparameter gamma in SVM?", "id": "alp-063"}
+{"source": "alpaca", "source_index": 26161, "prompt": "Describe a technique to accelerate the completion of a monotonous task.", "id": "alp-064"}
+{"source": "alpaca", "source_index": 24837, "prompt": "Find the total cost for two tickets for the concert\n\nConcert tickets cost $50 each, with a service charge of 10%.", "id": "alp-065"}
+{"source": "alpaca", "source_index": 28200, "prompt": "Come up with additional topics that could be discussed in the given article.\n\nThe article looks into the history of immigration in the U.S.", "id": "alp-066"}
+{"source": "alpaca", "source_index": 51699, "prompt": "Evaluate the following statement: \"The use of technology has improved society in many ways.\"", "id": "alp-067"}
+{"source": "alpaca", "source_index": 9171, "prompt": "Given a British city, write a description of the main tourist attraction\n\nLondon", "id": "alp-068"}
+{"source": "alpaca", "source_index": 25739, "prompt": "Explain the meaning of a given term\n\nZero-sum game", "id": "alp-069"}
+{"source": "alpaca", "source_index": 18973, "prompt": "How does a monopolist maximize its profit?", "id": "alp-070"}
+{"source": "alpaca", "source_index": 46256, "prompt": "Switch the position of two words in a sentence.\n\nShe came home late.", "id": "alp-071"}
+{"source": "alpaca", "source_index": 32427, "prompt": "Edit the following sentence:\n\nThe man was walking to the store quick", "id": "alp-072"}
+{"source": "alpaca", "source_index": 10166, "prompt": "What is a 9-digit number that is divisible by 7?", "id": "alp-073"}
+{"source": "alpaca", "source_index": 50643, "prompt": "Write a summary of the novel \"1984\" by George Orwell.", "id": "alp-074"}
+{"source": "alpaca", "source_index": 37539, "prompt": "Create a marketing plan to promote a website.", "id": "alp-075"}
+{"source": "alpaca", "source_index": 48467, "prompt": "Generate a unique ID for the given employee.\n\nJohn Smith", "id": "alp-076"}
+{"source": "alpaca", "source_index": 7351, "prompt": "Generate three antonyms for the word \"wonderful\".", "id": "alp-077"}
+{"source": "alpaca", "source_index": 3613, "prompt": "Write a detailed definition of “Internet of Things (IoT)”", "id": "alp-078"}
+{"source": "alpaca", "source_index": 32075, "prompt": "Write a brief description about Microsoft Excel.", "id": "alp-079"}
+{"source": "alpaca", "source_index": 27768, "prompt": "Categorize the company's product line into four.\n\nFace Creams, Night Creams, Facial Toner, Beauty Bars", "id": "alp-080"}
+{"source": "alpaca", "source_index": 5183, "prompt": "Calculate the fraction of a circle that a given angle subtends.\n\nAngle = 60°", "id": "alp-081"}
+{"source": "alpaca", "source_index": 6787, "prompt": "Given a website link, classify the website.\n\nhttps://www.nytimes.com/", "id": "alp-082"}
+{"source": "alpaca", "source_index": 27126, "prompt": "Give an example of a human genome sequencing process.", "id": "alp-083"}
+{"source": "alpaca", "source_index": 18616, "prompt": "Come up with four words that describe happiness.", "id": "alp-084"}
+{"source": "alpaca", "source_index": 35711, "prompt": "Create a strategy for decreasing global poverty.", "id": "alp-085"}
+{"source": "alpaca", "source_index": 33565, "prompt": "Find all the numbers in this passage.\n\nThe first iPhone was released 13 years ago in 2007 and the sales skyrocketed to 1.4 million units that year.", "id": "alp-086"}
+{"source": "alpaca", "source_index": 48907, "prompt": "Name a popular activity people do in the summer.", "id": "alp-087"}
+{"source": "alpaca", "source_index": 27719, "prompt": "Name five personalities related to computer science.\n\n<none>", "id": "alp-088"}
+{"source": "alpaca", "source_index": 4121, "prompt": "Analyze the effectiveness of the methods used in the following experiment.\n\nSubjects were asked to play a game in which they had to guess which of two cups contained a reward.", "id": "alp-089"}
+{"source": "alpaca", "source_index": 15969, "prompt": "Create a drawing of a tree using the provided materials.\n\nColored Pencils", "id": "alp-090"}
+{"source": "alpaca", "source_index": 18829, "prompt": "Create a list of five Good Samaritan acts.", "id": "alp-091"}
+{"source": "alpaca", "source_index": 3815, "prompt": "What is the current exchange rate between US dollars and Euro?", "id": "alp-092"}
+{"source": "alpaca", "source_index": 37792, "prompt": "Provide a list of four adjectives that describe a mountain.", "id": "alp-093"}
+{"source": "alpaca", "source_index": 23311, "prompt": "Describe the importance of empathy in leadership.", "id": "alp-094"}
+{"source": "alpaca", "source_index": 19338, "prompt": "Generate a plausible title for a movie starring a character named Arjun.", "id": "alp-095"}
+{"source": "alpaca", "source_index": 9653, "prompt": "Summarize the abstract of the following research paper\n\nhttps://www.sciencedirect.com/science/article/pii/S0048969720390785", "id": "alp-096"}
+{"source": "alpaca", "source_index": 9441, "prompt": "Create an analogy to describe an AI assistant.", "id": "alp-097"}
+{"source": "alpaca", "source_index": 13373, "prompt": "Generate a story of two friends meeting a new person", "id": "alp-098"}
+{"source": "alpaca", "source_index": 16622, "prompt": "Explain the symbolism in the short story \"The Lottery\" by Shirley Jackson.", "id": "alp-099"}
+{"source": "alpaca", "source_index": 4627, "prompt": "Paraphrase the following sentence in 5 words or less.\n\nI am preparing for my upcoming exams.", "id": "alp-100"}
+{"source": "alpaca", "source_index": 22584, "prompt": "Given a hate crime incident, explain why it qualifies as a hate crime.\n\nA group of teens attacked a homeless man and shouted homophobic slurs at him.", "id": "alp-101"}
+{"source": "alpaca", "source_index": 18551, "prompt": "Categorize the following object as class A or class B.\n\nObject: A pink rose", "id": "alp-102"}
+{"source": "alpaca", "source_index": 36127, "prompt": "Find the cause and effect of the given sentence.\n\nThe company went bankrupt.", "id": "alp-103"}
+{"source": "alpaca", "source_index": 21450, "prompt": "Design a web page with two columns and a footer.", "id": "alp-104"}
+{"source": "alpaca", "source_index": 50562, "prompt": "This is a website URL. Identify the domain name.\n\nhttp://www.example.com/", "id": "alp-105"}
+{"source": "alpaca", "source_index": 37096, "prompt": "Name a common device that uses the technology discussed in this article.\n\nThis article discusses how to create wireless charging for smartphones.", "id": "alp-106"}
+{"source": "alpaca", "source_index": 35271, "prompt": "Create a word cloud with the most frequently used words from this text.\n\nCells are the basic structural, functional, and biological units of all known living organisms.", "id": "alp-107"}
+{"source": "alpaca", "source_index": 43874, "prompt": "Create a program that evaluates student performance.", "id": "alp-108"}
+{"source": "alpaca", "source_index": 19136, "prompt": "Evaluate the relevancy of this example\n\nA restaurant in Paris", "id": "alp-109"}
+{"source": "alpaca", "source_index": 8308, "prompt": "Compute the minimum score required to pass a test with 15 questions and a passing score of 80%.", "id": "alp-110"}
+{"source": "alpaca", "source_index": 45387, "prompt": "Create a SQL query to find the name of the employee who was hired last.\n\nTable: Employee\nFields: Employee ID, Employee Name, Hire Date", "id": "alp-111"}
+{"source": "alpaca", "source_index": 5335, "prompt": "Explain the concept of 'intellectual property rights'.", "id": "alp-112"}
+{"source": "alpaca", "source_index": 1829, "prompt": "Give three tips on writing an effective resume.", "id": "alp-113"}
+{"source": "alpaca", "source_index": 44494, "prompt": "Generate a conversation about the weather.", "id": "alp-114"}
+{"source": "alpaca", "source_index": 13462, "prompt": "Classify the given hospital score into grade A, B, C, or D.\n\n4.7", "id": "alp-115"}
+{"source": "alpaca", "source_index": 33432, "prompt": "Format the given sentence in proper APA style.\n\nThe research findings indicate that nature-based activities can be beneficial for mental health.", "id": "alp-116"}
+{"source": "alpaca", "source_index": 19326, "prompt": "Rewrite a sentence by changing the verb\n\nMolly jumped on the couch", "id": "alp-117"}
+{"source": "alpaca", "source_index": 1313, "prompt": "Arrange the following words into a phrase:\n\npairs \nshoes \nrunning", "id": "alp-118"}
+{"source": "alpaca", "source_index": 46505, "prompt": "Rewrite this sentence using a pronoun to replace the noun.\n\nThe cat jumped onto the couch.", "id": "alp-119"}
+{"source": "alpaca", "source_index": 34369, "prompt": "Imagine that you are in a group of friends and need to come up with a creative activity for everyone to participate in.", "id": "alp-120"}
+{"source": "alpaca", "source_index": 11856, "prompt": "Describe the impact of technology on society in two paragraphs.", "id": "alp-121"}
+{"source": "alpaca", "source_index": 23427, "prompt": "Design a logo for an e-commerce business targeting young people.", "id": "alp-122"}
+{"source": "alpaca", "source_index": 41533, "prompt": "Scan and remove any inappropriate content from the following text.\n\nThis text has some inappropriate content, such as the f-word, s-word, and b-word.", "id": "alp-123"}
+{"source": "alpaca", "source_index": 10098, "prompt": "Research and write up 5 interesting facts about your city\n\nLos Angeles, USA", "id": "alp-124"}
+{"source": "alpaca", "source_index": 32408, "prompt": "Make a list of popular social media websites.", "id": "alp-125"}
+{"source": "alpaca", "source_index": 47598, "prompt": "Calculate this simple mathematical equation.\n\n8 x 5", "id": "alp-126"}
+{"source": "alpaca", "source_index": 15340, "prompt": "Create a short story about a fictional alien species", "id": "alp-127"}
+{"source": "alpaca", "source_index": 29749, "prompt": "Complete the following sentence:\n\n\"Technology has changed the way people _____________\"", "id": "alp-128"}
+{"source": "alpaca", "source_index": 5933, "prompt": "List 4 benefits of eating breakfast every day.", "id": "alp-129"}
+{"source": "alpaca", "source_index": 21348, "prompt": "What are the advantages of a decision tree?", "id": "alp-130"}
+{"source": "alpaca", "source_index": 49089, "prompt": "Summarize the aphorism \"knowledge is power\" in one sentence.", "id": "alp-131"}
+{"source": "alpaca", "source_index": 554, "prompt": "In 50 words or less, describe the type of atmosphere a modern basketball game", "id": "alp-132"}
+{"source": "alpaca", "source_index": 8280, "prompt": "Use the given information to create a multiple choice question.\n\nPerson: Julius Caesar \nFact: Assassinated in 44 BC \nTime: Autumn 2020", "id": "alp-133"}
+{"source": "alpaca", "source_index": 48386, "prompt": "Categorize the following list of items: apple, banana, cow, airplane", "id": "alp-134"}
+{"source": "alpaca", "source_index": 24427, "prompt": "Translate this sentence into a more casual tone.\n\nI was unable to make it to the meeting.", "id": "alp-135"}
+{"source": "alpaca", "source_index": 1493, "prompt": "Rewrite the following paragraph adding adjectives and adverbs.\n\nJohn walked into the room. He smiled.", "id": "alp-136"}
+{"source": "alpaca", "source_index": 49604, "prompt": "Compare and contrast cross-validation and out-of-sample testing.", "id": "alp-137"}
+{"source": "alpaca", "source_index": 16858, "prompt": "Given the following facts, generate a story riddle.\n\n- The protagonist had a secret fear. \n- He found a magical cloak.\n- He had a special purpose to fulfill.", "id": "alp-138"}
+{"source": "alpaca", "source_index": 23709, "prompt": "Summarize the differences between a debit and credit card", "id": "alp-139"}
+{"source": "alpaca", "source_index": 43649, "prompt": "Provide an example of a GPT model used for generating text.", "id": "alp-140"}
+{"source": "alpaca", "source_index": 8531, "prompt": "Create a game based on a given topic.\n\nWeather", "id": "alp-141"}
+{"source": "alpaca", "source_index": 10585, "prompt": "Provide a suitable heading for the following paragraph.\n\nThe oceans play an important role in the Earth’s climate. They cover nearly 80% of the Earth’s surface and are responsible for controlling air temperature and balancing the nutrient cycles of the planet.", "id": "alp-142"}
+{"source": "alpaca", "source_index": 49115, "prompt": "Find the maximum speed of the vehicle given an acceleration rate, initial speed and time passed.\n\nAcceleration rate = 4 m/s^2, initial speed = 10 m/s, time passed = 5 seconds", "id": "alp-143"}
+{"source": "alpaca", "source_index": 2398, "prompt": "Edit the given sentence and make it more technically accurate.\n\nElectrons and protons have opposite charges.", "id": "alp-144"}
+{"source": "alpaca", "source_index": 10298, "prompt": "Generate an appropriate summarizing sentence for the following article\n\nNew research from the Institute of Social Research in Finland has found that the happiness of young people is increasingly influenced by their perception of economic security.", "id": "alp-145"}
+{"source": "alpaca", "source_index": 19904, "prompt": "Name a workplace team-building exercise.", "id": "alp-146"}
+{"source": "alpaca", "source_index": 37107, "prompt": "Write a short story about a person living in a world where the laws of physics no longer apply.", "id": "alp-147"}
+{"source": "alpaca", "source_index": 42449, "prompt": "Using the provided input, generate a name for a new product.\n\nA new type of sports drink targeted to athletes.", "id": "alp-148"}
+{"source": "alpaca", "source_index": 15857, "prompt": "Rewrite the given sentence in positive language.\n\n\"You should not worry so much.\"", "id": "alp-149"}
+{"source": "alpaca", "source_index": 22267, "prompt": "Write a function that calculates the area of a circle given the radius", "id": "alp-150"}
+{"source": "alpaca", "source_index": 13494, "prompt": "In a few sentences, describe the importance of sleep.", "id": "alp-151"}
+{"source": "alpaca", "source_index": 42665, "prompt": "Compress the following text using Lempel-Ziv-Welch (LZW) algorithm\n\n$ACADEMICPROGRAM$", "id": "alp-152"}
+{"source": "alpaca", "source_index": 9990, "prompt": "Who are some major figures in the fashion industry?", "id": "alp-153"}
+{"source": "alpaca", "source_index": 21404, "prompt": "Generate a one-sentence title for a creative recipe.", "id": "alp-154"}
+{"source": "alpaca", "source_index": 37493, "prompt": "Suggest three careers in the medical field", "id": "alp-155"}
+{"source": "alpaca", "source_index": 17160, "prompt": "Compose a 3 paragraph essay on the importance of saving money.", "id": "alp-156"}
+{"source": "alpaca", "source_index": 43729, "prompt": "Rewrite the given sentence such that it begins with the adverb\n\nHe speaks very quickly", "id": "alp-157"}
+{"source": "alpaca", "source_index": 4754, "prompt": "Spell out the spelling of ophthalmologist.", "id": "alp-158"}
+{"source": "alpaca", "source_index": 1023, "prompt": "What is the main benefit of using a natural language processing (NLP) system?", "id": "alp-159"}
+{"source": "alpaca", "source_index": 25341, "prompt": "What are the benefits of unstructured play for children?", "id": "alp-160"}
+{"source": "alpaca", "source_index": 42649, "prompt": "Provide an argument why the Internet should remain neutral.", "id": "alp-161"}
+{"source": "alpaca", "source_index": 22354, "prompt": "Create a historical fact about the civil war.", "id": "alp-162"}
+{"source": "alpaca", "source_index": 42717, "prompt": "Generate instructions for a recipe for steamed pork dumplings.", "id": "alp-163"}
+{"source": "alpaca", "source_index": 33122, "prompt": "Which US state has the second smallest population?", "id": "alp-164"}
+{"source": "alpaca", "source_index": 15658, "prompt": "Summarize the key steps to problem solving.", "id": "alp-165"}
+{"source": "alpaca", "source_index": 28364, "prompt": "Identify all the countries South America.", "id": "alp-166"}
+{"source": "alpaca", "source_index": 17620, "prompt": "What is the standard height for a ceiling?", "id": "alp-167"}
+{"source": "alpaca", "source_index": 23255, "prompt": "Give me a list of reasons why people overeat.", "id": "alp-168"}
+{"source": "alpaca", "source_index": 33221, "prompt": "Remove the spelling errors in the following sentence\n\nThe chikdren ran amok in the street.", "id": "alp-169"}
+{"source": "alpaca", "source_index": 12507, "prompt": "Given the ingredients, suggest a recipe\n\nIngredients: \n- 4 pitted dates \n- 2 tablespoons of almonds\n- ½ cup walnuts\n- 2 tablespoons honey\n- 2 tablespoons coconut oil", "id": "alp-170"}
+{"source": "alpaca", "source_index": 28419, "prompt": "Explain why it is important to understand basic geometry in AI.", "id": "alp-171"}
+{"source": "alpaca", "source_index": 45257, "prompt": "Compare the properties of liquid and gas states of matter", "id": "alp-172"}
+{"source": "alpaca", "source_index": 44622, "prompt": "Are the following two words related? Justify your answer with a sentence.\n\nApple and Orange", "id": "alp-173"}
+{"source": "alpaca", "source_index": 4645, "prompt": "Construct a sentence using these words\n\nBeautiful, morning", "id": "alp-174"}
+{"source": "alpaca", "source_index": 31948, "prompt": "Generate a two-digit number between 5 and 11 without repeating the digits give a two-digit number between 5 and 11 without repeating the digits", "id": "alp-175"}
+{"source": "alpaca", "source_index": 8255, "prompt": "Find the 2nd smallest number in this set.\n\n{0, 2, 5, 22, 15, 11, 37}", "id": "alp-176"}
+{"source": "alpaca", "source_index": 11840, "prompt": "Generate a song title that captures the spirit of the future.", "id": "alp-177"}
+{"source": "alpaca", "source_index": 25682, "prompt": "Add parentheses to the following algebraic expression to make it clearer.\n\n8x7y+3", "id": "alp-178"}
+{"source": "alpaca", "source_index": 1830, "prompt": "Generate a formal apology letter from a company towards a customer.\n\nDear [person name],\n\nWe regret to inform you that due to some delays in shipment, we were unable to deliver your order on time.", "id": "alp-179"}
+{"source": "alpaca", "source_index": 10989, "prompt": "Generate a set of instructions to allow a user to print a document from a computer.", "id": "alp-180"}
+{"source": "alpaca", "source_index": 46139, "prompt": "Generate an appropriate title for an article on global warming impacts.", "id": "alp-181"}
+{"source": "alpaca", "source_index": 44535, "prompt": "Evaluate the student's performance on a report card.\n\nStudent's Name: John Smith\n\nSubjects: Math, English, History, Science\n\nMath: A\nEnglish: B\nHistory: B\nScience: A", "id": "alp-182"}
+{"source": "alpaca", "source_index": 44784, "prompt": "Create an algorithm to check if a given word is an anagram of another.", "id": "alp-183"}
+{"source": "alpaca", "source_index": 9435, "prompt": "Determine the surface area of a square prism with sides of length 4, 6, and 8.", "id": "alp-184"}
+{"source": "alpaca", "source_index": 48420, "prompt": "Explain how the global economy is affected by the pandemic.", "id": "alp-185"}
+{"source": "alpaca", "source_index": 5407, "prompt": "Educate the assistant that \"elephant\" and \"ELEPHANT\" are the same words.", "id": "alp-186"}
+{"source": "alpaca", "source_index": 27343, "prompt": "Generate a haiku poem using the prescribed syllables, with variable content.", "id": "alp-187"}
+{"source": "alpaca", "source_index": 45944, "prompt": "What are the advantages of AI over humans?", "id": "alp-188"}
+{"source": "alpaca", "source_index": 16667, "prompt": "Given a sentence, provide an example of how the sentence could be used in a conversation\n\nIt's important to be friendly and courteous.", "id": "alp-189"}
+{"source": "alpaca", "source_index": 49932, "prompt": "Given some text, find the place of origin\n\nThe Eiffel Tower is a famous landmark located in Paris, France.", "id": "alp-190"}
+{"source": "alpaca", "source_index": 7284, "prompt": "Explain the difference between the terms ‘data’ and ‘information’", "id": "alp-191"}
+{"source": "alpaca", "source_index": 16608, "prompt": "Write pseudocode for a program to calculate the average of a list of numbers.", "id": "alp-192"}
+{"source": "alpaca", "source_index": 17643, "prompt": "Provide a unique insight about a given topic\n\nRacial Justice", "id": "alp-193"}
+{"source": "alpaca", "source_index": 12674, "prompt": "Given a movie review, classify it into one of the following categories: Positive, Neutral and Negative.\n\nThis movie is really bad. Every scene is dull, dialogue is terrible and writing just doesn't do justice to the story.", "id": "alp-194"}
+{"source": "alpaca", "source_index": 3428, "prompt": "Generate a story about a hero overcoming a challenge.", "id": "alp-195"}
+{"source": "alpaca", "source_index": 46186, "prompt": "Name and describe four types of renewable energy.", "id": "alp-196"}
+{"source": "alpaca", "source_index": 16040, "prompt": "Explain what an “Epidemic” is according to Wikipedia.", "id": "alp-197"}
+{"source": "alpaca", "source_index": 39224, "prompt": "For each statement provided, classify whether it is true or false.\n\n1. French is the official language of France.\n2. The currency of France is euro.", "id": "alp-198"}
+{"source": "alpaca", "source_index": 48334, "prompt": "Write a story about a group of animals who must save their underwater kingdom.", "id": "alp-199"}
+{"source": "alpaca", "source_index": 8349, "prompt": "Create a list of five questions to ask a potential job candidate.", "id": "alp-200"}
+{"source": "alpaca", "source_index": 19119, "prompt": "Compose a short story about a father’s journey.", "id": "alp-201"}
+{"source": "alpaca", "source_index": 44212, "prompt": "Modify the following sentence to include a specific company or product.\n\nThe product is an affordable solution for small businesses.", "id": "alp-202"}
+{"source": "alpaca", "source_index": 38633, "prompt": "Generate an algorithms that checks if a given string can be balanced.", "id": "alp-203"}
+{"source": "alpaca", "source_index": 8720, "prompt": "Find words to describe a beach festival.", "id": "alp-204"}
+{"source": "alpaca", "source_index": 29998, "prompt": "Describe a creative project or task you did recently that you are proud of.", "id": "alp-205"}
+{"source": "alpaca", "source_index": 36006, "prompt": "Describe how the artificial intelligence (AI) industry is likely to develop in the coming years.", "id": "alp-206"}
+{"source": "alpaca", "source_index": 45562, "prompt": "Choose the alternative which is closest in meaning to the given phrase.\n\nI'm entitled to my opinion", "id": "alp-207"}
+{"source": "alpaca", "source_index": 15547, "prompt": "Calculate the average of 3 numbers.\n\n4, 7, 12", "id": "alp-208"}
+{"source": "alpaca", "source_index": 9234, "prompt": "Analyze the given idiom to determine its meaning.\n\nHit the nail on the head", "id": "alp-209"}
+{"source": "alpaca", "source_index": 2082, "prompt": "Generate a children's story that includes the character of a friendly lion.", "id": "alp-210"}
+{"source": "alpaca", "source_index": 33515, "prompt": "Create a new business model for a computer shop.", "id": "alp-211"}
+{"source": "alpaca", "source_index": 40520, "prompt": "Reformat the following sentence to make it sound more natural: \"She covers a lot of material in her classes''", "id": "alp-212"}
+{"source": "alpaca", "source_index": 46200, "prompt": "Describe a scene taking place in the park.", "id": "alp-213"}
+{"source": "alpaca", "source_index": 4218, "prompt": "Correct the incorrect pronoun in the following sentence.\n\nThem ended up ordering pizza for dinner.", "id": "alp-214"}
+{"source": "alpaca", "source_index": 50339, "prompt": "Compose a tweet with the following words: Protest, Equality, Autonomy", "id": "alp-215"}
+{"source": "alpaca", "source_index": 41179, "prompt": "What type of error is the following piece of code producing?\n\ndef print_hello():\nprint(\"Goodbye\")", "id": "alp-216"}
+{"source": "alpaca", "source_index": 17384, "prompt": "Formulate a legal pleading given two parties and the fact scenario.\n\nParties: Plaintiff, Defendant \nFact Scenario: Defendant signed a contract with the Plaintiff for a service but failed to pay for the service", "id": "alp-217"}
+{"source": "alpaca", "source_index": 12322, "prompt": "Find the average of a list of numbers.\n\n1, 2, 4, 5, 10", "id": "alp-218"}
+{"source": "alpaca", "source_index": 951, "prompt": "Propose a suitable title for the below article\n\nThis article discusses the current state of the music industry and how technology has had an impact on its evolution.", "id": "alp-219"}
+{"source": "alpaca", "source_index": 19352, "prompt": "Design a plan to help the given student improve their grades.\n\nStudent Name: John\nGrades: Math-C, History-D", "id": "alp-220"}
+{"source": "alpaca", "source_index": 11654, "prompt": "Add the following ingredients to a holiday cookie recipe: flour, honey, and molasses.", "id": "alp-221"}
+{"source": "alpaca", "source_index": 43936, "prompt": "Write a short response to \"What is Life?\".", "id": "alp-222"}
+{"source": "alpaca", "source_index": 11024, "prompt": "Find the best sports car that costs less than $30,000.", "id": "alp-223"}
+{"source": "alpaca", "source_index": 38771, "prompt": "Design an engaging lesson plan on the topic “The Five Major Religions”.", "id": "alp-224"}
+{"source": "alpaca", "source_index": 18652, "prompt": "Write a one minute speech about the importance of reading", "id": "alp-225"}
+{"source": "alpaca", "source_index": 38062, "prompt": "Arrange these words to make a meaningful short story: \"cat, midnight, bat, forest, hide\"", "id": "alp-226"}
+{"source": "alpaca", "source_index": 33030, "prompt": "Using Machine Learning, predict the body temperature of an animal based on given data.\n\nInput: weight, age, environment and activity of the animal", "id": "alp-227"}
+{"source": "alpaca", "source_index": 1039, "prompt": "Remove the unnecessary words from the sentence and output the revised sentence.\n\nHe is giving a quick test on Thursday afternoon.", "id": "alp-228"}
+{"source": "alpaca", "source_index": 14015, "prompt": "Compose a poem with an ABC rhyming scheme.\n\n(no input)", "id": "alp-229"}
+{"source": "alpaca", "source_index": 46124, "prompt": "What techniques can be used to stop yourself from procrastinating?", "id": "alp-230"}
+{"source": "alpaca", "source_index": 33286, "prompt": "Edit the following short story to be suitable for young children.\n\nThe night was dark and stormy, and the old man trudged through the forest, not sure where he was going. He heard a sound from the dark and covered himself up with branches, scared. He looked around and saw a small log cabin, lit up from the inside by a solitary lamp. The old man went inside and saw an old woman waiting for him.", "id": "alp-231"}
+{"source": "alpaca", "source_index": 30530, "prompt": "Generate a short story about a <mask> trying to find their place in the world.\n\nCheetah", "id": "alp-232"}
+{"source": "alpaca", "source_index": 47867, "prompt": "Re-write the sentence to remove wordiness and use better tone.\n\nWe apologize in advance for any inconvenience that this may cause", "id": "alp-233"}
+{"source": "alpaca", "source_index": 39984, "prompt": "Think of a metaphor to explain what \"prosperity\" means.", "id": "alp-234"}
+{"source": "alpaca", "source_index": 29360, "prompt": "Generate a new movie title from the following words: Cat, Astronaut, Lighthouse", "id": "alp-235"}
+{"source": "alpaca", "source_index": 501, "prompt": "Determine which statement is true.\n\nAmerica is the third largest country in the world\nAustralia is the second largest country in the world", "id": "alp-236"}
+{"source": "alpaca", "source_index": 2646, "prompt": "Given a list of items, arrange them in the alphabetical order.\n\nApple, Banana, Orange, Lemon", "id": "alp-237"}
+{"source": "alpaca", "source_index": 30916, "prompt": "Name three similarities between a cat and a tiger.", "id": "alp-238"}
+{"source": "alpaca", "source_index": 11560, "prompt": "Generate a poem about nature, include a minimum of 4 lines.", "id": "alp-239"}
+{"source": "alpaca", "source_index": 6438, "prompt": "Reverse engineer the given sentence to create a task that could lead to this output.\n\nThe coffee mug was empty.", "id": "alp-240"}
+{"source": "alpaca", "source_index": 4734, "prompt": "Create an outline of a persuasive essay about the importance of education.", "id": "alp-241"}
+{"source": "alpaca", "source_index": 32932, "prompt": "Write a 2-3 sentence description of a stranger", "id": "alp-242"}
+{"source": "alpaca", "source_index": 7195, "prompt": "Generate a unique metaphor for a heavy person.", "id": "alp-243"}
+{"source": "alpaca", "source_index": 28431, "prompt": "Compute the total amount of product sold between the two dates.\n\nStart Date: 8/1/2020\nEnd Date: 8/30/2020", "id": "alp-244"}
+{"source": "alpaca", "source_index": 35085, "prompt": "Select an appropriate size for a skateboard given the customer's height.\n\nCustomer height: 5 feet 5 inches", "id": "alp-245"}
+{"source": "alpaca", "source_index": 1613, "prompt": "Write an algorithm to implement a binary search tree.", "id": "alp-246"}
+{"source": "alpaca", "source_index": 22193, "prompt": "Compose a song based on the provided lyrics.\n\nLyrics:\nI've been trying so hard just to make it\nNo one's willing to take a stand\nTime is running out and I'm feeling like I'm fading", "id": "alp-247"}
+{"source": "alpaca", "source_index": 10637, "prompt": "Identify a popular website and describe two features in detail.", "id": "alp-248"}
+{"source": "alpaca", "source_index": 19373, "prompt": "Edit the following sentence to make the tense of the verb consistent.\n\nHe had gone to the store yesterday evening.", "id": "alp-249"}

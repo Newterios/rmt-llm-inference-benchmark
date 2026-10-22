@@ -1,0 +1,62 @@
+{
+  "_comment": "One entry per experimental condition. backend: openai_compat (llama-server, OpenRouter) or anthropic (official SDK). Keys are read from .env by name.",
+  "mac_m4pro": {
+    "backend": "openai_compat",
+    "base_url": "http://127.0.0.1:8080/v1",
+    "model": "llama-3.1-8b-instruct-q4_k_m",
+    "api_key_env": null,
+    "hardware": "MacBook Pro, Apple M4 Pro (14-core), 24 GB unified memory, macOS 26",
+    "engine": "llama.cpp llama-server b11429 (Metal), Q4_K_M GGUF"
+  },
+  "pc_rtx4060": {
+    "backend": "openai_compat",
+    "base_url": "http://127.0.0.1:8080/v1",
+    "model": "llama-3.1-8b-instruct-q4_k_m",
+    "api_key_env": null,
+    "hardware": "Desktop PC, NVIDIA RTX 4060 8 GB, AMD Ryzen 9 7900X, 32 GB DDR5, Windows 11",
+    "engine": "llama.cpp llama-server (CUDA), Q4_K_M GGUF"
+  },
+  "rented_rtx4090": {
+    "backend": "openai_compat",
+    "base_url": "http://127.0.0.1:8080/v1",
+    "model": "llama-3.1-8b-instruct-q4_k_m",
+    "api_key_env": null,
+    "hardware": "Rented cloud GPU, NVIDIA RTX 4090 24 GB (RunPod/Vast.ai), Linux",
+    "engine": "llama.cpp llama-server (CUDA), Q4_K_M GGUF"
+  },
+  "api_deepinfra": {
+    "backend": "openai_compat",
+    "base_url": "https://openrouter.ai/api/v1",
+    "model": "meta-llama/llama-3.1-8b-instruct",
+    "api_key_env": "OPENROUTER_API_KEY",
+    "extra_body": {"provider": {"order": ["DeepInfra"], "allow_fallbacks": false}, "usage": {"include": true}},
+    "hardware": "Hosted API via OpenRouter, provider DeepInfra (fp8)",
+    "engine": "provider-managed"
+  },
+  "api_groq": {
+    "backend": "openai_compat",
+    "base_url": "https://openrouter.ai/api/v1",
+    "model": "meta-llama/llama-3.1-8b-instruct",
+    "api_key_env": "OPENROUTER_API_KEY",
+    "extra_body": {"provider": {"order": ["Groq"], "allow_fallbacks": false}, "usage": {"include": true}},
+    "hardware": "Hosted API via OpenRouter, provider Groq (LPU)",
+    "engine": "provider-managed"
+  },
+  "api_coreweave": {
+    "backend": "openai_compat",
+    "base_url": "https://openrouter.ai/api/v1",
+    "model": "meta-llama/llama-3.1-8b-instruct",
+    "api_key_env": "OPENROUTER_API_KEY",
+    "extra_body": {"provider": {"order": ["CoreWeave"], "allow_fallbacks": false}, "usage": {"include": true}},
+    "hardware": "Hosted API via OpenRouter, provider CoreWeave (bf16)",
+    "engine": "provider-managed"
+  },
+  "api_claude_haiku": {
+    "backend": "anthropic",
+    "base_url": null,
+    "model": "claude-haiku-5-5",
+    "api_key_env": "ANTHROPIC_API_KEY",
+    "hardware": "Hosted API, Anthropic (closed-weight reference model)",
+    "engine": "provider-managed"
+  }
+}
