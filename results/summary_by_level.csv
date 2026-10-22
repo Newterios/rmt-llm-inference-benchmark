@@ -1,0 +1,8 @@
+condition,task,set,concurrency,repeat,n,n_ok,fail_rate,wall_s,req_per_s,agg_out_tok_per_s,ttft_p50_s,ttft_p95_s,latency_p50_s,latency_p95_s,decode_tok_per_s_p50,prompt_tok_mean,out_tok_mean,tokens_estimated,cost_usd,accuracy,sustainable_req_per_day,errors
+mac_m4pro,quality,pilot,4,1,30,30,0.0,45.9,0.6537,84.54,0.428,1.292,5.651,9.515,23.31,122.0,129.3,False,,0.8667,56477,
+mac_m4pro,throughput,pilot,1,1,50,50,0.0,135.65,0.3686,43.1,0.229,0.306,1.675,5.86,47.41,71.3,116.9,False,,,31848,
+mac_m4pro,throughput,pilot,1,2,50,50,0.0,138.75,0.3604,42.14,0.228,0.315,1.827,5.981,47.3,71.3,116.9,False,,,31135,
+mac_m4pro,throughput,pilot,4,1,50,50,0.0,67.48,0.741,85.38,0.306,0.771,3.457,11.251,24.26,71.3,115.2,False,,,64023,
+mac_m4pro,throughput,pilot,4,2,50,50,0.0,68.87,0.726,84.1,0.306,0.687,3.404,11.497,24.54,71.3,115.8,False,,,62729,
+mac_m4pro,throughput,pilot,16,1,50,50,0.0,74.29,0.673,77.14,0.653,3.854,9.219,47.734,8.58,71.3,114.6,False,,,58149,
+mac_m4pro,throughput,pilot,16,2,50,50,0.0,44.76,1.117,129.39,0.522,2.958,6.931,23.275,11.38,71.3,115.8,False,,,96506,

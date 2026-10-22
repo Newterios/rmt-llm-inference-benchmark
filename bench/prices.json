@@ -1,0 +1,48 @@
+{
+  "_comment": "Price assumptions for the cost model. Every number has a source and an access date. Edit here only; the cost model reads this file.",
+  "usd_per_kzt": 0.002,
+  "electricity_kzt_per_kwh": 39.58,
+  "amortization_years": 3,
+  "hardware": {
+    "mac_m4pro": {
+      "price_kzt": 1100000,
+      "source": "TO BE FILLED: Kazakhstan retailer listing, access date",
+      "idle_watts_assumed": 8,
+      "load_watts_measured": null
+    },
+    "pc_rtx4060": {
+      "price_kzt": 700000,
+      "source": "TO BE FILLED: Kazakhstan retailer listing, access date",
+      "idle_watts_assumed": 60,
+      "load_watts_measured": null
+    },
+    "rented_rtx4090": {
+      "usd_per_hour": 0.35,
+      "source": "TO BE FILLED: RunPod/Vast.ai price at run date",
+      "price_kzt": null
+    }
+  },
+  "api_usd_per_million_tokens": {
+    "api_deepinfra": {
+      "input": 0.02,
+      "output": 0.04,
+      "source": "openrouter.ai/api/v1/models/meta-llama/llama-3.1-8b-instruct/endpoints, accessed 23.10.2026"
+    },
+    "api_groq": {
+      "input": 0.05,
+      "output": 0.08,
+      "source": "same endpoint list, accessed 23.10.2026"
+    },
+    "api_coreweave": {
+      "input": 0.22,
+      "output": 0.22,
+      "source": "same endpoint list, accessed 23.10.2026"
+    },
+    "api_claude_haiku": {
+      "input": 0.1,
+      "output": 0.5,
+      "source": "Anthropic price list for claude-haiku-5-5, accessed 23.10.2026"
+    }
+  },
+  "electricity_source": "Astana-REK tariff for legal entities proposed from June 2026: 39.58 KZT/kWh (digitalbusiness.kz, 26.05.2026, accessed 23.10.2026); households pay 20.21 to 36.36 KZT/kWh"
+}

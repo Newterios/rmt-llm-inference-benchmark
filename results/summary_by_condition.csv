@@ -1,0 +1,5 @@
+condition,task,set,concurrency,accuracy,agg_out_tok_per_s,cost_usd,decode_tok_per_s_p50,fail_rate,latency_p50_s,latency_p95_s,n,n_ok,out_tok_mean,prompt_tok_mean,req_per_s,sustainable_req_per_day,ttft_p50_s,ttft_p95_s,wall_s,repeats
+mac_m4pro,quality,pilot,4,0.8667,84.54,,23.31,0.0,5.651,9.515,30.0,30.0,129.3,122.0,0.6537,56477.0,0.428,1.292,45.9,1
+mac_m4pro,throughput,pilot,1,,42.620000000000005,,47.355,0.0,1.751,5.9205000000000005,50.0,50.0,116.9,71.3,0.3645,31491.5,0.2285,0.3105,137.2,2
+mac_m4pro,throughput,pilot,4,,84.74,,24.4,0.0,3.4305,11.373999999999999,50.0,50.0,115.5,71.3,0.7335,63376.0,0.306,0.7290000000000001,68.17500000000001,2
+mac_m4pro,throughput,pilot,16,,103.26499999999999,,9.98,0.0,8.075,35.5045,50.0,50.0,115.19999999999999,71.3,0.895,77327.5,0.5875,3.406,59.525000000000006,2

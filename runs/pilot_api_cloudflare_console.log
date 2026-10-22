@@ -1,0 +1,2 @@
+writing runs/api_cloudflare/20261023-013727_throughput_pilot.jsonl
+[api_cloudflare] throughput/pilot c=1 r=1: ok=50/50 wall=379.9s req/s=0.1316 out_tok/s=15.37 p50_lat=4.32s p50_ttft=0.474s cost=$0.002072
