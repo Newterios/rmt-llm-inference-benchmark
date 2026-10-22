@@ -60,8 +60,12 @@ def main(set_name):
         cost = pd.read_csv(cp)
         fig, ax = plt.subplots(figsize=(7, 4))
         for c in [c for c in LABELS if c in set(cost.condition)]:
-            g = cost[cost.condition == c].sort_values("volume_per_day")
-            ax.plot(g.volume_per_day, g.cost_per_1000_usd, marker="o", label=LABELS[c])
+            for scen, style in (("dedicated", "-"), ("n/a", "-"), ("shared_dev_machine", "--")):
+                g = cost[(cost.condition == c) & (cost.scenario == scen)].sort_values("volume_per_day")
+                if g.empty:
+                    continue
+                lab = LABELS[c] + (" (25% of price)" if scen == "shared_dev_machine" else "")
+                ax.plot(g.volume_per_day, g.cost_per_1000_usd, marker="o", linestyle=style, label=lab)
         ax.set_xscale("log"); ax.set_yscale("log")
         ax.set_xlabel("Requests per day"); ax.set_ylabel("USD per 1,000 requests")
         ax.set_title("Cost per 1,000 requests vs daily volume"); ax.grid(alpha=.3, which="both"); ax.legend(fontsize=7)

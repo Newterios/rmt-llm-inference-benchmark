@@ -14,8 +14,8 @@
       "price_usd": 1999,
       "source": "Apple list price of MacBook Pro 14-inch, M4 Pro (12-core CPU, 16-core GPU), 24 GB, 512 GB: USD 1,999 (AppleInsider price guide, snapshot 01.07.2026)",
       "idle_watts_assumed": 8,
-      "load_watts_measured": null,
-      "load_watts_source": "powermetrics cpu_power+gpu_power during the main run, runs/mac_m4pro/power_main_*.txt"
+      "load_watts_measured": 18.8,
+      "load_watts_source": "powermetrics CPU+GPU package power, mean over the concurrency-16 levels of the main run (runs/mac_m4pro/power_main_*.txt, results/power_by_level.csv); display and other components not included"
     },
     "pc_rtx4060": {
       "price_usd": 1361,
@@ -102,8 +102,8 @@
       "price_usd": 1999,
       "source": "Apple list price of MacBook Pro 14-inch, M4 Pro (12-core CPU, 16-core GPU), 24 GB, 512 GB: USD 1,999 (AppleInsider price guide, snapshot 01.07.2026)",
       "idle_watts_assumed": 8,
-      "load_watts_measured": null,
-      "load_watts_source": "powermetrics cpu_power+gpu_power during the main run, runs/mac_m4pro/power_main_*.txt",
+      "load_watts_measured": 18.8,
+      "load_watts_source": "powermetrics CPU+GPU package power, mean over the concurrency-16 levels of the main run (runs/mac_m4pro/power_main_*.txt, results/power_by_level.csv); display and other components not included",
       "derived_from": null,
       "note": "same machine and price as mac_m4pro; measured separately"
     },
@@ -111,8 +111,8 @@
       "price_usd": 1999,
       "source": "Apple list price of MacBook Pro 14-inch, M4 Pro (12-core CPU, 16-core GPU), 24 GB, 512 GB: USD 1,999 (AppleInsider price guide, snapshot 01.07.2026)",
       "idle_watts_assumed": 8,
-      "load_watts_measured": null,
-      "load_watts_source": "powermetrics cpu_power+gpu_power during the main run, runs/mac_m4pro/power_main_*.txt",
+      "load_watts_measured": 18.8,
+      "load_watts_source": "powermetrics CPU+GPU package power, mean over the concurrency-16 levels of the main run (runs/mac_m4pro/power_main_*.txt, results/power_by_level.csv); display and other components not included",
       "note": "same machine and price as mac_m4pro"
     }
   },
