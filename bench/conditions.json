@@ -134,5 +134,13 @@
     "api_key_env": null,
     "hardware": "MacBook Pro, Apple M4 Pro (14-core), 24 GB unified memory, macOS 26",
     "engine": "llama.cpp llama-server b11429 (Metal), Q8_0 GGUF (8.54 GB) - quantization comparison condition"
+  },
+  "mac_m4pro_loaded": {
+    "backend": "openai_compat",
+    "base_url": "http://127.0.0.1:8080/v1",
+    "model": "llama-3.1-8b-instruct-q4_k_m",
+    "api_key_env": null,
+    "hardware": "MacBook Pro, Apple M4 Pro (14-core), 24 GB unified memory, macOS 26",
+    "engine": "llama.cpp llama-server b11429 (Metal), Q4_K_M GGUF - same run protocol while the Mac was in use (Chrome with Colab, screenshots); observation, not a planned condition"
   }
 }
