@@ -1,0 +1,12 @@
+condition,scenario,cost_per_1000_usd,applies_to_our_workload
+api_claude_haiku,list price (as billed in our runs),0.07839,True
+api_claude_haiku,"batch API (asynchronous, 50 percent off)",0.0392,only for non-interactive jobs
+api_claude_haiku,"our prompts + 1500-token shared prefix, no cache",0.22839,False
+api_claude_haiku,"our prompts + 1500-token shared prefix, prefix cached at 0.1x input price",0.09339,False
+api_claude_haiku,prompt cache on our actual prompts,0.07839,no saving: prompts shorter than the 1024-token minimum
+api_cloudflare,list price (as billed in our runs),0.04199,True
+api_coreweave,list price (as billed in our runs),0.0376,True
+api_groq,list price (as billed in our runs),0.013,True
+api_groq,"our prompts + 1500-token shared prefix, no cache",0.08801,False
+api_groq,"our prompts + 1500-token shared prefix, prefix cached at 0.5x input price",0.05051,False
+api_groq,prompt cache on our actual prompts,0.013,no saving: prompts shorter than the 1024-token minimum

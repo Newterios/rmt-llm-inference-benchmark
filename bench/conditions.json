@@ -121,10 +121,18 @@
   },
   "rented_colab_gpu": {
     "backend": "openai_compat",
-    "base_url": "http://127.0.0.1:8080/v1",
+    "base_url": "http://127.0.0.1:8090/v1",
     "model": "llama-3.1-8b-instruct-q4_k_m",
     "api_key_env": null,
     "hardware": "Rented cloud GPU: Google Colab Pro runtime (GPU model from nvidia-smi is written to the run meta line)",
     "engine": "llama.cpp llama-server (CUDA, built from source in the notebook), Q4_K_M GGUF"
+  },
+  "mac_m4pro_q8": {
+    "backend": "openai_compat",
+    "base_url": "http://127.0.0.1:8080/v1",
+    "model": "llama-3.1-8b-instruct-q8_0",
+    "api_key_env": null,
+    "hardware": "MacBook Pro, Apple M4 Pro (14-core), 24 GB unified memory, macOS 26",
+    "engine": "llama.cpp llama-server b11429 (Metal), Q8_0 GGUF (8.54 GB) - quantization comparison condition"
   }
 }

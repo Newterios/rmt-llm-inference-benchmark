@@ -1,0 +1,10 @@
+condition,task,set,concurrency,repeat,mean_watts,max_watts,samples,window_s
+mac_m4pro,throughput,main,1,1,16.7,21.2,108,551.7
+mac_m4pro,throughput,main,1,2,15.7,21.8,546,554.7
+mac_m4pro,throughput,main,1,3,16.0,22.9,605,615.9
+mac_m4pro,throughput,main,4,1,19.0,24.2,501,508.8
+mac_m4pro,throughput,main,4,2,17.3,20.8,413,419.2
+mac_m4pro,throughput,main,4,3,17.6,26.5,443,450.0
+mac_m4pro,throughput,main,16,1,19.3,26.0,159,161.7
+mac_m4pro,throughput,main,16,2,17.8,24.3,167,169.4
+mac_m4pro,throughput,main,16,3,19.3,27.9,160,161.6

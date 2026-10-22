@@ -95,6 +95,33 @@ def main(set_name="main"):
                                   "baseline_cost_per_1000_usd": round(api_cost[baseline], 5),
                                   "capacity_req_per_day": int(cap), "break_even_req_per_day": be,
                                   "note": "none below capacity" if be is None else "found"})
+    # hosted pricing scenarios (no new runs): batch discount and prompt caching
+    sc = PRICES.get("api_pricing_scenarios", {})
+    scen_rows = []
+    for cond, g in th.groupby("condition"):
+        if cond not in api_cost:
+            continue
+        cap_row = g.loc[g.concurrency.idxmax()]
+        p = PRICES["api_usd_per_million_tokens"][cond]
+        in_tok, out_tok = cap_row.prompt_tok_mean, cap_row.out_tok_mean
+        list_cost = api_cost[cond]
+        scen_rows.append({"condition": cond, "scenario": "list price (as billed in our runs)", "cost_per_1000_usd": list_cost,
+                          "applies_to_our_workload": True})
+        if cond in sc.get("providers_with_batch", []):
+            scen_rows.append({"condition": cond, "scenario": "batch API (asynchronous, 50 percent off)",
+                              "cost_per_1000_usd": list_cost * sc["batch_factor"], "applies_to_our_workload": "only for non-interactive jobs"})
+        if cond in sc.get("cache_read_fraction", {}):
+            pre = sc["hypothetical_cached_prefix_tokens"]
+            frac = sc["cache_read_fraction"][cond]
+            no_cache = 1000 * ((in_tok + pre) * p["input"] + out_tok * p["output"]) / 1e6
+            with_cache = 1000 * (in_tok * p["input"] + pre * p["input"] * frac + out_tok * p["output"]) / 1e6
+            scen_rows.append({"condition": cond, "scenario": f"our prompts + {pre}-token shared prefix, no cache", "cost_per_1000_usd": no_cache,
+                              "applies_to_our_workload": False})
+            scen_rows.append({"condition": cond, "scenario": f"our prompts + {pre}-token shared prefix, prefix cached at {frac:.1f}x input price", "cost_per_1000_usd": with_cache,
+                              "applies_to_our_workload": False})
+            scen_rows.append({"condition": cond, "scenario": "prompt cache on our actual prompts", "cost_per_1000_usd": list_cost,
+                              "applies_to_our_workload": f"no saving: prompts shorter than the {sc['cache_minimum_prefix_tokens']}-token minimum"})
+    pd.DataFrame(scen_rows).round(5).to_csv(ROOT / "results" / f"api_pricing_scenarios_{set_name}.csv", index=False)
     out = pd.DataFrame(rows)
     out["cost_per_1000_usd"] = out["cost_per_1000_usd"].astype(float).round(5)
     out.to_csv(ROOT / "results" / f"cost_per_1000_{set_name}.csv", index=False)

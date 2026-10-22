@@ -1,0 +1,15 @@
+writing runs/api_groq/20261023-024258_throughput_main.jsonl
+[api_groq] throughput/main c=1 r=1: ok=200/200 wall=75.5s req/s=2.6487 out_tok/s=315.07 p50_lat=0.35s p50_ttft=0.207s cost=$0.002583
+[api_groq] throughput/main c=1 r=2: ok=200/200 wall=75.2s req/s=2.66 out_tok/s=317.79 p50_lat=0.33s p50_ttft=0.205s cost=$0.002591
+[api_groq] throughput/main c=1 r=3: ok=200/200 wall=74.7s req/s=2.676 out_tok/s=319.42 p50_lat=0.36s p50_ttft=0.205s cost=$0.00259
+[api_groq] throughput/main c=4 r=1: ok=200/200 wall=19.0s req/s=10.5402 out_tok/s=1255.76 p50_lat=0.35s p50_ttft=0.206s cost=$0.002586
+[api_groq] throughput/main c=4 r=2: ok=200/200 wall=18.9s req/s=10.5686 out_tok/s=1263.48 p50_lat=0.36s p50_ttft=0.205s cost=$0.002593
+[api_groq] throughput/main c=4 r=3: ok=200/200 wall=19.1s req/s=10.4815 out_tok/s=1247.93 p50_lat=0.35s p50_ttft=0.205s cost=$0.002585
+[api_groq] throughput/main c=16 r=1: ok=200/200 wall=5.2s req/s=38.4913 out_tok/s=4590.66 p50_lat=0.36s p50_ttft=0.214s cost=$0.002588
+[api_groq] throughput/main c=16 r=2: ok=200/200 wall=5.0s req/s=39.7699 out_tok/s=4736.59 p50_lat=0.34s p50_ttft=0.212s cost=$0.002585
+[api_groq] throughput/main c=16 r=3: ok=200/200 wall=5.1s req/s=39.148 out_tok/s=4655.67 p50_lat=0.33s p50_ttft=0.21s cost=$0.002583
+done: runs/api_groq/20261023-024258_throughput_main.jsonl
+writing runs/api_groq/20261023-024800_quality_main.jsonl
+[api_groq] quality/main c=4 r=1: ok=100/100 wall=10.4s req/s=9.6004 out_tok/s=1443.14 p50_lat=0.38s p50_ttft=0.212s cost=$0.001831 acc=0.81
+[api_groq] quality/main c=4 r=2: ok=100/100 wall=10.2s req/s=9.7675 out_tok/s=1491.11 p50_lat=0.37s p50_ttft=0.209s cost=$0.00185 acc=0.81
+done: runs/api_groq/20261023-024800_quality_main.jsonl

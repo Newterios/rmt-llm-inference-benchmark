@@ -1,0 +1,83 @@
+writing runs/api_claude_haiku/20261023-024258_throughput_main.jsonl
+[api_claude_haiku] throughput/main c=1 r=1: ok=200/200 wall=327.0s req/s=0.6115 out_tok/s=87.7 p50_lat=1.53s p50_ttft=0.72s cost=$0.015491
+[api_claude_haiku] throughput/main c=1 r=2: ok=200/200 wall=310.8s req/s=0.6435 out_tok/s=92.02 p50_lat=1.51s p50_ttft=0.718s cost=$0.015451
+[api_claude_haiku] throughput/main c=1 r=3: ok=200/200 wall=319.2s req/s=0.6265 out_tok/s=88.68 p50_lat=1.55s p50_ttft=0.704s cost=$0.015306
+Task exception was never retrieved
+future: <Task finished name='Task-811' coro=<AsyncClient.aclose() done, defined at /Users/aitbek/Desktop/AITU/rmt/rmt-llm-inference-benchmark/.venv/lib/python3.14/site-packages/httpx2/_client.py:2197> exception=RuntimeError('Event loop is closed')>
+Traceback (most recent call last):
+  File "/Users/aitbek/Desktop/AITU/rmt/rmt-llm-inference-benchmark/.venv/lib/python3.14/site-packages/httpx2/_client.py", line 2204, in aclose
+    await self._transport.aclose()
+  File "/Users/aitbek/Desktop/AITU/rmt/rmt-llm-inference-benchmark/.venv/lib/python3.14/site-packages/httpx2/_transports/default.py", line 400, in aclose
+    await self._pool.aclose()
+  File "/Users/aitbek/Desktop/AITU/rmt/rmt-llm-inference-benchmark/.venv/lib/python3.14/site-packages/httpcore2/_async/connection_pool.py", line 382, in aclose
+    await self._close_connections(closing_connections)
+  File "/Users/aitbek/Desktop/AITU/rmt/rmt-llm-inference-benchmark/.venv/lib/python3.14/site-packages/httpcore2/_async/connection_pool.py", line 374, in _close_connections
+    await connection.aclose()
+  File "/Users/aitbek/Desktop/AITU/rmt/rmt-llm-inference-benchmark/.venv/lib/python3.14/site-packages/httpcore2/_async/connection.py", line 157, in aclose
+    await self._connection.aclose()
+  File "/Users/aitbek/Desktop/AITU/rmt/rmt-llm-inference-benchmark/.venv/lib/python3.14/site-packages/httpcore2/_async/http11.py", line 236, in aclose
+    await self._network_stream.aclose()
+  File "/Users/aitbek/Desktop/AITU/rmt/rmt-llm-inference-benchmark/.venv/lib/python3.14/site-packages/httpcore2/_backends/anyio.py", line 56, in aclose
+    await self._stream.aclose()
+  File "/Users/aitbek/Desktop/AITU/rmt/rmt-llm-inference-benchmark/.venv/lib/python3.14/site-packages/anyio/streams/tls.py", line 248, in aclose
+    await self.transport_stream.aclose()
+  File "/Users/aitbek/Desktop/AITU/rmt/rmt-llm-inference-benchmark/.venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py", line 1467, in aclose
+    self._transport.close()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/selector_events.py", line 1209, in close
+    super().close()
+    ~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/selector_events.py", line 869, in close
+    self._loop.call_soon(self._call_connection_lost, None)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/base_events.py", line 827, in call_soon
+    self._check_closed()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/base_events.py", line 550, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+Task exception was never retrieved
+future: <Task finished name='Task-812' coro=<AsyncClient.aclose() done, defined at /Users/aitbek/Desktop/AITU/rmt/rmt-llm-inference-benchmark/.venv/lib/python3.14/site-packages/httpx2/_client.py:2197> exception=RuntimeError('Event loop is closed')>
+Traceback (most recent call last):
+  File "/Users/aitbek/Desktop/AITU/rmt/rmt-llm-inference-benchmark/.venv/lib/python3.14/site-packages/httpx2/_client.py", line 2204, in aclose
+    await self._transport.aclose()
+  File "/Users/aitbek/Desktop/AITU/rmt/rmt-llm-inference-benchmark/.venv/lib/python3.14/site-packages/httpx2/_transports/default.py", line 400, in aclose
+    await self._pool.aclose()
+  File "/Users/aitbek/Desktop/AITU/rmt/rmt-llm-inference-benchmark/.venv/lib/python3.14/site-packages/httpcore2/_async/connection_pool.py", line 382, in aclose
+    await self._close_connections(closing_connections)
+  File "/Users/aitbek/Desktop/AITU/rmt/rmt-llm-inference-benchmark/.venv/lib/python3.14/site-packages/httpcore2/_async/connection_pool.py", line 374, in _close_connections
+    await connection.aclose()
+  File "/Users/aitbek/Desktop/AITU/rmt/rmt-llm-inference-benchmark/.venv/lib/python3.14/site-packages/httpcore2/_async/connection.py", line 157, in aclose
+    await self._connection.aclose()
+  File "/Users/aitbek/Desktop/AITU/rmt/rmt-llm-inference-benchmark/.venv/lib/python3.14/site-packages/httpcore2/_async/http11.py", line 236, in aclose
+    await self._network_stream.aclose()
+  File "/Users/aitbek/Desktop/AITU/rmt/rmt-llm-inference-benchmark/.venv/lib/python3.14/site-packages/httpcore2/_backends/anyio.py", line 56, in aclose
+    await self._stream.aclose()
+  File "/Users/aitbek/Desktop/AITU/rmt/rmt-llm-inference-benchmark/.venv/lib/python3.14/site-packages/anyio/streams/tls.py", line 248, in aclose
+    await self.transport_stream.aclose()
+  File "/Users/aitbek/Desktop/AITU/rmt/rmt-llm-inference-benchmark/.venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py", line 1467, in aclose
+    self._transport.close()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/selector_events.py", line 1209, in close
+    super().close()
+    ~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/selector_events.py", line 869, in close
+    self._loop.call_soon(self._call_connection_lost, None)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/base_events.py", line 827, in call_soon
+    self._check_closed()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/base_events.py", line 550, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+[api_claude_haiku] throughput/main c=4 r=1: ok=200/200 wall=77.3s req/s=2.5877 out_tok/s=366.51 p50_lat=1.52s p50_ttft=0.706s cost=$0.015314
+[api_claude_haiku] throughput/main c=4 r=2: ok=200/200 wall=77.7s req/s=2.5739 out_tok/s=369.8 p50_lat=1.51s p50_ttft=0.687s cost=$0.015518
+[api_claude_haiku] throughput/main c=4 r=3: ok=200/200 wall=80.2s req/s=2.4947 out_tok/s=363.61 p50_lat=1.55s p50_ttft=0.699s cost=$0.015726
+[api_claude_haiku] throughput/main c=16 r=1: ok=200/200 wall=23.0s req/s=8.7043 out_tok/s=1265.08 p50_lat=1.45s p50_ttft=0.702s cost=$0.015685
+[api_claude_haiku] throughput/main c=16 r=2: ok=200/200 wall=20.9s req/s=9.5768 out_tok/s=1401.42 p50_lat=1.55s p50_ttft=0.73s cost=$0.015784
+[api_claude_haiku] throughput/main c=16 r=3: ok=200/200 wall=25.3s req/s=7.8925 out_tok/s=1134.35 p50_lat=1.51s p50_ttft=0.699s cost=$0.015523
+done: runs/api_claude_haiku/20261023-024258_throughput_main.jsonl
+writing runs/api_claude_haiku/20261023-030416_quality_main.jsonl
+[api_claude_haiku] quality/main c=4 r=1: ok=100/100 wall=29.9s req/s=3.345 out_tok/s=367.48 p50_lat=1.05s p50_ttft=0.696s cost=$0.006863 acc=0.94
+[api_claude_haiku] quality/main c=4 r=2: ok=100/100 wall=29.9s req/s=3.3443 out_tok/s=365.4 p50_lat=1.06s p50_ttft=0.681s cost=$0.006834 acc=0.94
+done: runs/api_claude_haiku/20261023-030416_quality_main.jsonl

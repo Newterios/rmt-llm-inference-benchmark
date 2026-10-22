@@ -1,3 +1,15 @@
 writing runs/mac_m4pro/20261023-014315_throughput_main.jsonl
 [mac_m4pro] throughput/main c=1 r=1: ok=200/200 wall=552.2s req/s=0.3622 out_tok/s=42.74 p50_lat=1.75s p50_ttft=0.229s cost=$None
 [mac_m4pro] throughput/main c=1 r=2: ok=200/200 wall=555.0s req/s=0.3604 out_tok/s=42.53 p50_lat=1.9s p50_ttft=0.252s cost=$None
+[mac_m4pro] throughput/main c=1 r=3: ok=200/200 wall=615.4s req/s=0.325 out_tok/s=38.35 p50_lat=2.02s p50_ttft=0.257s cost=$None
+[mac_m4pro] throughput/main c=4 r=1: ok=200/200 wall=508.3s req/s=0.3935 out_tok/s=45.99 p50_lat=6.62s p50_ttft=0.409s cost=$None
+[mac_m4pro] throughput/main c=4 r=2: ok=200/200 wall=419.2s req/s=0.4771 out_tok/s=55.93 p50_lat=5.9s p50_ttft=0.336s cost=$None
+[mac_m4pro] throughput/main c=4 r=3: ok=200/200 wall=450.0s req/s=0.4444 out_tok/s=51.95 p50_lat=5.92s p50_ttft=0.363s cost=$None
+[mac_m4pro] throughput/main c=16 r=1: ok=200/200 wall=161.8s req/s=1.236 out_tok/s=144.93 p50_lat=7.28s p50_ttft=0.436s cost=$None
+[mac_m4pro] throughput/main c=16 r=2: ok=200/200 wall=169.4s req/s=1.1803 out_tok/s=138.99 p50_lat=7.54s p50_ttft=0.45s cost=$None
+[mac_m4pro] throughput/main c=16 r=3: ok=200/200 wall=161.6s req/s=1.2379 out_tok/s=145.3 p50_lat=7.22s p50_ttft=0.419s cost=$None
+done: runs/mac_m4pro/20261023-014315_throughput_main.jsonl
+writing runs/mac_m4pro/20261023-024313_quality_main.jsonl
+[mac_m4pro] quality/main c=4 r=1: ok=100/100 wall=187.0s req/s=0.5348 out_tok/s=77.46 p50_lat=6.66s p50_ttft=0.524s cost=$None acc=0.85
+[mac_m4pro] quality/main c=4 r=2: ok=100/100 wall=175.3s req/s=0.5706 out_tok/s=82.94 p50_lat=6.03s p50_ttft=0.46s cost=$None acc=0.84
+done: runs/mac_m4pro/20261023-024313_quality_main.jsonl
