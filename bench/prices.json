@@ -1,48 +1,49 @@
 {
-  "_comment": "Price assumptions for the cost model. Every number has a source and an access date. Edit here only; the cost model reads this file.",
+  "_comment": "Price assumptions for the cost model. Every number has a source and an access date (all accessed 23.10.2026). Hardware is priced at current US retail prices for the same configuration, not at what the team paid, because both machines were bought earlier at lower prices and the RQ is about a team deciding today.",
   "usd_per_kzt": 0.002,
   "electricity_kzt_per_kwh": 39.58,
+  "electricity_source": "Astana-REK tariff for legal entities from June 2026: 39.58 KZT/kWh (digitalbusiness.kz, 26.05.2026); households pay 20.21 to 36.36 KZT/kWh",
   "amortization_years": 3,
+  "attribution_scenarios": {
+    "dedicated": 1.0,
+    "shared_dev_machine": 0.25
+  },
+  "attribution_comment": "dedicated = the machine is bought for inference and its whole price is charged to it. shared_dev_machine = the machine already exists as a developer workstation and only a quarter of its price is charged to inference (team assumption, stated in the report as a scenario, not a measurement).",
   "hardware": {
     "mac_m4pro": {
-      "price_kzt": 1100000,
-      "source": "TO BE FILLED: Kazakhstan retailer listing, access date",
+      "price_usd": 1999,
+      "source": "Apple list price of MacBook Pro 14-inch, M4 Pro (12-core CPU, 16-core GPU), 24 GB, 512 GB: USD 1,999 (AppleInsider price guide, snapshot 01.07.2026)",
       "idle_watts_assumed": 8,
-      "load_watts_measured": null
+      "load_watts_measured": null,
+      "load_watts_source": "powermetrics cpu_power+gpu_power during the main run, runs/mac_m4pro/power_main_*.txt"
     },
     "pc_rtx4060": {
-      "price_kzt": 700000,
-      "source": "TO BE FILLED: Kazakhstan retailer listing, access date",
+      "price_usd": 1361,
+      "components_usd": {
+        "AMD Ryzen 9 7900X": [306, "Amazon via buildcores.com"],
+        "Gigabyte X870 Eagle WiFi7": [212, "esaitech.com (US reseller)"],
+        "Asus Dual RTX 4060 OC 8 GB": [436, "Amazon via buildcores.com"],
+        "Kingston Fury Beast 32 GB DDR5-6000": [137, "newegg.com"],
+        "Gigabyte UD750GM 750 W Gold": [100, "typical Amazon price reported by slickdeals.net, Jan 2026"],
+        "1 TB NVMe SSD (assumed)": [90, "team assumption, model not recorded"],
+        "ATX case (assumed)": [80, "team assumption, model not recorded"]
+      },
+      "source": "Sum of current US prices of the team's build without monitor and peripherals; see components_usd",
       "idle_watts_assumed": 60,
-      "load_watts_measured": null
+      "load_watts_measured": null,
+      "load_watts_source": "nvidia-smi power.draw (GPU only) plus 80 W assumed for the rest of the system under load"
     },
     "rented_rtx4090": {
-      "usd_per_hour": 0.35,
-      "source": "TO BE FILLED: RunPod/Vast.ai price at run date",
-      "price_kzt": null
+      "usd_per_hour": 0.34,
+      "source": "RunPod Community Cloud RTX 4090 on-demand price USD 0.34/h (runpod.io/gpu-cloud/pricing, July 2026 page)"
     }
   },
   "api_usd_per_million_tokens": {
-    "api_deepinfra": {
-      "input": 0.02,
-      "output": 0.04,
-      "source": "openrouter.ai/api/v1/models/meta-llama/llama-3.1-8b-instruct/endpoints, accessed 23.10.2026"
-    },
-    "api_groq": {
-      "input": 0.05,
-      "output": 0.08,
-      "source": "same endpoint list, accessed 23.10.2026"
-    },
-    "api_coreweave": {
-      "input": 0.22,
-      "output": 0.22,
-      "source": "same endpoint list, accessed 23.10.2026"
-    },
-    "api_claude_haiku": {
-      "input": 0.1,
-      "output": 0.5,
-      "source": "Anthropic price list for claude-haiku-5-5, accessed 23.10.2026"
-    }
-  },
-  "electricity_source": "Astana-REK tariff for legal entities proposed from June 2026: 39.58 KZT/kWh (digitalbusiness.kz, 26.05.2026, accessed 23.10.2026); households pay 20.21 to 36.36 KZT/kWh"
+    "api_deepinfra": {"input": 0.02, "output": 0.04, "source": "openrouter.ai/api/v1/models/meta-llama/llama-3.1-8b-instruct/endpoints"},
+    "api_novita": {"input": 0.02, "output": 0.05, "source": "same"},
+    "api_groq": {"input": 0.05, "output": 0.08, "source": "same"},
+    "api_cloudflare": {"input": 0.152, "output": 0.287, "source": "same"},
+    "api_coreweave": {"input": 0.22, "output": 0.22, "source": "same"},
+    "api_claude_haiku": {"input": 0.10, "output": 0.50, "source": "Anthropic price list for claude-haiku-5-5"}
+  }
 }
