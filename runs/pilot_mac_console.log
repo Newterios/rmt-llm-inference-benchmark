@@ -1,0 +1,30 @@
+writing runs/mac_m4pro/20261023-012551_throughput_pilot.jsonl
+[mac_m4pro] throughput/pilot c=1 r=1: ok=50/50 wall=135.9s req/s=0.368 out_tok/s=43.03 p50_lat=1.73s p50_ttft=0.229s cost=$None
+[mac_m4pro] throughput/pilot c=1 r=2: ok=50/50 wall=138.0s req/s=0.3623 out_tok/s=42.37 p50_lat=1.93s p50_ttft=0.228s cost=$None
+[mac_m4pro] throughput/pilot c=4 r=1: ok=50/50 wall=67.5s req/s=0.7402 out_tok/s=85.29 p50_lat=3.59s p50_ttft=0.306s cost=$None
+[mac_m4pro] throughput/pilot c=4 r=2: ok=50/50 wall=69.4s req/s=0.7207 out_tok/s=83.49 p50_lat=3.45s p50_ttft=0.307s cost=$None
+[mac_m4pro] throughput/pilot c=16 r=1: ok=50/50 wall=74.5s req/s=0.6713 out_tok/s=76.94 p50_lat=9.59s p50_ttft=0.666s cost=$None
+[mac_m4pro] throughput/pilot c=16 r=2: ok=50/50 wall=45.1s req/s=1.1076 out_tok/s=128.3 p50_lat=6.97s p50_ttft=0.522s cost=$None
+done: runs/mac_m4pro/20261023-012551_throughput_pilot.jsonl
+writing runs/mac_m4pro/20261023-013444_quality_pilot.jsonl
+[mac_m4pro] quality/pilot c=4 r=1: ok=30/30 wall=46.4s req/s=0.6459 out_tok/s=83.54 p50_lat=5.68s p50_ttft=0.429s cost=$None acc=0.8667
+done: runs/mac_m4pro/20261023-013444_quality_pilot.jsonl
+Traceback (most recent call last):
+  File "/Users/aitbek/Desktop/AITU/rmt/rmt-llm-inference-benchmark/bench/summarize.py", line 85, in <module>
+    main()
+    ~~~~^^
+  File "/Users/aitbek/Desktop/AITU/rmt/rmt-llm-inference-benchmark/bench/summarize.py", line 75, in main
+    cond = lvl.groupby(agg_keys)[list(num)].median().reset_index()
+  File "/Users/aitbek/Desktop/AITU/rmt/rmt-llm-inference-benchmark/.venv/lib/python3.14/site-packages/pandas/core/frame.py", line 8253, in reset_index
+    new_obj.insert(
+    ~~~~~~~~~~~~~~^
+        0,
+        ^^
+    ...<2 lines>...
+        allow_duplicates=allow_duplicates,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/aitbek/Desktop/AITU/rmt/rmt-llm-inference-benchmark/.venv/lib/python3.14/site-packages/pandas/core/frame.py", line 6247, in insert
+    raise ValueError(f"cannot insert {column}, already exists")
+ValueError: cannot insert concurrency, already exists

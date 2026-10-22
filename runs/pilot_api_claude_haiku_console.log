@@ -1,0 +1,45 @@
+writing runs/api_claude_haiku/20261023-013727_throughput_pilot.jsonl
+[api_claude_haiku] throughput/pilot c=1 r=1: ok=50/50 wall=78.3s req/s=0.6387 out_tok/s=91.71 p50_lat=1.43s p50_ttft=0.743s cost=$0.003902
+[api_claude_haiku] throughput/pilot c=1 r=2: ok=50/50 wall=84.9s req/s=0.589 out_tok/s=86.33 p50_lat=1.64s p50_ttft=0.891s cost=$0.003976
+[api_claude_haiku] throughput/pilot c=4 r=1: ok=50/50 wall=21.3s req/s=2.3433 out_tok/s=329.47 p50_lat=1.56s p50_ttft=0.825s cost=$0.003827
+Task exception was never retrieved
+future: <Task finished name='Task-211' coro=<AsyncClient.aclose() done, defined at /Users/aitbek/Desktop/AITU/rmt/rmt-llm-inference-benchmark/.venv/lib/python3.14/site-packages/httpx2/_client.py:2197> exception=RuntimeError('Event loop is closed')>
+Traceback (most recent call last):
+  File "/Users/aitbek/Desktop/AITU/rmt/rmt-llm-inference-benchmark/.venv/lib/python3.14/site-packages/httpx2/_client.py", line 2204, in aclose
+    await self._transport.aclose()
+  File "/Users/aitbek/Desktop/AITU/rmt/rmt-llm-inference-benchmark/.venv/lib/python3.14/site-packages/httpx2/_transports/default.py", line 400, in aclose
+    await self._pool.aclose()
+  File "/Users/aitbek/Desktop/AITU/rmt/rmt-llm-inference-benchmark/.venv/lib/python3.14/site-packages/httpcore2/_async/connection_pool.py", line 382, in aclose
+    await self._close_connections(closing_connections)
+  File "/Users/aitbek/Desktop/AITU/rmt/rmt-llm-inference-benchmark/.venv/lib/python3.14/site-packages/httpcore2/_async/connection_pool.py", line 374, in _close_connections
+    await connection.aclose()
+  File "/Users/aitbek/Desktop/AITU/rmt/rmt-llm-inference-benchmark/.venv/lib/python3.14/site-packages/httpcore2/_async/connection.py", line 157, in aclose
+    await self._connection.aclose()
+  File "/Users/aitbek/Desktop/AITU/rmt/rmt-llm-inference-benchmark/.venv/lib/python3.14/site-packages/httpcore2/_async/http11.py", line 236, in aclose
+    await self._network_stream.aclose()
+  File "/Users/aitbek/Desktop/AITU/rmt/rmt-llm-inference-benchmark/.venv/lib/python3.14/site-packages/httpcore2/_backends/anyio.py", line 56, in aclose
+    await self._stream.aclose()
+  File "/Users/aitbek/Desktop/AITU/rmt/rmt-llm-inference-benchmark/.venv/lib/python3.14/site-packages/anyio/streams/tls.py", line 248, in aclose
+    await self.transport_stream.aclose()
+  File "/Users/aitbek/Desktop/AITU/rmt/rmt-llm-inference-benchmark/.venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py", line 1467, in aclose
+    self._transport.close()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/selector_events.py", line 1209, in close
+    super().close()
+    ~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/selector_events.py", line 869, in close
+    self._loop.call_soon(self._call_connection_lost, None)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/base_events.py", line 827, in call_soon
+    self._check_closed()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/base_events.py", line 550, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+[api_claude_haiku] throughput/pilot c=4 r=2: ok=50/50 wall=20.6s req/s=2.4296 out_tok/s=350.0 p50_lat=1.62s p50_ttft=0.748s cost=$0.003914
+[api_claude_haiku] throughput/pilot c=16 r=1: ok=50/50 wall=7.5s req/s=6.6595 out_tok/s=958.3 p50_lat=1.64s p50_ttft=0.786s cost=$0.00391
+[api_claude_haiku] throughput/pilot c=16 r=2: ok=50/50 wall=6.7s req/s=7.4197 out_tok/s=1073.48 p50_lat=1.52s p50_ttft=0.77s cost=$0.003929
+done: runs/api_claude_haiku/20261023-013727_throughput_pilot.jsonl
+writing runs/api_claude_haiku/20261023-014117_quality_pilot.jsonl
+[api_claude_haiku] quality/pilot c=4 r=1: ok=30/30 wall=8.7s req/s=3.4611 out_tok/s=332.96 p50_lat=1.14s p50_ttft=0.718s cost=$0.001833 acc=1.0
+done: runs/api_claude_haiku/20261023-014117_quality_pilot.jsonl

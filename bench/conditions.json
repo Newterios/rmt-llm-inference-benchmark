@@ -29,7 +29,17 @@
     "base_url": "https://openrouter.ai/api/v1",
     "model": "meta-llama/llama-3.1-8b-instruct",
     "api_key_env": "OPENROUTER_API_KEY",
-    "extra_body": {"provider": {"order": ["DeepInfra"], "allow_fallbacks": false}, "usage": {"include": true}},
+    "extra_body": {
+      "provider": {
+        "order": [
+          "DeepInfra"
+        ],
+        "allow_fallbacks": false
+      },
+      "usage": {
+        "include": true
+      }
+    },
     "hardware": "Hosted API via OpenRouter, provider DeepInfra (fp8)",
     "engine": "provider-managed"
   },
@@ -38,7 +48,17 @@
     "base_url": "https://openrouter.ai/api/v1",
     "model": "meta-llama/llama-3.1-8b-instruct",
     "api_key_env": "OPENROUTER_API_KEY",
-    "extra_body": {"provider": {"order": ["Groq"], "allow_fallbacks": false}, "usage": {"include": true}},
+    "extra_body": {
+      "provider": {
+        "order": [
+          "Groq"
+        ],
+        "allow_fallbacks": false
+      },
+      "usage": {
+        "include": true
+      }
+    },
     "hardware": "Hosted API via OpenRouter, provider Groq (LPU)",
     "engine": "provider-managed"
   },
@@ -47,7 +67,17 @@
     "base_url": "https://openrouter.ai/api/v1",
     "model": "meta-llama/llama-3.1-8b-instruct",
     "api_key_env": "OPENROUTER_API_KEY",
-    "extra_body": {"provider": {"order": ["CoreWeave"], "allow_fallbacks": false}, "usage": {"include": true}},
+    "extra_body": {
+      "provider": {
+        "order": [
+          "CoreWeave"
+        ],
+        "allow_fallbacks": false
+      },
+      "usage": {
+        "include": true
+      }
+    },
     "hardware": "Hosted API via OpenRouter, provider CoreWeave (bf16)",
     "engine": "provider-managed"
   },
@@ -57,6 +87,44 @@
     "model": "claude-haiku-5-5",
     "api_key_env": "ANTHROPIC_API_KEY",
     "hardware": "Hosted API, Anthropic (closed-weight reference model)",
+    "engine": "provider-managed"
+  },
+  "api_novita": {
+    "backend": "openai_compat",
+    "base_url": "https://openrouter.ai/api/v1",
+    "model": "meta-llama/llama-3.1-8b-instruct",
+    "api_key_env": "OPENROUTER_API_KEY",
+    "extra_body": {
+      "provider": {
+        "order": [
+          "Novita"
+        ],
+        "allow_fallbacks": false
+      },
+      "usage": {
+        "include": true
+      }
+    },
+    "hardware": "Hosted API via OpenRouter, provider Novita (fp8)",
+    "engine": "provider-managed"
+  },
+  "api_cloudflare": {
+    "backend": "openai_compat",
+    "base_url": "https://openrouter.ai/api/v1",
+    "model": "meta-llama/llama-3.1-8b-instruct",
+    "api_key_env": "OPENROUTER_API_KEY",
+    "extra_body": {
+      "provider": {
+        "order": [
+          "Cloudflare"
+        ],
+        "allow_fallbacks": false
+      },
+      "usage": {
+        "include": true
+      }
+    },
+    "hardware": "Hosted API via OpenRouter, provider Cloudflare Workers AI (fp8)",
     "engine": "provider-managed"
   }
 }
