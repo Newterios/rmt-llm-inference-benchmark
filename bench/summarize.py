@@ -27,6 +27,7 @@ def load_requests():
                 continue
             if obj.get("type") == "request" and not obj.get("warmup"):
                 obj["run_file"] = str(path.relative_to(ROOT))
+                obj["condition"] = path.parent.name  # the folder name is authoritative (e.g. mac_m4pro_loaded)
                 obj.pop("text", None)  # outputs stay in the raw JSONL only
                 rows.append(obj)
     return pd.DataFrame(rows)
