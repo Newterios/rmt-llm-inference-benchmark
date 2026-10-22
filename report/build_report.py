@@ -28,6 +28,7 @@ S4 = json.load(open(ROOT / "report" / "segment4.json"))
 COND = json.load(open(ROOT / "bench" / "conditions.json"))
 
 LABEL = {"mac_m4pro": "L-Mac: MacBook Pro M4 Pro 24 GB, llama.cpp, Q4_K_M",
+         "mac_m4pro_q8": "L-Mac8: the same Mac with the Q8_0 file (quantization comparison)",
          "pc_rtx4060": "L-PC: desktop RTX 4060 8 GB, llama.cpp, Q4_K_M",
          "pc_rtx4060_budget": "L-PCb: minimal RTX 4060 box, cost scenario derived from L-PC",
          "rented_colab_gpu": "R-GPU: rented Google Colab Pro GPU, llama.cpp, Q4_K_M",
