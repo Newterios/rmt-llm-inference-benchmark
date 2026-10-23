@@ -1,0 +1,3 @@
+writing runs/api_deepinfra/20261023-051456_throughput_main.jsonl
+[api_deepinfra] throughput/main c=1 r=1: ok=200/200 wall=844.0s req/s=0.237 out_tok/s=26.81 p50_lat=2.91s p50_ttft=0.678s cost=$0.001097
+[api_deepinfra] throughput/main c=1 r=2: ok=185/200 wall=1114.3s req/s=0.166 out_tok/s=18.99 p50_lat=4.97s p50_ttft=0.865s cost=$0.001024
