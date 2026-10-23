@@ -311,6 +311,9 @@ p("Step 6, main runs (24 to 26.10.2026). Each condition receives the 200 main th
 f_raw = fig(FIG / "fig_raw_jsonl.png",
             "Head of a raw run file (runs/mac_m4pro/*.jsonl): the meta line with the server configuration, then "
             "one JSON line per request with timing, tokens, status and the model's answer. Own screenshot.")
+f_pc = fig(FIG / "pc" / "pc_server_offloaded.png",
+           "llama-server starting on the PC (own screenshot, 23.10.2026 22:55): all 33 layers offloaded to the RTX 4060, "
+           "16 slots of 1,024 tokens (n_ctx 16,384), flash attention enabled, 2,048 MiB KV cache on the GPU, build b11840.", width_cm=16)
 p("Step 7, processing. bench/summarize.py rebuilds results/requests_all.csv (one row per request, model text "
   "removed), results/summary_by_level.csv (one row per condition, task, set, concurrency and repeat) and "
   "results/summary_by_condition.csv (median over repeats). bench/cost_model.py turns throughput and prices.json "
@@ -434,7 +437,7 @@ table([["Date", "Who", "What was done", "What went wrong", "What was changed"]] 
 h("T3. Artefacts developed", 2)
 table([
     ["Artefact", "What it does in the study", "Public link", "Evidence presented"],
-    ["bench/run.py", "Sends prompts, measures, writes raw data", LINKS["github"] + "/blob/main/bench/run.py", f"Figure {f_pilot} (console), Figure {f_raw} (raw file)"],
+    ["bench/run.py", "Sends prompts, measures, writes raw data", LINKS["github"] + "/blob/main/bench/run.py", f"Figure {f_pilot} (console), Figure {f_raw} (raw file), Figure {f_pc} (PC server)"],
     ["bench/make_prompts.py", "Builds the fixed prompt sets and their card with checksums", LINKS["github"] + "/blob/main/bench/make_prompts.py", "data/prompts/prompt_sets_card.json"],
     ["bench/summarize.py, bench/cost_model.py, bench/make_figures.py", "Processing, cost model, plots", LINKS["github"] + "/tree/main/bench", "results/*.csv, figures/*.png"],
     ["bench/serve_mac.sh, bench/windows/*.ps1, bench/cloud/colab_benchmark.ipynb", "Identical server configuration on three kinds of machine", LINKS["github"] + "/tree/main/bench", f"Figure {f_server}"],
