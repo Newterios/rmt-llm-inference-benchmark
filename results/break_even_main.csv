@@ -5,5 +5,9 @@ mac_m4pro_loaded,dedicated,api_deepinfra,0.00546,106859,,none below capacity
 mac_m4pro_loaded,shared_dev_machine,api_deepinfra,0.00546,106859,100000.0,found
 mac_m4pro_q8,dedicated,api_deepinfra,0.00546,104687,,none below capacity
 mac_m4pro_q8,shared_dev_machine,api_deepinfra,0.00546,104687,100000.0,found
+pc_rtx4060,dedicated,api_deepinfra,0.00546,202255,,none below capacity
+pc_rtx4060,shared_dev_machine,api_deepinfra,0.00546,202255,100000.0,found
+pc_rtx4060_budget,dedicated,api_deepinfra,0.00546,202255,,none below capacity
+pc_rtx4060_budget,shared_dev_machine,api_deepinfra,0.00546,202255,79433.0,found
 rented_colab_gpu,dedicated,api_deepinfra,0.00546,112857,,none below capacity
 rented_colab_gpu,shared_dev_machine,api_deepinfra,0.00546,112857,,none below capacity
