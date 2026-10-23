@@ -51,8 +51,8 @@
       },
       "source": "Sum of current US prices of the team's build without monitor and peripherals; see components_usd",
       "idle_watts_assumed": 60,
-      "load_watts_measured": null,
-      "load_watts_source": "nvidia-smi power.draw (GPU only) plus 80 W assumed for the rest of the system under load"
+      "load_watts_measured": 183.4,
+      "load_watts_source": "GPU power from nvidia-smi (driver 610.88 reports power.draw as N/A, so the 'Power Samples' average of nvidia-smi -q -d POWER was logged: runs/pc_rtx4060/power_samples_*.csv), mean over the concurrency-16 levels of the main run = 103.4 W (results/power_by_level.csv), plus 80 W assumed for the rest of the system under load"
     },
     "pc_rtx4060_budget": {
       "price_usd": 1063,
@@ -89,8 +89,8 @@
       },
       "source": "Minimal inference box with the same GPU as the team's PC: mid-range CPU, B650 board, air cooling. Throughput and power are taken from the pc_rtx4060 measurements because all 33 layers run on the GPU and the CPU is almost idle during decoding; this is a cost scenario, not a separately measured machine.",
       "idle_watts_assumed": 45,
-      "load_watts_measured": null,
-      "load_watts_source": "same GPU power log as pc_rtx4060 plus 60 W assumed for the rest of the system"
+      "load_watts_measured": 163.4,
+      "load_watts_source": "same GPU power log as pc_rtx4060 (103.4 W, mean over the concurrency-16 levels of the main run) plus 60 W assumed for the rest of the system"
     },
     "rented_colab_gpu": {
       "usd_per_hour": null,
