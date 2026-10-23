@@ -8,9 +8,9 @@ api_cloudflare,n/a,100000,185960,True,49.0,120.1,0.04192,provider-reported usage
 api_coreweave,n/a,1000,1081498,True,49.0,118.2,0.03678,provider-reported usage.cost x 1000
 api_coreweave,n/a,10000,1081498,True,49.0,118.2,0.03678,provider-reported usage.cost x 1000
 api_coreweave,n/a,100000,1081498,True,49.0,118.2,0.03678,provider-reported usage.cost x 1000
-api_deepinfra,n/a,1000,0,True,,,,list price x measured tokens
-api_deepinfra,n/a,10000,0,True,,,,list price x measured tokens
-api_deepinfra,n/a,100000,0,True,,,,list price x measured tokens
+api_deepinfra,n/a,1000,231256,True,48.0,112.7,0.00546,provider-reported usage.cost x 1000
+api_deepinfra,n/a,10000,231256,True,48.0,112.7,0.00546,provider-reported usage.cost x 1000
+api_deepinfra,n/a,100000,231256,True,48.0,112.7,0.00546,provider-reported usage.cost x 1000
 api_groq,n/a,1000,3698627,True,68.0,119.1,0.01292,provider-reported usage.cost x 1000
 api_groq,n/a,10000,3698627,True,68.0,119.1,0.01292,provider-reported usage.cost x 1000
 api_groq,n/a,100000,3698627,True,68.0,119.1,0.01292,provider-reported usage.cost x 1000

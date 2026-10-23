@@ -53,16 +53,24 @@ api_coreweave,throughput,pilot,4,1,50,50,0.0,15.01,3.3314,395.37,0.356,0.705,0.9
 api_coreweave,throughput,pilot,4,2,50,50,0.0,13.98,3.5774,424.71,0.349,0.485,0.689,1.997,168.35,52.3,118.7,False,0.001881,,309088,
 api_coreweave,throughput,pilot,16,1,50,50,0.0,4.98,10.043,1191.9,0.364,0.811,1.049,2.212,160.11,52.3,118.7,False,0.00188,,867716,
 api_coreweave,throughput,pilot,16,2,50,50,0.0,4.11,12.1555,1442.38,0.365,0.493,0.717,2.023,163.31,52.3,118.7,False,0.00188,,1050239,
-api_deepinfra,quality,main,4,1,100,0,1.0,8.29,0.0,0.0,,,,,,,,False,,0.0,0,"{""error"":{""message"":""Provider returned error"",""code"":429,""me"
-api_deepinfra,throughput,main,1,1,200,200,0.0,1073.45,0.1863,20.96,0.812,1.457,3.42,19.695,36.48,48.0,112.5,False,0.001092,,16098,
-api_deepinfra,throughput,main,1,2,200,200,0.0,1017.5,0.1966,22.05,0.752,1.412,3.005,21.114,44.23,48.0,112.2,False,0.001089,,16983,
-api_deepinfra,throughput,main,1,3,200,200,0.0,727.45,0.2749,30.78,0.596,1.199,2.355,7.963,51.37,48.0,112.0,False,0.001088,,23754,
-api_deepinfra,throughput,main,4,1,200,191,0.045,259.14,0.737,81.66,0.7,1.188,3.473,15.142,34.64,47.9,110.8,False,0.001029,,63680,"{""error"":{""message"":""Provider returned error"",""code"":429,""me"
-api_deepinfra,throughput,main,4,2,200,0,1.0,16.28,0.0,0.0,,,,,,,,False,,,0,"{""error"":{""message"":""Provider returned error"",""code"":429,""me"
-api_deepinfra,throughput,main,4,3,200,0,1.0,16.3,0.0,0.0,,,,,,,,False,,,0,"{""error"":{""message"":""Provider returned error"",""code"":429,""me"
-api_deepinfra,throughput,main,16,1,200,0,1.0,4.74,0.0,0.0,,,,,,,,False,,,0,"{""error"":{""message"":""Provider returned error"",""code"":429,""me"
-api_deepinfra,throughput,main,16,2,200,0,1.0,4.31,0.0,0.0,,,,,,,,False,,,0,"{""error"":{""message"":""Provider returned error"",""code"":429,""me"
-api_deepinfra,throughput,main,16,3,200,0,1.0,4.66,0.0,0.0,,,,,,,,False,,,0,"{""error"":{""message"":""Provider returned error"",""code"":429,""me"
+api_deepinfra,quality,main,4,1,100,100,0.0,167.64,0.5965,87.34,0.627,1.413,4.851,16.276,33.16,105.8,146.4,False,0.000797,0.73,51540,
+api_deepinfra,quality,main,4,2,100,100,0.0,158.72,0.6301,94.19,0.647,1.337,4.973,14.058,31.15,105.8,149.5,False,0.00081,0.71,54437,
+api_deepinfra,quality,pilot,4,1,30,30,0.0,40.94,0.7328,99.9,0.608,1.013,4.676,11.053,30.75,102.0,136.3,False,0.000225,0.8667,63311,
+api_deepinfra,throughput,main,1,1,200,200,0.0,844.0,0.237,26.81,0.676,1.18,2.909,9.122,42.63,48.0,113.1,False,0.001097,,20474,
+api_deepinfra,throughput,main,1,2,200,185,0.075,1114.51,0.166,18.99,0.865,1.46,4.973,12.227,28.0,47.9,114.4,False,0.001024,,14342,"{""error"":{""message"":""Provider returned error"",""code"":429,""me"
+api_deepinfra,throughput,main,1,3,200,96,0.52,717.62,0.1338,16.0,0.882,1.642,4.462,21.804,25.45,49.0,119.6,False,0.000553,,11558,"{""error"":{""message"":""Provider returned error"",""code"":429,""me"
+api_deepinfra,throughput,main,4,1,200,63,0.685,128.46,0.4904,59.05,0.795,1.644,5.386,15.546,25.94,49.3,120.4,False,0.000366,,42372,"{""error"":{""message"":""Provider returned error"",""code"":429,""me"
+api_deepinfra,throughput,main,4,2,200,87,0.565,144.32,0.6028,66.37,0.754,1.105,4.269,13.065,25.38,47.1,110.1,False,0.000465,,52085,"{""error"":{""message"":""Provider returned error"",""code"":429,""me"
+api_deepinfra,throughput,main,4,3,200,108,0.46,190.61,0.5666,68.88,0.725,1.432,4.091,15.676,25.54,49.0,121.6,False,0.000631,,48954,"{""error"":{""message"":""Provider returned error"",""code"":429,""me"
+api_deepinfra,throughput,main,16,1,200,200,0.0,74.72,2.6766,301.58,0.644,1.423,3.348,10.144,32.62,48.0,112.7,False,0.001093,,231256,
+api_deepinfra,throughput,main,16,2,200,200,0.0,82.23,2.4323,274.29,0.628,1.168,3.343,10.685,33.34,48.0,112.8,False,0.001094,,210152,
+api_deepinfra,throughput,main,16,3,200,200,0.0,70.08,2.8539,319.89,0.6,1.21,3.286,13.443,34.74,48.0,112.1,False,0.001089,,246573,
+api_deepinfra,throughput,pilot,1,1,50,35,0.3,201.5,0.1737,22.07,0.683,2.784,3.968,14.611,37.97,52.0,127.1,False,0.000214,,15007,"{""error"":{""message"":""Provider returned error"",""code"":429,""me"
+api_deepinfra,throughput,pilot,1,2,50,50,0.0,166.99,0.2994,33.71,0.572,1.072,2.733,7.08,47.38,51.3,112.6,False,0.000276,,25870,
+api_deepinfra,throughput,pilot,4,1,50,50,0.0,65.27,0.7661,86.05,0.62,1.27,2.818,7.365,42.36,51.3,112.3,False,0.000276,,66190,
+api_deepinfra,throughput,pilot,4,2,50,50,0.0,58.18,0.8595,97.89,0.57,1.099,2.583,9.249,35.38,51.3,113.9,False,0.000279,,74259,
+api_deepinfra,throughput,pilot,16,1,50,50,0.0,24.85,2.0123,222.28,0.832,1.47,4.897,9.988,32.55,51.3,110.5,False,0.000272,,173867,
+api_deepinfra,throughput,pilot,16,2,50,50,0.0,33.64,1.4864,167.82,0.64,1.017,2.752,18.024,36.35,51.3,112.9,False,0.000277,,128428,
 api_groq,quality,main,4,1,100,100,0.0,9.56,10.4574,1571.95,0.211,0.248,0.378,0.623,865.64,125.8,150.3,False,0.001831,0.81,903517,
 api_groq,quality,main,4,2,100,100,0.0,10.44,9.579,1462.33,0.209,0.235,0.373,0.58,864.46,125.8,152.7,False,0.00185,0.81,827627,
 api_groq,quality,pilot,4,1,30,30,0.0,2.52,11.8879,1693.23,0.212,0.227,0.354,0.506,894.18,122.0,142.4,False,0.000525,0.8333,1027115,
