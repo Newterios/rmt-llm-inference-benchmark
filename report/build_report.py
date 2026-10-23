@@ -48,6 +48,7 @@ st.font.name = "Calibri"
 st.font.size = Pt(11)
 st.element.rPr.rFonts.set(qn("w:eastAsia"), "Calibri")
 for s in doc.sections:
+    s.page_width, s.page_height = Cm(21.0), Cm(29.7)  # A4
     s.left_margin = s.right_margin = Cm(2.0)
     s.top_margin = s.bottom_margin = Cm(2.0)
 
