@@ -1,5 +1,92 @@
 {
-  "completion": [],
-  "comparison": [],
-  "text": []
+ "completion": [
+  [
+   "L-PC: desktop RTX 4060 (run by the team on the Windows PC with bench/windows/run_pc.ps1)",
+   "1,800 throughput + 200 quality requests (main); 300 + 30 (pilot)",
+   "pending at report date: scheduled for 23.10.2026 (daytime); the scripts, model checksum and condition entry are ready"
+  ],
+  [
+   "API-DI DeepInfra, missing main levels (rate-limited from 04:35)",
+   "concurrency 4 repeats 2 and 3, concurrency 16 repeats 1 to 3, quality repeats 1 and 2",
+   "to be re-run during Astana daytime (US night); the 429 responses are kept in runs/_deepinfra_rate_limited"
+  ]
+ ],
+ "comparison": [
+  [
+   "ER1: at 1,000 requests/day both local machines cost at least 10x more per 1,000 requests than the cheapest hosted Llama 3.1 8B provider",
+   "Mac M4 Pro at 1,000/day: 1.84 USD per 1,000 (dedicated) or 0.47 USD (25 percent attribution). Cheapest provider DeepInfra: 0.0054 USD; Groq 0.0129 USD. Ratio 340x (dedicated) and 87x (shared). PC not yet measured, but its price (1,361 USD) gives the same order.",
+   "trending toward",
+   "results/cost_per_1000_main.csv, results/break_even_main.csv"
+  ],
+  [
+   "ER2: break-even of the RTX 4060 PC against DeepInfra between 10,000 and 100,000 requests/day",
+   "PC data pending. For the Mac the dedicated scenario never breaks even below its capacity (102,000/day): at 100,000/day it costs 0.0186 USD per 1,000 against 0.0054 for DeepInfra and 0.0129 for Groq. Only the 25-percent attribution scenario breaks even, and only at the top of the range (about 100,000/day against DeepInfra, 40,000/day against Groq).",
+   "trending against (for the Mac)",
+   "results/break_even_main.csv; Figure with cost curves"
+  ],
+  [
+   "ER3: neither local machine sustains 100,000 requests/day; Mac maximum 20,000 to 50,000",
+   "Mac at concurrency 16: 1.18 requests/s = 102,000 requests/day with 118-token answers, so the Mac can just sustain 100,000/day if it runs 24 h at full load; this is twice the upper bound we expected. The rented T4 reaches 113,000/day, the Q8_0 file 105,000/day.",
+   "trending against",
+   "results/summary_by_condition.csv (sustainable_req_per_day, concurrency 16)"
+  ],
+  [
+   "ER4: local Q4_K_M within 5 points of hosted bf16 on GSM8K; fp8 providers within 3 points of bf16",
+   "100 main items: Mac Q4_K_M 0.85, Mac Q8_0 0.84, CoreWeave bf16 0.80, Groq 0.81, Cloudflare fp8 0.78, rented T4 Q4_K_M 0.855, DeepInfra fp8 pending. The 4-bit local model is not below bf16 at all; Cloudflare fp8 is 2 points below bf16. All gaps are inside the 7 to 9 point confidence half-width of a 100-item test.",
+   "trending toward",
+   "results/summary_by_condition.csv (accuracy); runs/*/*_quality_main.jsonl"
+  ],
+  [
+   "ER5: local single-request TTFT under 0.5 s; hosted TTFT 0.3 to 1.5 s; Mac p95 latency at concurrency 16 above 20 s",
+   "Mac TTFT 0.24 s, T4 0.11 s; hosted medians: Groq 0.21 s (below the expected band), CoreWeave 0.35, Cloudflare 0.44, Haiku 0.72, DeepInfra 0.75. Mac p95 latency at concurrency 16: 27.3 s.",
+   "trending toward, except Groq's TTFT which is below the expected band",
+   "results/summary_by_condition.csv (ttft_p50_s, latency_p95_s)"
+  ],
+  [
+   "ER6: same model across providers differs at least 3x in decode speed (Groq fastest) with accuracy within 2 points",
+   "Decode speed per request: Groq 780 tokens/s, CoreWeave 162, DeepInfra 44, Cloudflare 23, a 34x spread. Accuracy spread among the Llama providers: 0.78 to 0.81 (3 points, Cloudflare lowest).",
+   "trending toward for speed; accuracy spread slightly above the declared 2 points",
+   "results/summary_by_condition.csv"
+  ],
+  [
+   "ER7: Claude Haiku 5.5 at least 0.90 on GSM8K; Llama 3.1 8B between 0.70 and 0.88; price ratio 1.5 to 10x",
+   "Haiku 0.94; Llama 0.78 to 0.855 in every serving condition. Haiku costs 0.078 USD per 1,000 requests, 6x Groq and 14x DeepInfra, inside the expected 1.5 to 10x for all but the cheapest provider.",
+   "trending toward",
+   "results/summary_by_condition.csv; results/cost_per_1000_main.csv"
+  ],
+  [
+   "ER8: local error rate 0; hosted below 2 percent at concurrency 16; Groq rate-limited (5 percent or more) at concurrency 16",
+   "Local: 0 failures in 7,200 Mac and T4 requests. Hosted: CoreWeave 14 connection resets in one concurrency-16 repeat (7 percent of that level, 0.8 percent overall), Cloudflare 1 failure in 2,000, Groq 0 failures at concurrency 16 (no 429 at all). DeepInfra and Novita refused every request for about 30 minutes at 01:34 (HTTP 429, shared upstream pool), DeepInfra then served 791 of 800 requests between 04:10 and 04:35 and refused almost everything again from 04:35 (9 of 200 at concurrency 4, 0 of 200 at concurrency 16).",
+   "trending against for Groq; the rate-limit failure mode appeared at a different provider and at a different time of day",
+   "runs/_smoke/*deepinfra*, runs/api_coreweave/*throughput_main*.jsonl (status != ok), docs/research_log.md"
+  ]
+ ],
+ "text": [
+  "Items and metrics that produce data we cannot use as planned. The provider-reported prompt_tokens field is not comparable across endpoints: the same 200 prompts are counted as 49 tokens on average by CoreWeave and Cloudflare, 57 by Anthropic, 68 by Groq and by llama.cpp. The providers apply different chat templates and tokenizers, so prompt-token counts are reported but cost is compared only through the provider's own billed cost per request. The local power figures are not comparable either: powermetrics on the Mac reports CPU and GPU package power (19 W under load), nvidia-smi on the T4 reports the card alone (66 W), and neither sees the rest of the machine; we therefore treat energy as a secondary input and show in the cost model that it changes cost per 1,000 requests by less than 1 percent at every volume. The concurrency-4 level on the Mac produces a number that is correct but misleading on its own: aggregate throughput rises only from 43 to 52 tokens/s between concurrency 1 and 4 while per-request speed falls from 48 to 14 tokens/s, and then jumps to 139 tokens/s at concurrency 16. This is a property of the Metal backend of llama.cpp at small batch sizes, reproduced in all three repeats of both Mac runs and absent on the T4 (26, 59, 154 tokens/s), so the three-level design cannot be read as a smooth curve for the Mac.",
+  "Where runs behaved differently from the protocol's assumptions. The two cheapest fp8 endpoints, DeepInfra and Novita, refused every request with HTTP 429 for about half an hour at 01:34 Astana time (US evening) and accepted them at 04:10, so 'the cheapest provider' is only available at some hours; Cloudflare was added as a second fp8 provider, and all hosted conditions now carry the time of day of their runs in the meta line. The rate limiting we expected from Groq never appeared: 1,800 main requests at concurrency up to 16 all succeeded, while CoreWeave, which we expected to be stable, dropped 14 connections in one repeat. The Colab L4 runtime we planned was not available and the session ran on a free-tier Tesla T4 (confirmed by the Resources panel after the run), which decodes single requests at 26 tokens/s, slower than the Mac, so the rented condition is a weaker machine than the one we described in the protocol. Building llama.cpp on the two-core Colab VM took 54 minutes instead of 8, and the server could not bind port 8080 because Colab occupies it. The pilot set of 50 prompts predicted the main set poorly at concurrency 4 (84 against 52 tokens/s on the Mac); our first explanation, GUI load from the open Chrome tab, was wrong, because the idle rerun gave the same 51 tokens/s, so the difference comes from the answer-length mix of the two prompt sets.",
+  "What we changed, with dates. 23.10.2026 01:36: Cloudflare added as a second fp8 provider. 02:00: prices moved to current US list prices in USD with sources, and a second attribution scenario (25 percent of hardware cost) added. 02:10: a cost-only 'budget inference box' configuration added that reuses the PC measurements. 02:15: the rented-GPU condition moved from RunPod to a public Colab notebook. 02:45: a Q8_0 condition added on the Mac to test quantization. 03:10: Colab server port changed to 8090. 03:12: the first Mac main run kept as a separate 'loaded machine' observation and the protocol repeated on an idle machine. 04:12: DeepInfra main and pilot protocols run when the endpoint became available. None of these changes touched the prompt sets, the seed, the decoding parameters, the concurrency levels or the answer parser, so every run remains comparable with every other.",
+  "What will change and what will stay fixed. The PC condition will be run by the team with the identical scripts and the same model file (checksum verified) and nothing else will be re-run; DeepInfra's main run is the only one that happened at a different hour from the other hosted runs, and we will state the hours rather than re-run everything at one time. We will keep the 100-item quality test even though its confidence interval is wide, because changing it would make the pre-registered ER4, ER6 and ER7 untestable; Assignment 4 will report the interval, not only the point estimate. We will keep max_tokens at 256 although 12 percent of the throughput answers are cut at that limit, because the cut is identical in every condition and lifting it would change the token mix behind every cost figure. We will not add the Novita endpoint or a second Anthropic model: the design already has two fp8, one bf16, one Groq and one closed-weight hosted condition, and adding more would not change the answer to the RQ, which the pilot data already points to: below 100,000 requests per day a dedicated consumer machine does not beat the cheapest hosted price of the same model, and the break-even exists only if the machine's cost is mostly attributed to something else."
+ ],
+ "figures": [
+  [
+   "fig_throughput_main.png",
+   "Aggregate output tokens per second by condition and concurrency, main set, median of three repeats. Drawn by bench/make_figures.py from results/summary_by_condition.csv."
+  ],
+  [
+   "fig_latency_main.png",
+   "Median and p95 end-to-end latency by condition and concurrency, main set."
+  ],
+  [
+   "fig_accuracy_main.png",
+   "GSM8K exact-match accuracy on the 100 main items, median of two repeats."
+  ],
+  [
+   "fig_cost_main.png",
+   "Cost per 1,000 requests against daily volume. Solid lines: hosted list prices as billed and local machines at full hardware cost; dashed: local machines at 25 percent attribution. Log scales."
+  ],
+  [
+   "fig_colab_main_console.png",
+   "Console of the main protocol on the rented Colab T4 (own screenshot, 23.10.2026 04:47): nine throughput levels, two quality repeats, GPU state at the end."
+  ]
+ ]
 }

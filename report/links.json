@@ -1,4 +1,6 @@
 {
   "github": "https://github.com/Newterios/rmt-llm-inference-benchmark",
-  "drive": "https://drive.google.com/drive/folders/1i8-QIMm44T-JtJYDuVuXEoY7J7o0CqBT"
+  "drive": "https://drive.google.com/drive/folders/1i8-QIMm44T-JtJYDuVuXEoY7J7o0CqBT",
+  "colab_notebook": "https://colab.research.google.com/github/Newterios/rmt-llm-inference-benchmark/blob/main/bench/cloud/colab_benchmark.ipynb",
+  "pre_registration_commit": "https://github.com/Newterios/rmt-llm-inference-benchmark/commit/f814935"
 }

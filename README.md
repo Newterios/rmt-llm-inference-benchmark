@@ -12,18 +12,21 @@ raw logs into the tables used in the report.
 
 ## What is measured
 
-One model, Llama 3.1 8B Instruct, is served under seven conditions and receives the same
+One model, Llama 3.1 8B Instruct, is served under the following conditions and receives the same
 prompts at the same concurrency levels:
 
 | Condition | Where the model runs | Weights |
 |---|---|---|
 | `mac_m4pro` | MacBook Pro M4 Pro 24 GB, llama.cpp (Metal) | Q4_K_M GGUF |
 | `pc_rtx4060` | Desktop, RTX 4060 8 GB, llama.cpp (CUDA) | Q4_K_M GGUF |
-| `rented_colab_gpu` | Rented cloud GPU (Google Colab Pro, L4 class), llama.cpp (CUDA) | Q4_K_M GGUF |
+| `rented_colab_gpu` | Rented cloud GPU: Google Colab runtime, Tesla T4 (L4 was unavailable), llama.cpp (CUDA) | Q4_K_M GGUF |
 | `api_deepinfra` | OpenRouter, provider pinned to DeepInfra | fp8 |
 | `api_groq` | OpenRouter, provider pinned to Groq | provider-managed |
 | `api_coreweave` | OpenRouter, provider pinned to CoreWeave | bf16 |
 | `api_claude_haiku` | Anthropic API, `claude-haiku-5-5` (closed-weight reference) | n/a |
+| `mac_m4pro_q8` | Same Mac, Q8_0 file (quantization comparison) | Q8_0 GGUF |
+| `mac_m4pro_loaded` | Same Mac, first main run while the machine was in use (observation) | Q4_K_M GGUF |
+| `api_cloudflare` | OpenRouter, provider pinned to Cloudflare (added when DeepInfra was rate-limited) | fp8 |
 
 Workload levels 1,000 / 10,000 / 100,000 requests per day are represented by closed-loop
 concurrency 1 / 4 / 16. Two tasks: `throughput` (Alpaca prompts, 256 max tokens) and
@@ -46,7 +49,10 @@ bench/            harness and helper scripts
   serve_mac.sh      llama-server command used on the Mac
   pilot_mac.sh      the pilot protocol
   windows/          the same for the Windows PC (serve_pc.ps1, power_pc.ps1, run_pc.ps1)
-  cloud/            Colab notebook for the rented GPU condition (and a RunPod script, not used)
+  cloud/            Colab notebook for the rented GPU condition and its server-start script
+  energy.py         mean power per run level from the powermetrics / nvidia-smi logs
+  capture_terminal.sh  helper that captures a Terminal window as a PNG figure
+report/             build_report.py (generates the .docx from the data), links.json, segment4.json
 data/
   raw/              Alpaca (alpaca_data.json) and GSM8K test (gsm8k_test.jsonl) as downloaded
   prompts/          the fixed subsets: throughput_{pilot,main}.jsonl, quality_{pilot,main}.jsonl
@@ -54,7 +60,9 @@ data/
 runs/               RAW DATA. One JSONL per run: a meta line, one line per request
                     (timing, tokens, cost, status, full model output), one summary line per level.
                     runs/_smoke/ holds the 3-prompt smoke tests, excluded from analysis.
-results/            PROCESSED DATA, produced only by bench/summarize.py and bench/cost_model.py
+results/            PROCESSED DATA, produced only by bench/summarize.py, bench/energy.py and bench/cost_model.py
+                    (summary_by_level.csv, summary_by_condition.csv, requests_all.csv, power_by_level.csv,
+                    cost_per_1000_main.csv, break_even_main.csv, api_pricing_scenarios_main.csv)
 figures/            screenshots and plots used in the report
 docs/
   expected_results.md   pre-registered expectations (committed 23.10.2026, before any run)

@@ -512,6 +512,17 @@ table([
     ["Existing artefacts", f"Harness, server scripts and prompt builder with public links (T3); Figures {f_server} to {FIG_N} are our own screenshots and plots"],
 ], widths=[4, 13], font=8)
 
+from docx.enum.section import WD_ORIENT, WD_SECTION
+def landscape(on=True):
+    sec = doc.add_section(WD_SECTION.NEW_PAGE)
+    if on:
+        sec.orientation = WD_ORIENT.LANDSCAPE
+        sec.page_width, sec.page_height = Cm(29.7), Cm(21.0)
+    else:
+        sec.orientation = WD_ORIENT.PORTRAIT
+        sec.page_width, sec.page_height = Cm(21.0), Cm(29.7)
+    sec.left_margin = sec.right_margin = Cm(1.5); sec.top_margin = sec.bottom_margin = Cm(1.5)
+landscape(True)
 h("D.6 All metric measurements per condition and per run", 3)
 if not LVL.empty:
     cols = ["condition", "task", "set", "concurrency", "repeat", "n_ok", "n", "wall_s", "req_per_s", "agg_out_tok_per_s",
@@ -522,13 +533,14 @@ if not LVL.empty:
                      fmt(r["wall_s"], 1), fmt(r["req_per_s"], 3), fmt(r["agg_out_tok_per_s"], 1), fmt(r["ttft_p50_s"], 3), fmt(r["latency_p50_s"], 2),
                      fmt(r["latency_p95_s"], 2), fmt(r["decode_tok_per_s_p50"], 1), fmt(r["cost_usd"], 5) if pd.notna(r["cost_usd"]) else "model",
                      fmt(r["accuracy"], 3) if pd.notna(r["accuracy"]) else "-", f'{int(r["sustainable_req_per_day"]):,}' if pd.notna(r["sustainable_req_per_day"]) else "-"])
-    table(rows, font=7, caption="Every run, every level (results/summary_by_level.csv). cost 'model' = computed by the cost model, not billed")
+    table(rows, font=7, widths=[1.6, 1.3, 1.1, 0.8, 0.8, 1.5, 1.5, 1.4, 1.6, 1.5, 1.4, 1.4, 1.7, 1.7, 1.2, 1.8], caption="Every run, every level (results/summary_by_level.csv). cost 'model' = computed by the cost model, not billed")
     fails = LVL[LVL["n_ok"] < LVL["n"]]
     nfail = int((LVL["n"] - LVL["n_ok"]).sum())
     p(f"Repetitions: {int(LVL.repeat.max())} per level in the main set, 2 in the pilot. Failure and error cases: {nfail} failed requests out of "
       f"{int(LVL['n'].sum())} recorded in the table above" + (": " + "; ".join(f"{SHORT.get(r['condition'], r['condition'])} {r['task']} {r['set']} c={int(r['concurrency'])} r={int(r['repeat'])}: {int(r["n"] - r["n_ok"])} ({r["errors"]})" for _, r in fails.iterrows()) if nfail else ".")
       + " The DeepInfra and Novita smoke tests (4 requests, all HTTP 429) are the only requests not in this table.")
 
+landscape(False)
 # ================================================================ SEGMENT 4
 h("Segment 4. Expected Against Observed. Preliminary comparison", 1)
 h("T1. Completion table", 2)

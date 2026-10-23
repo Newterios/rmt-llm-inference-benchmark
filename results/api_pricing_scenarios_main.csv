@@ -6,7 +6,7 @@ api_claude_haiku,"our prompts + 1500-token shared prefix, prefix cached at 0.1x 
 api_claude_haiku,prompt cache on our actual prompts,0.07843,no saving: prompts shorter than the 1024-token minimum
 api_cloudflare,list price (as billed in our runs),0.04192,True
 api_coreweave,list price (as billed in our runs),0.03678,True
-api_deepinfra,list price (as billed in our runs),0.00544,True
+api_deepinfra,list price (as billed in our runs),,True
 api_groq,list price (as billed in our runs),0.01292,True
 api_groq,"our prompts + 1500-token shared prefix, no cache",0.08793,False
 api_groq,"our prompts + 1500-token shared prefix, prefix cached at 0.5x input price",0.05043,False
