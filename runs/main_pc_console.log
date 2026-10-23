@@ -1,0 +1,190 @@
+2026-10-23 22:55:44
+writing runs\pc_rtx4060\20261023-225545_throughput_pilot.jsonl
+[pc_rtx4060] throughput/pilot c=1 r=1: ok=50/50 wall=121.9s req/s=0.4101 out_tok/s=47.66 p50_lat=1.5s p50_ttft=0.059s cost=$None
+[pc_rtx4060] throughput/pilot c=1 r=2: ok=50/50 wall=120.2s req/s=0.4161 out_tok/s=48.36 p50_lat=1.47s p50_ttft=0.053s cost=$None
+[pc_rtx4060] throughput/pilot c=4 r=1: ok=50/50 wall=39.5s req/s=1.2664 out_tok/s=147.13 p50_lat=1.91s p50_ttft=0.136s cost=$None
+[pc_rtx4060] throughput/pilot c=4 r=2: ok=50/50 wall=43.6s req/s=1.1463 out_tok/s=132.4 p50_lat=1.97s p50_ttft=0.137s cost=$None
+[pc_rtx4060] throughput/pilot c=16 r=1: ok=50/50 wall=26.0s req/s=1.9255 out_tok/s=222.4 p50_lat=3.22s p50_ttft=0.187s cost=$None
+[pc_rtx4060] throughput/pilot c=16 r=2: ok=50/50 wall=33.7s req/s=1.4849 out_tok/s=175.22 p50_lat=3.91s p50_ttft=0.24s cost=$None
+done: runs\pc_rtx4060\20261023-225545_throughput_pilot.jsonl
+writing runs\pc_rtx4060\20261023-230214_quality_pilot.jsonl
+[pc_rtx4060] quality/pilot c=4 r=1: ok=30/30 wall=26.8s req/s=1.1201 out_tok/s=146.47 p50_lat=3.13s p50_ttft=0.156s cost=$None acc=0.8667
+done: runs\pc_rtx4060\20261023-230214_quality_pilot.jsonl
+writing runs\pc_rtx4060\20261023-230242_throughput_main.jsonl
+[pc_rtx4060] throughput/main c=1 r=1: ok=200/200 wall=488.7s req/s=0.4093 out_tok/s=48.11 p50_lat=1.62s p50_ttft=0.057s cost=$None
+[pc_rtx4060] throughput/main c=1 r=2: ok=200/200 wall=488.6s req/s=0.4093 out_tok/s=48.11 p50_lat=1.6s p50_ttft=0.057s cost=$None
+[pc_rtx4060] throughput/main c=1 r=3: ok=200/200 wall=488.8s req/s=0.4092 out_tok/s=48.1 p50_lat=1.6s p50_ttft=0.056s cost=$None
+[pc_rtx4060] throughput/main c=4 r=1: ok=200/200 wall=293.3s req/s=0.6819 out_tok/s=79.97 p50_lat=3.79s p50_ttft=0.17s cost=$None
+[pc_rtx4060] throughput/main c=4 r=2: ok=200/200 wall=293.5s req/s=0.6815 out_tok/s=80.18 p50_lat=4.06s p50_ttft=0.171s cost=$None
+[pc_rtx4060] throughput/main c=4 r=3: ok=200/200 wall=292.2s req/s=0.6845 out_tok/s=80.52 p50_lat=3.64s p50_ttft=0.168s cost=$None
+[pc_rtx4060] throughput/main c=16 r=1: ok=200/200 wall=86.4s req/s=2.314 out_tok/s=269.56 p50_lat=3.5s p50_ttft=0.177s cost=$None
+[pc_rtx4060] throughput/main c=16 r=2: ok=200/200 wall=82.8s req/s=2.4154 out_tok/s=281.96 p50_lat=3.92s p50_ttft=0.174s cost=$None
+[pc_rtx4060] throughput/main c=16 r=3: ok=200/200 wall=84.8s req/s=2.3571 out_tok/s=276.17 p50_lat=3.51s p50_ttft=0.173s cost=$None
+done: runs\pc_rtx4060\20261023-230242_throughput_main.jsonl
+writing runs\pc_rtx4060\20261023-234607_quality_main.jsonl
+[pc_rtx4060] quality/main c=4 r=1: ok=100/100 wall=94.2s req/s=1.0618 out_tok/s=150.12 p50_lat=3.33s p50_ttft=0.159s cost=$None acc=0.83
+[pc_rtx4060] quality/main c=4 r=2: ok=100/100 wall=96.0s req/s=1.0415 out_tok/s=154.28 p50_lat=3.28s p50_ttft=0.162s cost=$None acc=0.84
+done: runs\pc_rtx4060\20261023-234607_quality_main.jsonl
+       condition       task   set  concurrency  repeat  n_ok   n  wall_s  req_per_s  agg_out_tok_per_s  ttft_p50_s  latency_p50_s  latency_p95_s  decode_tok_per_s_p50  cost_usd  accuracy
+api_claude_haiku    quality  main            4       1   100 100   29.42     3.3996             373.48       0.696          1.050          1.811                273.95  0.006864    0.9400
+api_claude_haiku    quality  main            4       2   100 100   29.48     3.3916             370.56       0.681          1.055          1.814                284.04  0.006833    0.9400
+api_claude_haiku    quality pilot            4       1    30  30    9.38     3.1990             307.75       0.707          1.124          1.426                294.33  0.001833    1.0000
+api_claude_haiku throughput  main            1       1   200 200  326.72     0.6121              87.79       0.720          1.528          2.896                209.25  0.015491       NaN
+api_claude_haiku throughput  main            1       2   200 200  311.12     0.6428              91.93       0.715          1.509          2.547                211.61  0.015451       NaN
+api_claude_haiku throughput  main            1       3   200 200  318.93     0.6271              88.77       0.703          1.549          2.864                209.20  0.015306       NaN
+api_claude_haiku throughput  main            4       1   200 200   77.05     2.5957             367.64       0.705          1.515          2.534                207.16  0.015314       NaN
+api_claude_haiku throughput  main            4       2   200 200   77.36     2.5852             371.43       0.686          1.505          2.547                204.21  0.015518       NaN
+api_claude_haiku throughput  main            4       3   200 200   79.96     2.5011             364.55       0.699          1.550          2.635                206.69  0.015726       NaN
+api_claude_haiku throughput  main           16       1   200 200   23.12     8.6499            1257.18       0.702          1.445          2.570                209.76  0.015685       NaN
+api_claude_haiku throughput  main           16       2   200 200   21.50     9.3020            1361.21       0.730          1.542          2.608                207.88  0.015784       NaN
+api_claude_haiku throughput  main           16       3   200 200   25.54     7.8314            1125.56       0.699          1.503          2.567                206.02  0.015523       NaN
+api_claude_haiku throughput pilot            1       1    50  50   78.96     0.6332              90.92       0.738          1.400          2.707                223.37  0.003902       NaN
+api_claude_haiku throughput pilot            1       2    50  50   85.30     0.5862              85.91       0.840          1.622          3.032                217.10  0.003976       NaN
+api_claude_haiku throughput pilot            4       1    50  50   21.21     2.3575             331.46       0.816          1.556          2.585                216.14  0.003827       NaN
+api_claude_haiku throughput pilot            4       2    50  50   20.00     2.5001             360.16       0.746          1.611          2.650                211.16  0.003914       NaN
+api_claude_haiku throughput pilot           16       1    50  50    7.65     6.5387             940.92       0.786          1.635          2.357                219.91  0.003910       NaN
+api_claude_haiku throughput pilot           16       2    50  50    6.36     7.8558            1136.58       0.765          1.516          2.430                226.21  0.003929       NaN
+  api_cloudflare    quality  main            4       1   100 100  180.49     0.5541              75.86       0.380          6.268         14.123                 20.98  0.005552    0.7800
+  api_cloudflare    quality  main            4       2   100 100  177.69     0.5628              75.37       0.398          6.398         12.503                 20.88  0.005467    0.7800
+  api_cloudflare    quality pilot            4       1    30  30   68.45     0.4383              54.08       0.461          6.003         21.034                 20.04  0.001532    0.8667
+  api_cloudflare throughput  main            1       1   199 200 1199.01     0.1660              19.72       0.456          4.141         13.557                 22.91  0.008270       NaN
+  api_cloudflare throughput  main            1       2   200 200 1185.99     0.1686              19.97       0.436          4.284         12.755                 22.88  0.008278       NaN
+  api_cloudflare throughput  main            1       3   200 200 1225.10     0.1633              19.54       0.438          4.124         13.970                 22.63  0.008360       NaN
+  api_cloudflare throughput  main            4       1   200 200  329.14     0.6076              73.05       0.401          4.466         14.405                 21.56  0.008390       NaN
+  api_cloudflare throughput  main            4       2   200 200  311.87     0.6413              76.50       0.381          3.939         12.574                 22.67  0.008337       NaN
+  api_cloudflare throughput  main            4       3   200 200  293.57     0.6813              81.43       0.365          3.862         13.018                 23.06  0.008350       NaN
+  api_cloudflare throughput  main           16       1   200 200   96.88     2.0644             246.08       0.401          4.569         15.550                 20.86  0.008331       NaN
+  api_cloudflare throughput  main           16       2   200 200   92.92     2.1523             258.89       0.399          4.945         16.266                 20.39  0.008393       NaN
+  api_cloudflare throughput  main           16       3   200 200   91.62     2.1828             262.22       0.390          4.488         16.156                 20.60  0.008384       NaN
+  api_cloudflare throughput pilot            1       1    50  50  380.38     0.1314              15.35       0.469          4.216         17.477                 18.52  0.002072       NaN
+  api_cloudflare throughput pilot            1       2    50  50  396.34     0.1262              14.86       0.500          4.261         19.789                 18.88  0.002088       NaN
+  api_cloudflare throughput pilot            4       1    50  50   92.89     0.5383              63.22       0.475          4.038         15.444                 20.63  0.002083       NaN
+  api_cloudflare throughput pilot            4       2    50  50   82.83     0.6036              70.81       0.459          3.375         14.112                 21.27  0.002080       NaN
+  api_cloudflare throughput pilot           16       1    50  50   26.20     1.9085             225.08       0.482          3.514         16.795                 21.78  0.002090       NaN
+  api_cloudflare throughput pilot           16       2    50  50   32.83     1.5232             181.71       0.474          3.412         15.411                 20.19  0.002109       NaN
+   api_coreweave    quality  main            4       1   100 100   29.09     3.4381             426.57       0.337          1.069          1.641                160.71  0.005079    0.8000
+   api_coreweave    quality  main            4       2   100 100   29.07     3.4399             433.67       0.333          1.085          1.660                160.88  0.005123    0.8000
+   api_coreweave    quality pilot            4       1    30  30    8.96     3.3486             387.54       0.349          1.101          1.760                160.70  0.001444    0.8667
+   api_coreweave throughput  main            1       1   200 200  220.86     0.9056             107.10       0.345          0.883          2.013                161.98  0.007359       NaN
+   api_coreweave throughput  main            1       2   200 200  221.76     0.9019             106.81       0.345          0.888          1.983                162.29  0.007366       NaN
+   api_coreweave throughput  main            1       3   200 200  222.85     0.8974             106.69       0.353          0.891          1.998                161.86  0.007386       NaN
+   api_coreweave throughput  main            4       1   200 200   55.96     3.5738             422.69       0.350          0.845          1.996                163.94  0.007359       NaN
+   api_coreweave throughput  main            4       2   200 200   55.98     3.5728             422.73       0.348          0.843          1.993                164.31  0.007361       NaN
+   api_coreweave throughput  main            4       3   200 200   54.99     3.6369             431.70       0.347          0.884          1.987                163.04  0.007378       NaN
+   api_coreweave throughput  main           16       1   186 200   17.39    10.6938            1199.95       0.352          1.103          2.896                165.04  0.006605       NaN
+   api_coreweave throughput  main           16       2   200 200   15.98    12.5173            1479.36       0.335          0.848          2.022                163.33  0.007355       NaN
+   api_coreweave throughput  main           16       3   200 200   14.98    13.3510            1582.09       0.340          0.832          2.116                161.78  0.007369       NaN
+   api_coreweave throughput pilot            1       1    50  50   57.97     0.8625             102.36       0.355          0.774          2.114                164.80  0.001880       NaN
+   api_coreweave throughput pilot            1       2    50  50   55.98     0.8932             106.01       0.353          0.841          1.986                160.72  0.001880       NaN
+   api_coreweave throughput pilot            4       1    50  50   15.01     3.3314             395.37       0.356          0.937          2.031                162.36  0.001880       NaN
+   api_coreweave throughput pilot            4       2    50  50   13.98     3.5774             424.71       0.349          0.689          1.997                168.35  0.001881       NaN
+   api_coreweave throughput pilot           16       1    50  50    4.98    10.0430            1191.90       0.364          1.049          2.212                160.11  0.001880       NaN
+   api_coreweave throughput pilot           16       2    50  50    4.11    12.1555            1442.38       0.365          0.717          2.023                163.31  0.001880       NaN
+   api_deepinfra    quality  main            4       1   100 100  167.64     0.5965              87.34       0.627          4.851         16.276                 33.16  0.000797    0.7300
+   api_deepinfra    quality  main            4       2   100 100  158.72     0.6301              94.19       0.647          4.973         14.058                 31.15  0.000810    0.7100
+   api_deepinfra    quality pilot            4       1    30  30   40.94     0.7328              99.90       0.608          4.676         11.053                 30.75  0.000225    0.8667
+   api_deepinfra throughput  main            1       1   200 200  844.00     0.2370              26.81       0.676          2.909          9.122                 42.63  0.001097       NaN
+   api_deepinfra throughput  main            1       2   185 200 1114.51     0.1660              18.99       0.865          4.973         12.227                 28.00  0.001024       NaN
+   api_deepinfra throughput  main            1       3    96 200  717.62     0.1338              16.00       0.882          4.462         21.804                 25.45  0.000553       NaN
+   api_deepinfra throughput  main            4       1    63 200  128.46     0.4904              59.05       0.795          5.386         15.546                 25.94  0.000366       NaN
+   api_deepinfra throughput  main            4       2    87 200  144.32     0.6028              66.37       0.754          4.269         13.065                 25.38  0.000465       NaN
+   api_deepinfra throughput  main            4       3   108 200  190.61     0.5666              68.88       0.725          4.091         15.676                 25.54  0.000631       NaN
+   api_deepinfra throughput  main           16       1   200 200   74.72     2.6766             301.58       0.644          3.348         10.144                 32.62  0.001093       NaN
+   api_deepinfra throughput  main           16       2   200 200   82.23     2.4323             274.29       0.628          3.343         10.685                 33.34  0.001094       NaN
+   api_deepinfra throughput  main           16       3   200 200   70.08     2.8539             319.89       0.600          3.286         13.443                 34.74  0.001089       NaN
+   api_deepinfra throughput pilot            1       1    35  50  201.50     0.1737              22.07       0.683          3.968         14.611                 37.97  0.000214       NaN
+   api_deepinfra throughput pilot            1       2    50  50  166.99     0.2994              33.71       0.572          2.733          7.080                 47.38  0.000276       NaN
+   api_deepinfra throughput pilot            4       1    50  50   65.27     0.7661              86.05       0.620          2.818          7.365                 42.36  0.000276       NaN
+   api_deepinfra throughput pilot            4       2    50  50   58.18     0.8595              97.89       0.570          2.583          9.249                 35.38  0.000279       NaN
+   api_deepinfra throughput pilot           16       1    50  50   24.85     2.0123             222.28       0.832          4.897          9.988                 32.55  0.000272       NaN
+   api_deepinfra throughput pilot           16       2    50  50   33.64     1.4864             167.82       0.640          2.752         18.024                 36.35  0.000277       NaN
+        api_groq    quality  main            4       1   100 100    9.56    10.4574            1571.95       0.211          0.378          0.623                865.64  0.001831    0.8100
+        api_groq    quality  main            4       2   100 100   10.44     9.5790            1462.33       0.209          0.373          0.580                864.46  0.001850    0.8100
+        api_groq    quality pilot            4       1    30  30    2.52    11.8879            1693.23       0.212          0.354          0.506                894.18  0.000525    0.8333
+        api_groq throughput  main            1       1   200 200   75.34     2.6545             315.75       0.207          0.345          0.595                776.47  0.002583       NaN
+        api_groq throughput  main            1       2   200 200   75.30     2.6562             317.33       0.205          0.327          0.601                786.33  0.002591       NaN
+        api_groq throughput  main            1       3   200 200   75.31     2.6558             317.01       0.205          0.359          0.584                781.08  0.002590       NaN
+        api_groq throughput  main            4       1   200 200   18.59    10.7599            1281.93       0.206          0.347          0.588                770.98  0.002586       NaN
+        api_groq throughput  main            4       2   200 200   18.60    10.7545            1285.70       0.205          0.357          0.582                783.03  0.002593       NaN
+        api_groq throughput  main            4       3   200 200   19.56    10.2270            1217.63       0.205          0.348          0.593                778.69  0.002585       NaN
+        api_groq throughput  main           16       1   200 200    4.59    43.5274            5191.30       0.213          0.359          0.655                772.76  0.002588       NaN
+        api_groq throughput  main           16       2   200 200    5.58    35.8711            4272.25       0.212          0.340          0.619                778.95  0.002585       NaN
+        api_groq throughput  main           16       3   200 200    4.67    42.8082            5090.96       0.210          0.332          0.613                768.88  0.002583       NaN
+        api_groq throughput pilot            1       1    50  50   21.50     2.3257             274.57       0.212          0.364          0.615                792.76  0.000650       NaN
+        api_groq throughput pilot            1       2    50  50   19.53     2.5596             301.99       0.212          0.292          0.719                766.55  0.000650       NaN
+        api_groq throughput pilot            4       1    50  50    4.57    10.9441            1292.06       0.208          0.321          0.609                800.81  0.000650       NaN
+        api_groq throughput pilot            4       2    50  50    5.55     9.0098            1063.70       0.216          0.350          0.703                787.50  0.000650       NaN
+        api_groq throughput pilot           16       1    50  50    1.56    32.1009            3789.83       0.220          0.307          0.611                786.48  0.000650       NaN
+        api_groq throughput pilot           16       2    50  50    2.35    21.2331            2506.78       0.220          0.416          1.390                781.33  0.000650       NaN
+       mac_m4pro    quality  main            4       1   100 100  186.52     0.5361              77.59       0.505          6.537         12.460                 21.32       NaN    0.8400
+       mac_m4pro    quality  main            4       2   100 100  181.32     0.5515              79.51       0.462          6.367         12.252                 21.55       NaN    0.8600
+       mac_m4pro    quality pilot            4       1    30  30   45.90     0.6537              84.54       0.428          5.651          9.515                 23.31       NaN    0.8667
+       mac_m4pro throughput  main            1       1   200 200  542.77     0.3685              43.49       0.238          1.787          5.690                 48.18       NaN       NaN
+       mac_m4pro throughput  main            1       2   200 200  537.69     0.3720              43.90       0.240          1.736          5.633                 48.07       NaN       NaN
+       mac_m4pro throughput  main            1       3   200 200  546.75     0.3658              43.17       0.240          1.789          5.736                 47.89       NaN       NaN
+       mac_m4pro throughput  main            4       1   200 200  454.96     0.4396              51.62       0.368          5.557         22.171                 13.83       NaN       NaN
+       mac_m4pro throughput  main            4       2   200 200  455.92     0.4387              51.51       0.340          5.649         22.478                 13.90       NaN       NaN
+       mac_m4pro throughput  main            4       3   200 200  457.94     0.4367              51.29       0.352          5.689         22.852                 13.55       NaN       NaN
+       mac_m4pro throughput  main           16       1   200 200  169.25     1.1817             139.14       0.454          7.398         27.047                 10.14       NaN       NaN
+       mac_m4pro throughput  main           16       2   200 200  170.35     1.1740             137.89       0.439          7.332         27.992                 10.10       NaN       NaN
+       mac_m4pro throughput  main           16       3   200 200  168.14     1.1895             140.06       0.451          7.342         27.326                 10.19       NaN       NaN
+       mac_m4pro throughput pilot            1       1    50  50  135.65     0.3686              43.10       0.229          1.675          5.860                 47.41       NaN       NaN
+       mac_m4pro throughput pilot            1       2    50  50  138.75     0.3604              42.14       0.228          1.827          5.981                 47.30       NaN       NaN
+       mac_m4pro throughput pilot            4       1    50  50   67.48     0.7410              85.38       0.306          3.457         11.251                 24.26       NaN       NaN
+       mac_m4pro throughput pilot            4       2    50  50   68.87     0.7260              84.10       0.306          3.404         11.497                 24.54       NaN       NaN
+       mac_m4pro throughput pilot           16       1    50  50   74.29     0.6730              77.14       0.653          9.219         47.734                  8.58       NaN       NaN
+       mac_m4pro throughput pilot           16       2    50  50   44.76     1.1170             129.39       0.522          6.931         23.275                 11.38       NaN       NaN
+mac_m4pro_loaded    quality  main            4       1   100 100  187.46     0.5334              77.26       0.523          6.629         12.947                 21.86       NaN    0.8500
+mac_m4pro_loaded    quality  main            4       2   100 100  175.38     0.5702              82.88       0.459          5.981         12.484                 22.75       NaN    0.8400
+mac_m4pro_loaded throughput  main            1       1   200 200  551.72     0.3625              42.78       0.229          1.751          5.964                 47.79       NaN       NaN
+mac_m4pro_loaded throughput  main            1       2   200 200  554.72     0.3605              42.55       0.251          1.836          5.814                 47.39       NaN       NaN
+mac_m4pro_loaded throughput  main            1       3   200 200  615.86     0.3248              38.33       0.256          2.016          7.433                 45.72       NaN       NaN
+mac_m4pro_loaded throughput  main            4       1   200 200  508.83     0.3931              45.95       0.408          6.550         25.058                 12.49       NaN       NaN
+mac_m4pro_loaded throughput  main            4       2   200 200  419.19     0.4771              55.92       0.336          5.664         20.023                 15.02       NaN       NaN
+mac_m4pro_loaded throughput  main            4       3   200 200  450.01     0.4444              51.95       0.363          5.836         22.186                 14.02       NaN       NaN
+mac_m4pro_loaded throughput  main           16       1   200 200  161.71     1.2368             145.02       0.436          7.268         26.374                 10.51       NaN       NaN
+mac_m4pro_loaded throughput  main           16       2   200 200  169.39     1.1807             139.04       0.449          7.500         27.705                 10.18       NaN       NaN
+mac_m4pro_loaded throughput  main           16       3   200 200  161.59     1.2377             145.27       0.419          7.117         26.267                 10.43       NaN       NaN
+    mac_m4pro_q8    quality  main            4       1   100 100  208.01     0.4807              76.57       0.454          6.892         16.367                 20.72       NaN    0.8400
+    mac_m4pro_q8    quality  main            4       2   100 100  210.06     0.4760              75.81       0.478          6.970         16.776                 20.57       NaN    0.8400
+    mac_m4pro_q8 throughput  main            1       1   200 200  906.59     0.2206              26.91       0.226          3.410          9.360                 28.29       NaN       NaN
+    mac_m4pro_q8 throughput  main            1       2   200 200  866.56     0.2308              28.15       0.217          3.281          9.293                 30.20       NaN       NaN
+    mac_m4pro_q8 throughput  main           16       1   200 200  158.37     1.2628             154.02       0.394          8.092         24.178                 11.96       NaN       NaN
+    mac_m4pro_q8 throughput  main           16       2   200 200  172.34     1.1605             141.53       0.438          8.368         26.674                 11.02       NaN       NaN
+      pc_rtx4060    quality  main            4       1   100 100   94.23     1.0613             150.04       0.159          3.312          6.012                 41.33       NaN    0.8300
+      pc_rtx4060    quality  main            4       2   100 100   96.29     1.0385             153.84       0.162          3.216          7.548                 41.20       NaN    0.8400
+      pc_rtx4060    quality pilot            4       1    30  30   26.52     1.1313             147.93       0.155          3.097          5.334                 40.45       NaN    0.8667
+      pc_rtx4060 throughput  main            1       1   200 200  488.49     0.4094              48.13       0.057          1.556          5.287                 49.52       NaN       NaN
+      pc_rtx4060 throughput  main            1       2   200 200  488.49     0.4094              48.13       0.057          1.564          5.298                 49.61       NaN       NaN
+      pc_rtx4060 throughput  main            1       3   200 200  489.48     0.4086              48.03       0.055          1.553          5.293                 49.54       NaN       NaN
+      pc_rtx4060 throughput  main            4       1   200 200  292.77     0.6831              80.12       0.170          3.705         15.205                 21.80       NaN       NaN
+      pc_rtx4060 throughput  main            4       2   200 200  293.78     0.6808              80.10       0.170          4.013         14.925                 21.82       NaN       NaN
+      pc_rtx4060 throughput  main            4       3   200 200  292.11     0.6847              80.54       0.167          3.618         15.436                 22.15       NaN       NaN
+      pc_rtx4060 throughput  main           16       1   200 200   86.62     2.3090             268.98       0.177          3.497         13.556                 21.96       NaN       NaN
+      pc_rtx4060 throughput  main           16       2   200 200   83.33     2.4000             280.17       0.173          3.886         12.957                 22.16       NaN       NaN
+      pc_rtx4060 throughput  main           16       3   200 200   85.44     2.3409             274.27       0.173          3.510         13.333                 21.62       NaN       NaN
+      pc_rtx4060 throughput pilot            1       1    50  50  122.30     0.4088              47.51       0.059          1.479          5.342                 49.16       NaN       NaN
+      pc_rtx4060 throughput pilot            1       2    50  50  120.24     0.4158              48.33       0.053          1.448          5.260                 49.78       NaN       NaN
+      pc_rtx4060 throughput pilot            4       1    50  50   39.62     1.2619             146.60       0.135          1.867          6.506                 41.67       NaN       NaN
+      pc_rtx4060 throughput pilot            4       2    50  50   43.89     1.1392             131.57       0.137          1.851          7.515                 41.24       NaN       NaN
+      pc_rtx4060 throughput pilot           16       1    50  50   26.56     1.8823             217.41       0.185          3.202         13.195                 22.01       NaN       NaN
+      pc_rtx4060 throughput pilot           16       2    50  50   33.25     1.5036             177.43       0.240          3.545         21.251                 22.01       NaN       NaN
+rented_colab_gpu    quality  main            4       1   100 100  244.42     0.4091              58.09       0.315          8.710         17.490                 15.21       NaN    0.8600
+rented_colab_gpu    quality  main            4       2   100 100  250.34     0.3995              57.91       0.318          8.810         17.037                 15.13       NaN    0.8500
+rented_colab_gpu    quality pilot            4       1    30  30   68.35     0.4389              56.08       0.317          8.411         14.014                 15.14       NaN    0.8333
+rented_colab_gpu throughput  main            1       1   200 200  885.91     0.2258              26.31       0.113          2.880         10.027                 26.73       NaN       NaN
+rented_colab_gpu throughput  main            1       2   200 200  910.90     0.2196              25.59       0.109          2.927         10.008                 26.39       NaN       NaN
+rented_colab_gpu throughput  main            1       3   200 200  909.90     0.2198              25.61       0.109          2.933         10.000                 26.44       NaN       NaN
+rented_colab_gpu throughput  main            4       1   200 200  394.17     0.5074              59.04       0.262          5.035         17.226                 15.47       NaN       NaN
+rented_colab_gpu throughput  main            4       2   200 200  396.62     0.5043              58.48       0.265          4.901         17.264                 15.45       NaN       NaN
+rented_colab_gpu throughput  main            4       3   200 200  392.53     0.5095              58.91       0.263          4.948         17.278                 15.50       NaN       NaN
+rented_colab_gpu throughput  main           16       1   200 200  153.11     1.3062             153.51       0.356          6.839         23.982                 11.96       NaN       NaN
+rented_colab_gpu throughput  main           16       2   200 200  148.50     1.3468             158.86       0.347          6.837         23.531                 11.82       NaN       NaN
+rented_colab_gpu throughput  main           16       3   200 200  156.33     1.2794             149.63       0.348          6.081         23.520                 12.20       NaN       NaN
+rented_colab_gpu throughput pilot            1       1    50  50  225.06     0.2222              25.68       0.113          2.635         10.034                 26.62       NaN       NaN
+rented_colab_gpu throughput pilot            1       2    50  50  225.05     0.2222              25.68       0.110          2.608          9.966                 26.67       NaN       NaN
+rented_colab_gpu throughput pilot            4       1    50  50  142.10     0.3519              41.12       0.283          7.027         28.776                 12.31       NaN       NaN
+rented_colab_gpu throughput pilot            4       2    50  50  142.61     0.3506              40.75       0.282          6.922         30.088                 12.22       NaN       NaN
+rented_colab_gpu throughput pilot           16       1    50  50   67.03     0.7459              88.31       0.457          7.113         43.298                 11.63       NaN       NaN
+rented_colab_gpu throughput pilot           16       2    50  50   60.55     0.8257              96.79       0.484          6.393         38.612                 11.79       NaN       NaN
+2026-10-23 23:49:22
