@@ -1,9 +1,9 @@
 condition,scenario,baseline,baseline_cost_per_1000_usd,capacity_req_per_day,break_even_req_per_day,note
-mac_m4pro,dedicated,api_groq,0.01292,102096,,none below capacity
-mac_m4pro,shared_dev_machine,api_groq,0.01292,102096,39811.0,found
-mac_m4pro_loaded,dedicated,api_groq,0.01292,106859,,none below capacity
-mac_m4pro_loaded,shared_dev_machine,api_groq,0.01292,106859,39811.0,found
-mac_m4pro_q8,dedicated,api_groq,0.01292,104687,,none below capacity
-mac_m4pro_q8,shared_dev_machine,api_groq,0.01292,104687,39811.0,found
-rented_colab_gpu,dedicated,api_groq,0.01292,112857,,none below capacity
-rented_colab_gpu,shared_dev_machine,api_groq,0.01292,112857,,none below capacity
+mac_m4pro,dedicated,api_deepinfra,0.00546,102096,,none below capacity
+mac_m4pro,shared_dev_machine,api_deepinfra,0.00546,102096,100000.0,found
+mac_m4pro_loaded,dedicated,api_deepinfra,0.00546,106859,,none below capacity
+mac_m4pro_loaded,shared_dev_machine,api_deepinfra,0.00546,106859,100000.0,found
+mac_m4pro_q8,dedicated,api_deepinfra,0.00546,104687,,none below capacity
+mac_m4pro_q8,shared_dev_machine,api_deepinfra,0.00546,104687,100000.0,found
+rented_colab_gpu,dedicated,api_deepinfra,0.00546,112857,,none below capacity
+rented_colab_gpu,shared_dev_machine,api_deepinfra,0.00546,112857,,none below capacity
