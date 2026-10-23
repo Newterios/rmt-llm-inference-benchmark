@@ -56,6 +56,9 @@ def main():
             df = parse_powermetrics(p) if p.endswith(".txt") else parse_nvidia_smi(p)
         except Exception as e:
             print("skip", p, e); continue
+        if cond.startswith("rented_colab"):
+            # the Colab VM clock is UTC; request timestamps are converted to Astana time below
+            df["t"] = df["t"].dt.tz_localize("UTC").dt.tz_convert("Asia/Almaty").dt.tz_localize(None)
         df["condition"] = cond
         logs.append(df)
     if not logs:

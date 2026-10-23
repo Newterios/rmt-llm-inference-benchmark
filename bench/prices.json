@@ -94,9 +94,12 @@
     },
     "rented_colab_gpu": {
       "usd_per_hour": null,
-      "compute_units_per_hour": null,
-      "usd_per_compute_unit": 0.1999,
-      "source": "Google Colab Pro: 19.99 USD per month for 100 compute units (colab.research.google.com/signup); compute units per hour of the L4 runtime are read from the Colab Resources panel during the run and entered here"
+      "compute_units_per_hour": 1.76,
+      "usd_per_compute_unit": 0.0999,
+      "source": "Google Colab pay-as-you-go: 9.99 USD per 100 compute units (colab.research.google.com/signup). Google publishes no per-GPU rate; measured T4 burn rates reported by users range from 1.19 (mccormickml.com, March 2026) to 1.76 units/h (older measurement); the upper value 1.76 is used, i.e. about 0.18 USD/h. Our session actually ran on the free tier (Resources panel: no subscription, compute units exhausted), so this is a list price, not a paid one.",
+      "gpu": "Tesla T4 16 GB, driver 580.82.07, power cap 70 W",
+      "load_watts_measured": 66.0,
+      "load_watts_source": "nvidia-smi power.draw, mean over the main throughput levels (results/power_by_level.csv); GPU only, VM host power not visible"
     },
     "mac_m4pro_q8": {
       "price_usd": 1999,
