@@ -381,18 +381,18 @@ table([
      "Fixed random subsets with seed 42, a length filter (40 to 600 characters) so every prompt fits a 1,024-token slot, and disjoint pilot and main sets."],
     ["Instrument (harness)", "Own work; follows the OpenAI-compatible streaming API that llama-server and OpenRouter share", "Self-developed",
      "Not applicable", "No published harness measured all of our conditions through one code path with per-request cost and provider capture. Confidence comes from the smoke tests, the pilot (330 local and 1,320 hosted requests with 0 failures on the working providers), the broken-process checks in T10, and the fact that every number is recomputable from the raw files."],
-    ["Scales or items", "GSM8K, the evaluation set used by Kurtic et al. (2025), https://doi.org/10.18653/v1/2025.acl-long.1304; dataset by Cobbe et al. (2021)", "Adapted",
+    ["Scales or items", "GSM8K, the evaluation set used by Kurtic et al. (2025), https://doi.org/10.18653/v1/2025.acl-long.1304", "Adapted",
      "100 test items with numeric reference answers; exact-match scoring.",
      "Zero-shot with a fixed instruction and an 'Answer: <number>' line instead of few-shot prompting, so that the same prompt works for every endpoint and the output stays short."],
     ["Metrics or evaluation protocol", "Li et al. (2026), arXiv:2605.02821; Kurtic et al. (2025)", "Adapted",
      "Time to first token, output tokens per second and per-provider comparison of the same open-weight model (Li et al.); accuracy of quantized Llama 3.1 8B (Kurtic et al.).",
      "Added closed-loop concurrency levels tied to daily volumes, a per-request cost field, and a sustainable requests-per-day figure derived from throughput."],
-    ["Dataset", "Alpaca (Taori et al., 2023); GSM8K (Cobbe et al., 2021)", "Adopted", "The public files as published.", "Nothing in the files; only the subset selection described in T6."],
+    ["Dataset", "Alpaca, the request trace used by Kwon et al. (2023); GSM8K, the evaluation set used by Kurtic et al. (2025). Full dataset citations with links are given in the dataset card (D.1).", "Adopted", "The public files as published.", "Nothing in the files; only the subset selection described in T6."],
 ], widths=[2.4, 3.6, 2.2, 4, 4.8], font=8)
 
-p("Note on sources: the design, sampling, metric and item sources above (Pan et al., 2025; Tombor and Abonyi, 2026; Kwon et al., 2023; "
-  "Kurtic et al., 2025; Li et al., 2026) are all in the Assignment 2 reference list. The two dataset citations (Taori et al., 2023; "
-  "Cobbe et al., 2021) are data sources, not literature, and are added to the reference list of this report.", count=False)
+p("Note on sources: every source named in this table (Pan et al., 2025; Tombor and Abonyi, 2026; Kwon et al., 2023; Kurtic et al., 2025; "
+  "Li et al., 2026) is in the Assignment 2 reference list. The datasets themselves are cited with their original authors and links in the "
+  "dataset card (D.1), as that card requires.", count=False)
 h("T2. Replication status", 2)
 table([
     ["Declaration", "What was repeated"],
