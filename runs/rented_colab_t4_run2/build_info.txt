@@ -1,0 +1,1 @@
+llama.cpp source build, commit 3f03b17, CMAKE_CUDA_ARCHITECTURES=75

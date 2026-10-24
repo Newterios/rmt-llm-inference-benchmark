@@ -50,3 +50,9 @@ rented_colab_gpu,dedicated,100000,112857,True,68.0,117.5,0.0422,24 h x 0.176 USD
 rented_colab_gpu,shared_dev_machine,1000,112857,True,68.0,117.5,4.21978,24 h x 0.176 USD/h / volume
 rented_colab_gpu,shared_dev_machine,10000,112857,True,68.0,117.5,0.42198,24 h x 0.176 USD/h / volume
 rented_colab_gpu,shared_dev_machine,100000,112857,True,68.0,117.5,0.0422,24 h x 0.176 USD/h / volume
+rented_colab_t4_run2,dedicated,1000,117314,True,68.0,117.0,4.21978,24 h x 0.176 USD/h / volume
+rented_colab_t4_run2,dedicated,10000,117314,True,68.0,117.0,0.42198,24 h x 0.176 USD/h / volume
+rented_colab_t4_run2,dedicated,100000,117314,True,68.0,117.0,0.0422,24 h x 0.176 USD/h / volume
+rented_colab_t4_run2,shared_dev_machine,1000,117314,True,68.0,117.0,4.21978,24 h x 0.176 USD/h / volume
+rented_colab_t4_run2,shared_dev_machine,10000,117314,True,68.0,117.0,0.42198,24 h x 0.176 USD/h / volume
+rented_colab_t4_run2,shared_dev_machine,100000,117314,True,68.0,117.0,0.0422,24 h x 0.176 USD/h / volume

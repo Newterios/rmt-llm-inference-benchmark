@@ -11,3 +11,5 @@ pc_rtx4060_budget,dedicated,api_deepinfra,0.00546,202255,,none below capacity
 pc_rtx4060_budget,shared_dev_machine,api_deepinfra,0.00546,202255,79433.0,found
 rented_colab_gpu,dedicated,api_deepinfra,0.00546,112857,,none below capacity
 rented_colab_gpu,shared_dev_machine,api_deepinfra,0.00546,112857,,none below capacity
+rented_colab_t4_run2,dedicated,api_deepinfra,0.00546,117314,,none below capacity
+rented_colab_t4_run2,shared_dev_machine,api_deepinfra,0.00546,117314,,none below capacity
