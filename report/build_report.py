@@ -234,7 +234,7 @@ table([
 h("T4. What exactly was observed", 2)
 table([
     ["Observed", "Instrument that records it", "How it is recorded", "Unit", "Where and when"],
-    ["Time to first token", "bench/run.py, perf_counter around the HTTP stream", "First content chunk of the stream minus request start", "s", "Every request, all conditions, 23 to 26 October 2026"],
+    ["Time to first token", "bench/run.py, perf_counter around the HTTP stream", "First content chunk of the stream minus request start", "s", "Every request, all conditions, 23 to 24 October 2026"],
     ["End-to-end latency", "bench/run.py", "Stream end minus request start", "s", "same"],
     ["Prompt and output tokens", "Server-reported usage field (llama-server, OpenRouter, Anthropic SDK)", "Taken from the final stream chunk; if absent, streamed chunks are counted and the row is flagged tokens_estimated", "tokens", "same"],
     ["Cost of a request", "OpenRouter usage.cost; Anthropic list price times tokens; cost model for local runs", "Stored per request (cost_usd)", "USD", "same"],
@@ -259,7 +259,7 @@ table([
     ["Item", "Entry"],
     ["Population, dataset or case set", f"Requests of a general chat assistant, represented by two public datasets: Stanford Alpaca "
      f"({al['records_total']:,} instruction prompts) for throughput and the GSM8K test split ({gs['records_total']:,} "
-     "grade-school math problems with a numeric reference answer) for quality. Cases: nine serving conditions (Table 2 in D.3)."],
+     "grade-school math problems with a numeric reference answer) for quality. Cases: the ten serving conditions that were run, plus one attempted endpoint and one cost-only configuration (Table 3 in D.3)."],
     ["Achieved size", f"Throughput: {al['pilot']} pilot + {al['main']} main prompts. Quality: {gs['pilot']} pilot + {gs['main']} main items. "
      "Each throughput prompt is sent at 3 concurrency levels with 2 (pilot) or 3 (main) repeats, so one condition produces "
      f"{al['main'] * 9} main throughput requests and {gs['main'] * 2} main quality requests."],
@@ -281,8 +281,8 @@ p("Step 1, design and pre-registration (23.10.2026, 00:50 to 01:24). After the A
   "commit hash and time are visible in the repository history.")
 p("Step 2, local server setup (01:24). The model file Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf (4,920,739,232 bytes, "
   "sha256 7b064f58...) was downloaded from the bartowski repository on Hugging Face. llama-server build b11429 was "
-  "started with 16 parallel slots of 1,024 tokens each, flash attention on, all layers on the GPU, prompt caching "
-  "off (so that a repeated prompt is not answered from cache) and reasoning off. The identical command is in "
+  "started with 16 parallel slots of 1,024 tokens each, flash attention on, all layers on the GPU, slot prompt reuse "
+  "disabled with --no-cache-prompt and reasoning off; the RAM prompt cache that these builds keep stayed on (Segment 4 T3 shows it left no trace in the timings). The identical command is in "
   f"bench/serve_mac.sh and bench/windows/serve_pc.ps1. Figure {FIG_N + 1} shows the server configuration as reported "
   "by its own /props and /metrics endpoints.")
 f_server = fig(FIG / "fig_mac_server_props.png",
@@ -303,7 +303,7 @@ p("Step 5, hosted pilots (01:34 to about 02:00). The same protocol was run again
   "window; the attempts are kept in runs/_smoke and the research log, and Cloudflare was added as a second fp8 "
   "provider. The Anthropic condition uses the official SDK with thinking disabled, so that the closed model "
   "answers in the same single-pass mode as the 8B model.")
-p("Step 6, main runs (24 to 26.10.2026). Each condition receives the 200 main throughput prompts at concurrency "
+p("Step 6, main runs (23 to 24.10.2026). Each condition receives the 200 main throughput prompts at concurrency "
   "1, 4 and 16 with three repeats, and the 100 main GSM8K items at concurrency 4 with two repeats. Local runs are "
   "accompanied by a power log (nvidia-smi once per second on the PC and the rented GPU, powermetrics on the Mac). "
   "The PC is operated by the team with the scripts in bench/windows; the rented GPU condition runs in the public Colab notebook bench/cloud/colab_benchmark.ipynb. "
@@ -322,8 +322,8 @@ p("Step 7, processing. bench/summarize.py rebuilds results/requests_all.csv (one
   "plots from these CSV files only. Nothing in the report is typed in by hand from a terminal.")
 p("Fairness between conditions. All conditions receive byte-identical prompts and system messages, the same "
   "max_tokens (256 throughput, 400 quality), temperature 0 and seed 42 where the endpoint accepts them, the same "
-  "180 s timeout, the same warm-up, and the same closed-loop concurrency. The local server runs with prompt cache "
-  "off. Hosted conditions were run from the same Mac on the same home connection in Astana. Permissions: no "
+  "180 s timeout, the same warm-up, and the same closed-loop concurrency. The local server runs with slot prompt reuse "
+  "disabled on every machine. Hosted conditions were run from the same Mac on the same home connection in Astana. Permissions: no "
   "permissions were needed; the datasets are public under MIT and CC BY-NC 4.0 licences, the model under the "
   "Llama 3.1 Community License, and the API accounts belong to the team. Environment and versions: macOS 26.5.1, "
   "Python 3.14.0, httpx, anthropic SDK 2.1.0, llama.cpp b11429; Windows 11 and CUDA 12 on the PC; versions of "
@@ -396,14 +396,14 @@ p("Note on sources: the design, sampling, metric and item sources above (Pan et 
 h("T2. Replication status", 2)
 table([
     ["Declaration", "What was repeated"],
-    ["Original study", "The design (one model, nine serving conditions, three concurrency levels tied to daily volumes), the harness, the prompt sets and the cost model were built by the team. No published study was used as a template because none of the kept papers compares the same 8B model on consumer hardware and across hosted providers at the same workload: Pan et al. (2025) and Tombor and Abonyi (2026) model cost analytically, Li et al. (2026) measure providers but not local hardware, and Kurtic et al. (2025) measure quantization quality but not cost. Elements borrowed from these papers are listed in T1 as 'adapted'."],
+    ["Original study", "The design (one model, ten serving conditions, three concurrency levels tied to daily volumes), the harness, the prompt sets and the cost model were built by the team. No published study was used as a template because none of the kept papers compares the same 8B model on consumer hardware and across hosted providers at the same workload: Pan et al. (2025) and Tombor and Abonyi (2026) model cost analytically, Li et al. (2026) measure providers but not local hardware, and Kurtic et al. (2025) measure quantization quality but not cost. Elements borrowed from these papers are listed in T1 as 'adapted'."],
 ], widths=[3, 14])
 
 h("T3. Our research is an original study", 2)
 table([
     ["Element", "Our study"],
     ["Research question or hypothesis", RQ + " Hypothesis: a break-even volume exists between 1,000 and 100,000 requests per day, and the 4-bit local model stays within 5 accuracy points of the hosted bf16 model."],
-    ["Methodology and design", "Quantitative controlled benchmark with repeated measures; nine serving conditions; concurrency 1, 4, 16; three repeats (main); cost model on measured throughput."],
+    ["Methodology and design", "Quantitative controlled benchmark with repeated measures; ten serving conditions; concurrency 1, 4, 16; three repeats (main); cost model on measured throughput."],
     ["Population, sample or dataset, and size", "Alpaca 200 main + 50 pilot prompts; GSM8K 100 main + 30 pilot items; seed 42; disjoint subsets."],
     ["Instrument", "bench/run.py harness (streaming client, per-request timing, token and cost capture, answer parser); llama-server with a fixed configuration; OpenRouter provider pinning; Anthropic SDK."],
     ["Experimental or technical procedure", "Segment 1, T7: pre-registration, server setup, smoke test, pilot, hosted pilots, main runs with power logging, processing by scripts."],
@@ -481,7 +481,7 @@ for k, v in COND.items():
     if k.startswith("_"):
         continue
     eng = v.get("engine", "")
-    params = ("ctx 16,384 shared, 16 slots x 1,024; flash attention on; all 33 layers on GPU; prompt cache off; batch 2,048; "
+    params = ("ctx 16,384 shared, 16 slots x 1,024; flash attention on; all 33 layers on GPU; --no-cache-prompt (the build's RAM prompt cache stayed on); batch 2,048; "
               "max_tokens 256/400; temperature 0; seed 42") if "llama.cpp" in eng else \
              ("OpenRouter provider.order pinned, allow_fallbacks false; max_tokens 256/400; temperature 0; seed 42 passed; usage.include true")
     if v["backend"] == "anthropic":
