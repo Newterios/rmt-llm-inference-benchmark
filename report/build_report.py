@@ -307,7 +307,8 @@ p("Step 6, main runs (24 to 26.10.2026). Each condition receives the 200 main th
   "1, 4 and 16 with three repeats, and the 100 main GSM8K items at concurrency 4 with two repeats. Local runs are "
   "accompanied by a power log (nvidia-smi once per second on the PC and the rented GPU, powermetrics on the Mac). "
   "The PC is operated by the team with the scripts in bench/windows; the rented GPU condition runs in the public Colab notebook bench/cloud/colab_benchmark.ipynb. "
-  f"Figure {FIG_N + 1} shows the raw data file of one run exactly as it is stored.")
+  f"Figure {FIG_N + 1} shows the raw data file of one run exactly as it is stored, and Figure {FIG_N + 2} shows the server starting on the PC "
+  "with all 33 layers on the RTX 4060 and the same 16 x 1,024-token slot layout as on the Mac.")
 f_raw = fig(FIG / "fig_raw_jsonl.png",
             "Head of a raw run file (runs/mac_m4pro/*.jsonl): the meta line with the server configuration, then "
             "one JSON line per request with timing, tokens, status and the model's answer. Own screenshot.")
@@ -389,6 +390,9 @@ table([
     ["Dataset", "Alpaca (Taori et al., 2023); GSM8K (Cobbe et al., 2021)", "Adopted", "The public files as published.", "Nothing in the files; only the subset selection described in T6."],
 ], widths=[2.4, 3.6, 2.2, 4, 4.8], font=8)
 
+p("Note on sources: the design, sampling, metric and item sources above (Pan et al., 2025; Tombor and Abonyi, 2026; Kwon et al., 2023; "
+  "Kurtic et al., 2025; Li et al., 2026) are all in the Assignment 2 reference list. The two dataset citations (Taori et al., 2023; "
+  "Cobbe et al., 2021) are data sources, not literature, and are added to the reference list of this report.", count=False)
 h("T2. Replication status", 2)
 table([
     ["Declaration", "What was repeated"],
@@ -485,6 +489,8 @@ for k, v in COND.items():
     rows.append([SHORT[k], v["hardware"], eng if v["backend"] != "anthropic" else "provider-managed, closed weights",
                  params, "Same system prompt and user prompt bytes for every condition; streaming on; 180 s timeout; 2 warm-up requests per level, not recorded"])
 table(rows, widths=[1.8, 4.6, 3.4, 4.4, 2.8], font=7.5, caption="Serving conditions")
+p("Mathematical formulas: no model is trained or tuned, so there is no model equation; the only formulas in the study are the metric "
+  "and cost definitions in D.4. Decoding is greedy (temperature 0) with the Llama 3.1 chat template applied by each server.", count=False)
 p("Comparison condition: the cheapest working hosted endpoint of the same model (DeepInfra fp8 when available, "
   "otherwise Cloudflare fp8) is the baseline against which local cost is judged; Groq and CoreWeave show the spread "
   "within 'the API'; Claude Haiku 5.5 shows what a closed model costs and scores on the same items.")
@@ -576,7 +582,21 @@ table([["Expected result", "What actual data shows", "Verdict", "Where it can be
 h("T3. What the first data says about the instrument", 2)
 for para in S4["text"]:
     p(para)
-for fpath, cap in S4.get("figures", []):
+figs = S4.get("figures", [])
+if figs:
+    first = FIG_N + 1
+    intro = (f"Figures {first} to {first + len(figs) - 1} summarise the data behind this comparison. "
+             f"Figure {first} is the PC condition during its concurrency-16 level, with the server log, nvidia-smi and the harness console side by side. "
+             f"Figure {first + 1} plots aggregate throughput by condition and concurrency: Groq is an order of magnitude above every other condition, "
+             "the PC overtakes the T4 and the Mac at every level, and the Mac's flat step from concurrency 1 to 4 is visible. "
+             f"Figure {first + 2} shows median and p95 latency; Cloudflare and the local machines are the slow group, Groq and CoreWeave the fast one. "
+             f"Figure {first + 3} ranks GSM8K accuracy, with the two fp8 endpoints at the bottom of the Llama group and Claude Haiku 5.5 on top. "
+             f"Figure {first + 4} is the cost curve that answers the RQ: every hosted line is flat, every local line falls with volume, and the local "
+             "lines at full hardware cost stay above DeepInfra and Groq up to each machine's capacity, while the dashed 25-percent lines cross them "
+             "only near 100,000 requests per day. "
+             f"Figure {first + 5} is the console of the rented T4 run.")
+    p(intro)
+for fpath, cap in figs:
     fig(FIG / fpath, cap)
 
 # ================================================================ REFERENCES
