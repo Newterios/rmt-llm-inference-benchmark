@@ -117,6 +117,24 @@
       "load_watts_measured": 18.8,
       "load_watts_source": "powermetrics CPU+GPU package power, mean over the concurrency-16 levels of the main run (runs/mac_m4pro/power_main_*.txt, results/power_by_level.csv); display and other components not included",
       "note": "same machine and price as mac_m4pro"
+    },
+    "rented_colab_l4": {
+      "usd_per_hour": null,
+      "compute_units_per_hour": 4.82,
+      "usd_per_compute_unit": 0.0999,
+      "source": "Google Colab pay-as-you-go 9.99 USD per 100 compute units; L4 burn rate as shown by Colab's runtime panel (about 4.8 units/h, to be replaced by the value read during the run)",
+      "gpu": "NVIDIA L4 24 GB",
+      "load_watts_measured": null,
+      "load_watts_source": "nvidia-smi power.draw during the run"
+    },
+    "rented_colab_t4_run2": {
+      "usd_per_hour": null,
+      "compute_units_per_hour": 1.76,
+      "usd_per_compute_unit": 0.0999,
+      "source": "Google Colab pay-as-you-go: 9.99 USD per 100 compute units (colab.research.google.com/signup). Google publishes no per-GPU rate; measured T4 burn rates reported by users range from 1.19 (mccormickml.com, March 2026) to 1.76 units/h (older measurement); the upper value 1.76 is used, i.e. about 0.18 USD/h. Our session actually ran on the free tier (Resources panel: no subscription, compute units exhausted), so this is a list price, not a paid one.",
+      "gpu": "Tesla T4 16 GB, driver 580.82.07, power cap 70 W",
+      "load_watts_measured": null,
+      "load_watts_source": "nvidia-smi power.draw, mean over the main throughput levels (results/power_by_level.csv); GPU only, VM host power not visible"
     }
   },
   "api_usd_per_million_tokens": {

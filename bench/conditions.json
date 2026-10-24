@@ -142,5 +142,21 @@
     "api_key_env": null,
     "hardware": "MacBook Pro, Apple M4 Pro (14-core), 24 GB unified memory, macOS 26",
     "engine": "llama.cpp llama-server b11429 (Metal), Q4_K_M GGUF - same run protocol while the Mac was in use (Chrome with Colab, screenshots); observation, not a planned condition"
+  },
+  "rented_colab_l4": {
+    "backend": "openai_compat",
+    "base_url": "http://127.0.0.1:8090/v1",
+    "model": "llama-3.1-8b-instruct-q4_k_m",
+    "api_key_env": null,
+    "hardware": "Rented cloud GPU: Google Colab GPU runtime, NVIDIA L4 24 GB; second session run from the v2 notebook with the prebuilt llama.cpp CUDA binary; GPU model from nvidia-smi is written to the run meta line",
+    "engine": "llama.cpp llama-server b11853 prebuilt (ubuntu, CUDA 12.8), Q4_K_M GGUF"
+  },
+  "rented_colab_t4_run2": {
+    "backend": "openai_compat",
+    "base_url": "http://127.0.0.1:8090/v1",
+    "model": "llama-3.1-8b-instruct-q4_k_m",
+    "api_key_env": null,
+    "hardware": "Rented cloud GPU: Google Colab GPU runtime, Tesla T4 16 GB (second session); second session run from the v2 notebook with the prebuilt llama.cpp CUDA binary; GPU model from nvidia-smi is written to the run meta line",
+    "engine": "llama.cpp llama-server b11853 prebuilt (ubuntu, CUDA 12.8), Q4_K_M GGUF"
   }
 }
