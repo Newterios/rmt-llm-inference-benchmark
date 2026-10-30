@@ -1,0 +1,6 @@
+condition,agg_out_tok_per_s_c16,out_tok_mean,capacity_measured_req_per_day,capacity_if_256_token_answers
+mac_m4pro,139.1,117.8,102096.0,46959.7
+mac_m4pro_q8,147.8,122.0,104687.5,49874.1
+pc_rtx4060,274.3,116.7,202255.0,92566.1
+rented_colab_gpu,153.5,117.5,112857.0,51809.6
+rented_colab_t4_run2,158.9,117.0,117314.0,53628.8

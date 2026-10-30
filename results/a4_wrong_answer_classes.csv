@@ -1,0 +1,11 @@
+condition,cut at 400 tokens before the answer line,no Answer line (last number taken),wrong final number,total_wrong_answers
+api_claude_haiku,1,0,11,12
+api_cloudflare,0,2,42,44
+api_coreweave,1,0,39,40
+api_deepinfra,5,0,51,56
+api_groq,3,0,35,38
+mac_m4pro,2,2,26,30
+mac_m4pro_q8,8,0,24,32
+pc_rtx4060,5,0,28,33
+rented_colab_gpu,4,2,23,29
+rented_colab_t4_run2,3,1,29,33

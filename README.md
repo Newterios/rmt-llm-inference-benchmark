@@ -1,6 +1,6 @@
 # Local vs hosted inference of an 8B open-weight LLM: benchmark harness and data
 
-Research Methods and Tools, Astana IT University, group SE-2424, Assignment 3.
+Research Methods and Tools, Astana IT University, group SE-2424, Assignments 3 and 4.
 Team: Kaiyrbekuly Aitbek, Turganbek Nurhan.
 
 **Research question.** At what daily request volume does running an 8B open-weight LLM on a
@@ -51,6 +51,9 @@ bench/            harness and helper scripts
   windows/          the same for the Windows PC (serve_pc.ps1, power_pc.ps1, run_pc.ps1)
   cloud/            Colab notebook for the rented GPU condition and its server-start script
   energy.py         mean power per run level from the powermetrics / nvidia-smi logs
+  analyze_a4.py     Assignment 4 analysis: intervals, paired tests, failure classes, cost curves,
+                    decision table, sensitivity; reads existing files only, writes results/a4_*.csv
+                    and figures/a4_*.png
 data/
   raw/              Alpaca (alpaca_data.json) and GSM8K test (gsm8k_test.jsonl) as downloaded
   prompts/          the fixed subsets: throughput_{pilot,main}.jsonl, quality_{pilot,main}.jsonl
@@ -61,6 +64,7 @@ runs/               RAW DATA. One JSONL per run: a meta line, one line per reque
 results/            PROCESSED DATA, produced only by bench/summarize.py, bench/energy.py and bench/cost_model.py
                     (summary_by_level.csv, summary_by_condition.csv, requests_all.csv, power_by_level.csv,
                     cost_per_1000_main.csv, break_even_main.csv, api_pricing_scenarios_main.csv)
+                    and by bench/analyze_a4.py (every file named a4_*.csv)
 figures/            screenshots and plots used in the report
 docs/
   expected_results.md   pre-registered expectations (committed 23.10.2026, before any run)
@@ -78,6 +82,7 @@ cp .env.example .env                               # add OPENROUTER_API_KEY / AN
 ./bench/pilot_mac.sh                               # terminal 2
 .venv/bin/python bench/run.py --condition api_deepinfra --task throughput --set main --concurrency 1 4 16 --repeats 3
 .venv/bin/python bench/summarize.py && .venv/bin/python bench/cost_model.py main
+.venv/bin/python bench/analyze_a4.py                # Assignment 4 tables and figures, no new requests
 ```
 
 Model file: `bartowski/Meta-Llama-3.1-8B-Instruct-GGUF`, file `Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf`,

@@ -1,0 +1,10 @@
+condition,baseline,accuracy_condition,accuracy_baseline,difference_points,right_only_condition,right_only_baseline,mcnemar_exact_p
+mac_m4pro,api_coreweave,0.84,0.8,4.0,8,4,0.3877
+mac_m4pro_q8,api_coreweave,0.84,0.8,4.0,10,6,0.4545
+pc_rtx4060,api_coreweave,0.83,0.8,3.0,9,6,0.6072
+rented_colab_gpu,api_coreweave,0.86,0.8,6.0,11,5,0.2101
+rented_colab_t4_run2,api_coreweave,0.84,0.8,4.0,8,4,0.3877
+api_deepinfra,api_coreweave,0.73,0.8,-7.0,6,13,0.1671
+api_cloudflare,api_coreweave,0.78,0.8,-2.0,6,8,0.7905
+api_groq,api_coreweave,0.81,0.8,1.0,9,8,1.0
+api_claude_haiku,api_coreweave,0.94,0.8,14.0,16,2,0.0013

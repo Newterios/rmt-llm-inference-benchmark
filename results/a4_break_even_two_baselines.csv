@@ -1,0 +1,15 @@
+condition,scenario,baseline,baseline_cost_per_1000_usd,capacity_req_per_day,break_even_req_per_day,cost_at_capacity_edge
+mac_m4pro,dedicated,api_deepinfra,0.00546,102096,,0.01826
+mac_m4pro,shared_dev_machine,api_deepinfra,0.00546,102096,90848.0,0.00483
+pc_rtx4060,dedicated,api_deepinfra,0.00546,202255,,0.00799
+pc_rtx4060,shared_dev_machine,api_deepinfra,0.00546,202255,99606.0,0.0033
+pc_rtx4060_budget,dedicated,api_deepinfra,0.00546,202255,,0.00643
+pc_rtx4060_budget,shared_dev_machine,api_deepinfra,0.00546,202255,75576.0,0.00276
+rented_colab_gpu,rented 24 h,api_deepinfra,0.00546,112857,,0.03776
+mac_m4pro,dedicated,api_groq,0.01292,102096,,0.01826
+mac_m4pro,shared_dev_machine,api_groq,0.01292,102096,37900.0,0.00483
+pc_rtx4060,dedicated,api_groq,0.01292,202255,117010.0,0.00799
+pc_rtx4060,shared_dev_machine,api_groq,0.01292,202255,36196.0,0.0033
+pc_rtx4060_budget,dedicated,api_groq,0.01292,202255,90848.0,0.00643
+pc_rtx4060_budget,shared_dev_machine,api_groq,0.01292,202255,28103.0,0.00276
+rented_colab_gpu,rented 24 h,api_groq,0.01292,112857,,0.03776

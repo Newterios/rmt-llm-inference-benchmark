@@ -1,0 +1,16 @@
+condition,scenario,cost_per_1000_usd_at_100k,gsm8k_accuracy_mean_of_repeats
+mac_m4pro,dedicated,0.01861,0.85
+mac_m4pro,shared_dev_machine,0.00492,0.85
+mac_m4pro_q8,dedicated,0.0186,0.84
+mac_m4pro_q8,shared_dev_machine,0.00491,0.84
+pc_rtx4060,dedicated,0.01473,0.835
+pc_rtx4060,shared_dev_machine,0.00541,0.835
+rented_colab_gpu,dedicated,0.0422,0.855
+rented_colab_t4_run2,dedicated,0.0422,0.835
+api_deepinfra,n/a,0.00546,0.72
+api_cloudflare,n/a,0.04192,0.78
+api_groq,n/a,0.01292,0.81
+api_coreweave,n/a,0.03678,0.8
+api_claude_haiku,n/a,0.07843,0.94
+pc_rtx4060_budget,dedicated,0.01167,0.835
+pc_rtx4060_budget,shared_dev_machine,0.00439,0.835

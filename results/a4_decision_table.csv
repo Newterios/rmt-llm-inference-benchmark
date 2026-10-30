@@ -1,0 +1,7 @@
+volume_per_day,hardware_scenario,cheapest_within_5_points_of_bf16,its_cost_per_1000_usd,its_failure_pct,cheapest_with_failures_below_2pct,that_cost_per_1000_usd,cheapest_own_or_rented_hardware,local_cost_per_1000_usd,local_to_cheapest_ratio
+1000,dedicated,api_groq,0.01292,0.0,api_groq,0.01292,pc_rtx4060_budget,1.05738,81.84056
+1000,shared_dev_machine,api_groq,0.01292,0.0,api_groq,0.01292,pc_rtx4060_budget,0.3293,25.48762
+10000,dedicated,api_groq,0.01292,0.0,api_groq,0.01292,pc_rtx4060_budget,0.10674,8.26161
+10000,shared_dev_machine,api_groq,0.01292,0.0,api_groq,0.01292,pc_rtx4060_budget,0.03393,2.62616
+100000,dedicated,pc_rtx4060_budget,0.01167,0.0,pc_rtx4060_budget,0.01167,pc_rtx4060_budget,0.01167,1.0
+100000,shared_dev_machine,pc_rtx4060_budget,0.00439,0.0,pc_rtx4060_budget,0.00439,pc_rtx4060_budget,0.00439,1.0

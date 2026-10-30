@@ -1,0 +1,11 @@
+condition,requests,out_tok_mean,out_tok_median,cut_at_256,cut_pct
+api_claude_haiku,1800,143.82,132.0,658,36.56
+api_cloudflare,1799,119.51,81.0,0,0.0
+api_coreweave,1786,117.8,78.0,490,27.44
+api_deepinfra,1339,114.32,77.0,299,22.33
+api_groq,1800,119.2,86.0,411,22.83
+mac_m4pro,1800,117.7,72.0,417,23.17
+mac_m4pro_q8,800,121.96,91.0,196,24.5
+pc_rtx4060,1800,117.29,75.0,431,23.94
+rented_colab_gpu,1800,116.66,75.0,424,23.56
+rented_colab_t4_run2,1800,116.3,75.0,414,23.0

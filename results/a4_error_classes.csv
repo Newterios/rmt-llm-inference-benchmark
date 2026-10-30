@@ -1,0 +1,9 @@
+condition,failure_class,task,set,concurrency,repeat,failed_requests,sent
+api_cloudflare,connection closed mid-stream (ReadError),throughput,main,1,1,1,200
+api_coreweave,connection closed mid-stream (ReadError),throughput,main,16,1,14,200
+api_deepinfra,HTTP 429 rate limit (shared upstream pool),throughput,main,1,2,15,200
+api_deepinfra,HTTP 429 rate limit (shared upstream pool),throughput,main,1,3,104,200
+api_deepinfra,HTTP 429 rate limit (shared upstream pool),throughput,main,4,1,137,200
+api_deepinfra,HTTP 429 rate limit (shared upstream pool),throughput,main,4,2,113,200
+api_deepinfra,HTTP 429 rate limit (shared upstream pool),throughput,main,4,3,92,200
+api_deepinfra,HTTP 429 rate limit (shared upstream pool),throughput,pilot,1,1,15,50

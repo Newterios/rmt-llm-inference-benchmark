@@ -1,0 +1,5 @@
+condition,req_per_s_c16,measured_device_watts_c16,load_watts_in_cost_model,wh_per_1000_requests_measured_device,wh_per_1000_requests_cost_model
+mac_m4pro,1.18,,18.8,,4.42
+pc_rtx4060,2.34,103.37,183.4,12.27,21.76
+rented_colab_gpu,1.31,64.4,66.0,13.7,14.04
+rented_colab_t4_run2,1.36,64.2,,13.13,

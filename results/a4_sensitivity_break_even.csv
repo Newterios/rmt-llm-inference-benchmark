@@ -1,0 +1,13 @@
+condition,amortization_years,tariff_multiplier,break_even_vs_groq_req_per_day,electricity_share_of_daily_cost_at_100k_pct
+pc_rtx4060_budget,2,1.0,131274,11.9
+pc_rtx4060_budget,2,2.0,154213,21.27
+pc_rtx4060_budget,3,1.0,90848,16.85
+pc_rtx4060_budget,3,2.0,109207,28.84
+pc_rtx4060_budget,5,1.0,57344,25.25
+pc_rtx4060_budget,5,2.0,70536,40.31
+pc_rtx4060,2,1.0,169078,10.98
+pc_rtx4060,2,2.0,198621,19.78
+pc_rtx4060,3,1.0,117010,15.61
+pc_rtx4060,3,2.0,140655,27.0
+pc_rtx4060,5,1.0,73858,23.56
+pc_rtx4060,5,2.0,92963,38.14

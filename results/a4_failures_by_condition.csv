@@ -1,0 +1,12 @@
+condition,sent,failed,failure_pct
+api_claude_haiku,2330,0,0.0
+api_cloudflare,2330,1,0.04
+api_coreweave,2330,14,0.6
+api_deepinfra,2330,476,20.43
+api_groq,2330,0,0.0
+mac_m4pro,2330,0,0.0
+mac_m4pro_loaded,2000,0,0.0
+mac_m4pro_q8,1000,0,0.0
+pc_rtx4060,2330,0,0.0
+rented_colab_gpu,2330,0,0.0
+rented_colab_t4_run2,2330,0,0.0

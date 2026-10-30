@@ -1,0 +1,348 @@
+condition,repeat,prompt_id,class,gold,pred,finish_reason,completion_tokens,run_file
+mac_m4pro,1,gsm-038,wrong final number,25,250.0,stop,290,runs/mac_m4pro/20261023-040848_quality_main.jsonl
+mac_m4pro,1,gsm-042,wrong final number,150,240.0,stop,95,runs/mac_m4pro/20261023-040848_quality_main.jsonl
+mac_m4pro,1,gsm-045,wrong final number,2,4.0,length,400,runs/mac_m4pro/20261023-040848_quality_main.jsonl
+mac_m4pro,1,gsm-047,no Answer line (last number taken),2,4.0,stop,237,runs/mac_m4pro/20261023-040848_quality_main.jsonl
+mac_m4pro,1,gsm-048,wrong final number,14,17.0,stop,160,runs/mac_m4pro/20261023-040848_quality_main.jsonl
+mac_m4pro,1,gsm-059,wrong final number,32,48.0,stop,90,runs/mac_m4pro/20261023-040848_quality_main.jsonl
+mac_m4pro,1,gsm-069,wrong final number,2,1.75,stop,229,runs/mac_m4pro/20261023-040848_quality_main.jsonl
+mac_m4pro,1,gsm-078,wrong final number,5,7.0,stop,96,runs/mac_m4pro/20261023-040848_quality_main.jsonl
+mac_m4pro,1,gsm-080,wrong final number,1300,900.0,stop,181,runs/mac_m4pro/20261023-040848_quality_main.jsonl
+mac_m4pro,1,gsm-088,wrong final number,60,84.0,stop,127,runs/mac_m4pro/20261023-040848_quality_main.jsonl
+mac_m4pro,1,gsm-092,wrong final number,70000,75000.0,stop,118,runs/mac_m4pro/20261023-040848_quality_main.jsonl
+mac_m4pro,1,gsm-107,wrong final number,172,130.0,stop,186,runs/mac_m4pro/20261023-040848_quality_main.jsonl
+mac_m4pro,1,gsm-111,cut at 400 tokens before the answer line,18,-10.0,length,400,runs/mac_m4pro/20261023-040848_quality_main.jsonl
+mac_m4pro,1,gsm-112,wrong final number,1,2.0,stop,246,runs/mac_m4pro/20261023-040848_quality_main.jsonl
+mac_m4pro,1,gsm-119,wrong final number,9,8.0,stop,120,runs/mac_m4pro/20261023-040848_quality_main.jsonl
+mac_m4pro,1,gsm-121,wrong final number,3,6.0,stop,327,runs/mac_m4pro/20261023-040848_quality_main.jsonl
+mac_m4pro,2,gsm-038,wrong final number,25,250.0,stop,290,runs/mac_m4pro/20261023-040848_quality_main.jsonl
+mac_m4pro,2,gsm-042,wrong final number,150,240.0,stop,95,runs/mac_m4pro/20261023-040848_quality_main.jsonl
+mac_m4pro,2,gsm-047,no Answer line (last number taken),2,4.0,stop,237,runs/mac_m4pro/20261023-040848_quality_main.jsonl
+mac_m4pro,2,gsm-048,wrong final number,14,17.0,stop,160,runs/mac_m4pro/20261023-040848_quality_main.jsonl
+mac_m4pro,2,gsm-059,wrong final number,32,48.0,stop,90,runs/mac_m4pro/20261023-040848_quality_main.jsonl
+mac_m4pro,2,gsm-069,wrong final number,2,1.75,stop,229,runs/mac_m4pro/20261023-040848_quality_main.jsonl
+mac_m4pro,2,gsm-078,wrong final number,5,7.0,stop,96,runs/mac_m4pro/20261023-040848_quality_main.jsonl
+mac_m4pro,2,gsm-088,wrong final number,60,84.0,stop,127,runs/mac_m4pro/20261023-040848_quality_main.jsonl
+mac_m4pro,2,gsm-092,wrong final number,70000,75000.0,stop,118,runs/mac_m4pro/20261023-040848_quality_main.jsonl
+mac_m4pro,2,gsm-107,wrong final number,172,130.0,stop,186,runs/mac_m4pro/20261023-040848_quality_main.jsonl
+mac_m4pro,2,gsm-111,cut at 400 tokens before the answer line,18,-10.0,length,400,runs/mac_m4pro/20261023-040848_quality_main.jsonl
+mac_m4pro,2,gsm-112,wrong final number,1,2.0,stop,246,runs/mac_m4pro/20261023-040848_quality_main.jsonl
+mac_m4pro,2,gsm-119,wrong final number,9,8.0,stop,120,runs/mac_m4pro/20261023-040848_quality_main.jsonl
+mac_m4pro,2,gsm-121,wrong final number,3,6.0,stop,327,runs/mac_m4pro/20261023-040848_quality_main.jsonl
+mac_m4pro_q8,1,gsm-034,wrong final number,2,1.0,stop,245,runs/mac_m4pro_q8/20261023-041522_quality_main.jsonl
+mac_m4pro_q8,1,gsm-035,cut at 400 tokens before the answer line,51,19.0,length,400,runs/mac_m4pro_q8/20261023-041522_quality_main.jsonl
+mac_m4pro_q8,1,gsm-042,wrong final number,150,240.0,stop,96,runs/mac_m4pro_q8/20261023-041522_quality_main.jsonl
+mac_m4pro_q8,1,gsm-045,cut at 400 tokens before the answer line,2,15.0,length,400,runs/mac_m4pro_q8/20261023-041522_quality_main.jsonl
+mac_m4pro_q8,1,gsm-048,wrong final number,14,17.0,stop,158,runs/mac_m4pro_q8/20261023-041522_quality_main.jsonl
+mac_m4pro_q8,1,gsm-055,wrong final number,27,35.0,stop,110,runs/mac_m4pro_q8/20261023-041522_quality_main.jsonl
+mac_m4pro_q8,1,gsm-063,wrong final number,45,30.0,stop,154,runs/mac_m4pro_q8/20261023-041522_quality_main.jsonl
+mac_m4pro_q8,1,gsm-069,wrong final number,2,2.5,stop,323,runs/mac_m4pro_q8/20261023-041522_quality_main.jsonl
+mac_m4pro_q8,1,gsm-080,wrong final number,1300,900.0,stop,162,runs/mac_m4pro_q8/20261023-041522_quality_main.jsonl
+mac_m4pro_q8,1,gsm-088,wrong final number,60,84.0,stop,125,runs/mac_m4pro_q8/20261023-041522_quality_main.jsonl
+mac_m4pro_q8,1,gsm-092,wrong final number,70000,25000.0,stop,128,runs/mac_m4pro_q8/20261023-041522_quality_main.jsonl
+mac_m4pro_q8,1,gsm-096,cut at 400 tokens before the answer line,55,13.0,length,400,runs/mac_m4pro_q8/20261023-041522_quality_main.jsonl
+mac_m4pro_q8,1,gsm-111,wrong final number,18,3.5,stop,288,runs/mac_m4pro_q8/20261023-041522_quality_main.jsonl
+mac_m4pro_q8,1,gsm-112,wrong final number,1,3.0,stop,253,runs/mac_m4pro_q8/20261023-041522_quality_main.jsonl
+mac_m4pro_q8,1,gsm-119,wrong final number,9,9.5,stop,215,runs/mac_m4pro_q8/20261023-041522_quality_main.jsonl
+mac_m4pro_q8,1,gsm-121,cut at 400 tokens before the answer line,3,4.5,length,400,runs/mac_m4pro_q8/20261023-041522_quality_main.jsonl
+mac_m4pro_q8,2,gsm-034,wrong final number,2,1.0,stop,245,runs/mac_m4pro_q8/20261023-041522_quality_main.jsonl
+mac_m4pro_q8,2,gsm-035,cut at 400 tokens before the answer line,51,19.0,length,400,runs/mac_m4pro_q8/20261023-041522_quality_main.jsonl
+mac_m4pro_q8,2,gsm-042,wrong final number,150,240.0,stop,96,runs/mac_m4pro_q8/20261023-041522_quality_main.jsonl
+mac_m4pro_q8,2,gsm-045,cut at 400 tokens before the answer line,2,15.0,length,400,runs/mac_m4pro_q8/20261023-041522_quality_main.jsonl
+mac_m4pro_q8,2,gsm-048,wrong final number,14,17.0,stop,158,runs/mac_m4pro_q8/20261023-041522_quality_main.jsonl
+mac_m4pro_q8,2,gsm-055,wrong final number,27,35.0,stop,110,runs/mac_m4pro_q8/20261023-041522_quality_main.jsonl
+mac_m4pro_q8,2,gsm-063,wrong final number,45,30.0,stop,154,runs/mac_m4pro_q8/20261023-041522_quality_main.jsonl
+mac_m4pro_q8,2,gsm-069,wrong final number,2,2.5,stop,323,runs/mac_m4pro_q8/20261023-041522_quality_main.jsonl
+mac_m4pro_q8,2,gsm-080,wrong final number,1300,900.0,stop,162,runs/mac_m4pro_q8/20261023-041522_quality_main.jsonl
+mac_m4pro_q8,2,gsm-088,wrong final number,60,84.0,stop,125,runs/mac_m4pro_q8/20261023-041522_quality_main.jsonl
+mac_m4pro_q8,2,gsm-092,wrong final number,70000,25000.0,stop,128,runs/mac_m4pro_q8/20261023-041522_quality_main.jsonl
+mac_m4pro_q8,2,gsm-096,cut at 400 tokens before the answer line,55,13.0,length,400,runs/mac_m4pro_q8/20261023-041522_quality_main.jsonl
+mac_m4pro_q8,2,gsm-111,wrong final number,18,3.5,stop,288,runs/mac_m4pro_q8/20261023-041522_quality_main.jsonl
+mac_m4pro_q8,2,gsm-112,wrong final number,1,3.0,stop,253,runs/mac_m4pro_q8/20261023-041522_quality_main.jsonl
+mac_m4pro_q8,2,gsm-119,wrong final number,9,9.5,stop,215,runs/mac_m4pro_q8/20261023-041522_quality_main.jsonl
+mac_m4pro_q8,2,gsm-121,cut at 400 tokens before the answer line,3,4.5,length,400,runs/mac_m4pro_q8/20261023-041522_quality_main.jsonl
+pc_rtx4060,1,gsm-042,wrong final number,150,240.0,stop,68,runs/pc_rtx4060/20261023-234607_quality_main.jsonl
+pc_rtx4060,1,gsm-045,wrong final number,2,4.0,stop,142,runs/pc_rtx4060/20261023-234607_quality_main.jsonl
+pc_rtx4060,1,gsm-047,wrong final number,2,3.0,stop,238,runs/pc_rtx4060/20261023-234607_quality_main.jsonl
+pc_rtx4060,1,gsm-048,wrong final number,14,17.0,stop,160,runs/pc_rtx4060/20261023-234607_quality_main.jsonl
+pc_rtx4060,1,gsm-057,wrong final number,49,45.0,stop,121,runs/pc_rtx4060/20261023-234607_quality_main.jsonl
+pc_rtx4060,1,gsm-059,wrong final number,32,48.0,stop,90,runs/pc_rtx4060/20261023-234607_quality_main.jsonl
+pc_rtx4060,1,gsm-063,wrong final number,45,60.0,stop,203,runs/pc_rtx4060/20261023-234607_quality_main.jsonl
+pc_rtx4060,1,gsm-069,cut at 400 tokens before the answer line,2,18.0,length,400,runs/pc_rtx4060/20261023-234607_quality_main.jsonl
+pc_rtx4060,1,gsm-078,wrong final number,5,7.0,stop,96,runs/pc_rtx4060/20261023-234607_quality_main.jsonl
+pc_rtx4060,1,gsm-088,wrong final number,60,84.0,stop,127,runs/pc_rtx4060/20261023-234607_quality_main.jsonl
+pc_rtx4060,1,gsm-092,wrong final number,70000,75000.0,stop,122,runs/pc_rtx4060/20261023-234607_quality_main.jsonl
+pc_rtx4060,1,gsm-097,wrong final number,24,0.0,stop,138,runs/pc_rtx4060/20261023-234607_quality_main.jsonl
+pc_rtx4060,1,gsm-107,wrong final number,172,42.0,stop,192,runs/pc_rtx4060/20261023-234607_quality_main.jsonl
+pc_rtx4060,1,gsm-111,wrong final number,18,10.0,stop,75,runs/pc_rtx4060/20261023-234607_quality_main.jsonl
+pc_rtx4060,1,gsm-112,wrong final number,1,2.0,stop,225,runs/pc_rtx4060/20261023-234607_quality_main.jsonl
+pc_rtx4060,1,gsm-119,wrong final number,9,8.0,stop,120,runs/pc_rtx4060/20261023-234607_quality_main.jsonl
+pc_rtx4060,1,gsm-121,cut at 400 tokens before the answer line,3,12.0,length,400,runs/pc_rtx4060/20261023-234607_quality_main.jsonl
+pc_rtx4060,2,gsm-042,wrong final number,150,240.0,stop,68,runs/pc_rtx4060/20261023-234607_quality_main.jsonl
+pc_rtx4060,2,gsm-045,wrong final number,2,4.0,stop,142,runs/pc_rtx4060/20261023-234607_quality_main.jsonl
+pc_rtx4060,2,gsm-047,wrong final number,2,3.0,stop,361,runs/pc_rtx4060/20261023-234607_quality_main.jsonl
+pc_rtx4060,2,gsm-048,wrong final number,14,17.0,stop,160,runs/pc_rtx4060/20261023-234607_quality_main.jsonl
+pc_rtx4060,2,gsm-059,wrong final number,32,48.0,stop,90,runs/pc_rtx4060/20261023-234607_quality_main.jsonl
+pc_rtx4060,2,gsm-063,wrong final number,45,55.0,stop,219,runs/pc_rtx4060/20261023-234607_quality_main.jsonl
+pc_rtx4060,2,gsm-069,cut at 400 tokens before the answer line,2,36.0,length,400,runs/pc_rtx4060/20261023-234607_quality_main.jsonl
+pc_rtx4060,2,gsm-078,wrong final number,5,7.0,stop,99,runs/pc_rtx4060/20261023-234607_quality_main.jsonl
+pc_rtx4060,2,gsm-086,wrong final number,9,6.0,stop,144,runs/pc_rtx4060/20261023-234607_quality_main.jsonl
+pc_rtx4060,2,gsm-088,wrong final number,60,84.0,stop,127,runs/pc_rtx4060/20261023-234607_quality_main.jsonl
+pc_rtx4060,2,gsm-092,wrong final number,70000,75000.0,stop,117,runs/pc_rtx4060/20261023-234607_quality_main.jsonl
+pc_rtx4060,2,gsm-107,wrong final number,172,130.0,stop,186,runs/pc_rtx4060/20261023-234607_quality_main.jsonl
+pc_rtx4060,2,gsm-111,cut at 400 tokens before the answer line,18,14.0,length,400,runs/pc_rtx4060/20261023-234607_quality_main.jsonl
+pc_rtx4060,2,gsm-112,wrong final number,1,2.0,stop,248,runs/pc_rtx4060/20261023-234607_quality_main.jsonl
+pc_rtx4060,2,gsm-119,wrong final number,9,8.0,stop,120,runs/pc_rtx4060/20261023-234607_quality_main.jsonl
+pc_rtx4060,2,gsm-121,cut at 400 tokens before the answer line,3,12.0,length,400,runs/pc_rtx4060/20261023-234607_quality_main.jsonl
+rented_colab_gpu,1,gsm-038,wrong final number,25,250.0,stop,298,runs/rented_colab_gpu/20261022-232347_quality_main.jsonl
+rented_colab_gpu,1,gsm-042,wrong final number,150,240.0,stop,94,runs/rented_colab_gpu/20261022-232347_quality_main.jsonl
+rented_colab_gpu,1,gsm-047,no Answer line (last number taken),2,4.0,stop,237,runs/rented_colab_gpu/20261022-232347_quality_main.jsonl
+rented_colab_gpu,1,gsm-069,cut at 400 tokens before the answer line,2,18.0,length,400,runs/rented_colab_gpu/20261022-232347_quality_main.jsonl
+rented_colab_gpu,1,gsm-074,cut at 400 tokens before the answer line,1,6.0,length,400,runs/rented_colab_gpu/20261022-232347_quality_main.jsonl
+rented_colab_gpu,1,gsm-078,wrong final number,5,7.0,stop,99,runs/rented_colab_gpu/20261022-232347_quality_main.jsonl
+rented_colab_gpu,1,gsm-088,wrong final number,60,84.0,stop,127,runs/rented_colab_gpu/20261022-232347_quality_main.jsonl
+rented_colab_gpu,1,gsm-092,wrong final number,70000,75000.0,stop,118,runs/rented_colab_gpu/20261022-232347_quality_main.jsonl
+rented_colab_gpu,1,gsm-102,wrong final number,452,457.0,stop,193,runs/rented_colab_gpu/20261022-232347_quality_main.jsonl
+rented_colab_gpu,1,gsm-107,wrong final number,172,42.0,stop,192,runs/rented_colab_gpu/20261022-232347_quality_main.jsonl
+rented_colab_gpu,1,gsm-111,wrong final number,18,-10.0,stop,163,runs/rented_colab_gpu/20261022-232347_quality_main.jsonl
+rented_colab_gpu,1,gsm-112,wrong final number,1,2.0,stop,254,runs/rented_colab_gpu/20261022-232347_quality_main.jsonl
+rented_colab_gpu,1,gsm-119,wrong final number,9,8.0,stop,120,runs/rented_colab_gpu/20261022-232347_quality_main.jsonl
+rented_colab_gpu,1,gsm-121,wrong final number,3,6.0,stop,302,runs/rented_colab_gpu/20261022-232347_quality_main.jsonl
+rented_colab_gpu,2,gsm-038,wrong final number,25,250.0,stop,213,runs/rented_colab_gpu/20261022-232347_quality_main.jsonl
+rented_colab_gpu,2,gsm-042,wrong final number,150,240.0,stop,94,runs/rented_colab_gpu/20261022-232347_quality_main.jsonl
+rented_colab_gpu,2,gsm-047,no Answer line (last number taken),2,4.0,stop,237,runs/rented_colab_gpu/20261022-232347_quality_main.jsonl
+rented_colab_gpu,2,gsm-048,wrong final number,14,17.0,stop,159,runs/rented_colab_gpu/20261022-232347_quality_main.jsonl
+rented_colab_gpu,2,gsm-074,wrong final number,1,2.0,stop,246,runs/rented_colab_gpu/20261022-232347_quality_main.jsonl
+rented_colab_gpu,2,gsm-078,wrong final number,5,7.0,stop,99,runs/rented_colab_gpu/20261022-232347_quality_main.jsonl
+rented_colab_gpu,2,gsm-080,wrong final number,1300,900.0,stop,254,runs/rented_colab_gpu/20261022-232347_quality_main.jsonl
+rented_colab_gpu,2,gsm-086,wrong final number,9,6.0,stop,100,runs/rented_colab_gpu/20261022-232347_quality_main.jsonl
+rented_colab_gpu,2,gsm-088,wrong final number,60,84.0,stop,144,runs/rented_colab_gpu/20261022-232347_quality_main.jsonl
+rented_colab_gpu,2,gsm-092,wrong final number,70000,75000.0,stop,118,runs/rented_colab_gpu/20261022-232347_quality_main.jsonl
+rented_colab_gpu,2,gsm-102,wrong final number,452,457.0,stop,192,runs/rented_colab_gpu/20261022-232347_quality_main.jsonl
+rented_colab_gpu,2,gsm-111,cut at 400 tokens before the answer line,18,24.0,length,400,runs/rented_colab_gpu/20261022-232347_quality_main.jsonl
+rented_colab_gpu,2,gsm-112,wrong final number,1,7.0,stop,219,runs/rented_colab_gpu/20261022-232347_quality_main.jsonl
+rented_colab_gpu,2,gsm-119,wrong final number,9,8.0,stop,120,runs/rented_colab_gpu/20261022-232347_quality_main.jsonl
+rented_colab_gpu,2,gsm-121,cut at 400 tokens before the answer line,3,5.0,length,400,runs/rented_colab_gpu/20261022-232347_quality_main.jsonl
+rented_colab_t4_run2,1,gsm-038,wrong final number,25,250.0,stop,290,runs/rented_colab_t4_run2/20261024-180016_quality_main.jsonl
+rented_colab_t4_run2,1,gsm-042,wrong final number,150,240.0,stop,94,runs/rented_colab_t4_run2/20261024-180016_quality_main.jsonl
+rented_colab_t4_run2,1,gsm-045,wrong final number,2,4.0,stop,142,runs/rented_colab_t4_run2/20261024-180016_quality_main.jsonl
+rented_colab_t4_run2,1,gsm-047,wrong final number,2,5.0,stop,201,runs/rented_colab_t4_run2/20261024-180016_quality_main.jsonl
+rented_colab_t4_run2,1,gsm-048,wrong final number,14,17.0,stop,160,runs/rented_colab_t4_run2/20261024-180016_quality_main.jsonl
+rented_colab_t4_run2,1,gsm-059,wrong final number,32,10.67,stop,122,runs/rented_colab_t4_run2/20261024-180016_quality_main.jsonl
+rented_colab_t4_run2,1,gsm-069,cut at 400 tokens before the answer line,2,18.0,length,400,runs/rented_colab_t4_run2/20261024-180016_quality_main.jsonl
+rented_colab_t4_run2,1,gsm-078,wrong final number,5,7.0,stop,96,runs/rented_colab_t4_run2/20261024-180016_quality_main.jsonl
+rented_colab_t4_run2,1,gsm-086,wrong final number,9,6.0,stop,143,runs/rented_colab_t4_run2/20261024-180016_quality_main.jsonl
+rented_colab_t4_run2,1,gsm-088,wrong final number,60,84.0,stop,127,runs/rented_colab_t4_run2/20261024-180016_quality_main.jsonl
+rented_colab_t4_run2,1,gsm-092,wrong final number,70000,25000.0,stop,152,runs/rented_colab_t4_run2/20261024-180016_quality_main.jsonl
+rented_colab_t4_run2,1,gsm-111,wrong final number,18,10.0,stop,71,runs/rented_colab_t4_run2/20261024-180016_quality_main.jsonl
+rented_colab_t4_run2,1,gsm-112,wrong final number,1,2.0,stop,211,runs/rented_colab_t4_run2/20261024-180016_quality_main.jsonl
+rented_colab_t4_run2,1,gsm-119,wrong final number,9,8.0,stop,120,runs/rented_colab_t4_run2/20261024-180016_quality_main.jsonl
+rented_colab_t4_run2,1,gsm-121,wrong final number,3,1.0,stop,227,runs/rented_colab_t4_run2/20261024-180016_quality_main.jsonl
+rented_colab_t4_run2,1,gsm-124,wrong final number,79,97.0,stop,180,runs/rented_colab_t4_run2/20261024-180016_quality_main.jsonl
+rented_colab_t4_run2,2,gsm-042,wrong final number,150,240.0,stop,68,runs/rented_colab_t4_run2/20261024-180016_quality_main.jsonl
+rented_colab_t4_run2,2,gsm-045,cut at 400 tokens before the answer line,2,5.0,length,400,runs/rented_colab_t4_run2/20261024-180016_quality_main.jsonl
+rented_colab_t4_run2,2,gsm-047,wrong final number,2,5.0,stop,201,runs/rented_colab_t4_run2/20261024-180016_quality_main.jsonl
+rented_colab_t4_run2,2,gsm-048,wrong final number,14,17.0,stop,160,runs/rented_colab_t4_run2/20261024-180016_quality_main.jsonl
+rented_colab_t4_run2,2,gsm-057,wrong final number,49,45.0,stop,123,runs/rented_colab_t4_run2/20261024-180016_quality_main.jsonl
+rented_colab_t4_run2,2,gsm-059,wrong final number,32,10.67,stop,113,runs/rented_colab_t4_run2/20261024-180016_quality_main.jsonl
+rented_colab_t4_run2,2,gsm-069,no Answer line (last number taken),2,18.0,stop,329,runs/rented_colab_t4_run2/20261024-180016_quality_main.jsonl
+rented_colab_t4_run2,2,gsm-078,wrong final number,5,7.0,stop,96,runs/rented_colab_t4_run2/20261024-180016_quality_main.jsonl
+rented_colab_t4_run2,2,gsm-086,wrong final number,9,6.0,stop,100,runs/rented_colab_t4_run2/20261024-180016_quality_main.jsonl
+rented_colab_t4_run2,2,gsm-088,wrong final number,60,84.0,stop,127,runs/rented_colab_t4_run2/20261024-180016_quality_main.jsonl
+rented_colab_t4_run2,2,gsm-092,wrong final number,70000,25000.0,stop,152,runs/rented_colab_t4_run2/20261024-180016_quality_main.jsonl
+rented_colab_t4_run2,2,gsm-107,wrong final number,172,130.0,stop,186,runs/rented_colab_t4_run2/20261024-180016_quality_main.jsonl
+rented_colab_t4_run2,2,gsm-111,wrong final number,18,10.0,stop,71,runs/rented_colab_t4_run2/20261024-180016_quality_main.jsonl
+rented_colab_t4_run2,2,gsm-112,wrong final number,1,2.0,stop,248,runs/rented_colab_t4_run2/20261024-180016_quality_main.jsonl
+rented_colab_t4_run2,2,gsm-119,wrong final number,9,8.0,stop,120,runs/rented_colab_t4_run2/20261024-180016_quality_main.jsonl
+rented_colab_t4_run2,2,gsm-121,cut at 400 tokens before the answer line,3,6.0,length,400,runs/rented_colab_t4_run2/20261024-180016_quality_main.jsonl
+rented_colab_t4_run2,2,gsm-124,wrong final number,79,97.0,stop,180,runs/rented_colab_t4_run2/20261024-180016_quality_main.jsonl
+api_deepinfra,1,gsm-034,wrong final number,2,1.0,stop,135,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_deepinfra,1,gsm-036,wrong final number,4,3.0,stop,62,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_deepinfra,1,gsm-042,wrong final number,150,240.0,stop,85,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_deepinfra,1,gsm-045,cut at 400 tokens before the answer line,2,5.0,length,400,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_deepinfra,1,gsm-047,wrong final number,2,18.0,stop,299,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_deepinfra,1,gsm-054,wrong final number,1800,2100.0,stop,146,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_deepinfra,1,gsm-055,wrong final number,27,35.0,stop,114,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_deepinfra,1,gsm-056,wrong final number,16,13.0,stop,148,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_deepinfra,1,gsm-059,wrong final number,32,10.67,stop,110,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_deepinfra,1,gsm-063,wrong final number,45,18.0,stop,85,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_deepinfra,1,gsm-068,wrong final number,3,2.0,stop,193,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_deepinfra,1,gsm-069,wrong final number,2,18.0,stop,137,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_deepinfra,1,gsm-074,cut at 400 tokens before the answer line,1,8.0,length,400,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_deepinfra,1,gsm-075,wrong final number,8,168.0,stop,122,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_deepinfra,1,gsm-080,wrong final number,1300,45.0,stop,240,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_deepinfra,1,gsm-091,wrong final number,30,27.0,stop,236,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_deepinfra,1,gsm-092,wrong final number,70000,75000.0,stop,117,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_deepinfra,1,gsm-094,wrong final number,13,17.0,stop,202,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_deepinfra,1,gsm-096,wrong final number,55,17.0,stop,200,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_deepinfra,1,gsm-099,wrong final number,24,21.0,stop,93,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_deepinfra,1,gsm-109,wrong final number,13,13.5,stop,117,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_deepinfra,1,gsm-111,wrong final number,18,10.0,stop,93,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_deepinfra,1,gsm-112,wrong final number,1,2.0,stop,194,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_deepinfra,1,gsm-119,wrong final number,9,8.0,stop,171,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_deepinfra,1,gsm-121,wrong final number,3,5.0,stop,234,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_deepinfra,1,gsm-124,wrong final number,79,97.0,stop,184,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_deepinfra,1,gsm-127,wrong final number,8,12.0,stop,74,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_deepinfra,2,gsm-034,wrong final number,2,1.0,stop,139,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_deepinfra,2,gsm-036,wrong final number,4,3.0,stop,93,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_deepinfra,2,gsm-042,wrong final number,150,240.0,stop,85,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_deepinfra,2,gsm-045,cut at 400 tokens before the answer line,2,4.0,length,400,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_deepinfra,2,gsm-047,wrong final number,2,11.0,stop,388,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_deepinfra,2,gsm-054,wrong final number,1800,2100.0,stop,146,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_deepinfra,2,gsm-055,wrong final number,27,35.0,stop,114,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_deepinfra,2,gsm-056,wrong final number,16,13.0,stop,148,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_deepinfra,2,gsm-057,wrong final number,49,54.0,stop,179,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_deepinfra,2,gsm-059,wrong final number,32,10.67,stop,110,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_deepinfra,2,gsm-063,wrong final number,45,18.0,stop,85,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_deepinfra,2,gsm-069,wrong final number,2,18.0,stop,154,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_deepinfra,2,gsm-074,cut at 400 tokens before the answer line,1,8.0,length,400,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_deepinfra,2,gsm-075,wrong final number,8,168.0,stop,122,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_deepinfra,2,gsm-080,wrong final number,1300,45.0,stop,240,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_deepinfra,2,gsm-091,cut at 400 tokens before the answer line,30,105.0,length,400,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_deepinfra,2,gsm-092,wrong final number,70000,75000.0,stop,117,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_deepinfra,2,gsm-094,wrong final number,13,17.0,stop,202,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_deepinfra,2,gsm-096,wrong final number,55,17.0,stop,200,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_deepinfra,2,gsm-097,wrong final number,24,12.0,stop,145,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_deepinfra,2,gsm-099,wrong final number,24,21.0,stop,93,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_deepinfra,2,gsm-102,wrong final number,452,457.0,stop,309,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_deepinfra,2,gsm-105,wrong final number,3,0.0,stop,170,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_deepinfra,2,gsm-109,wrong final number,13,9.5,stop,224,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_deepinfra,2,gsm-111,wrong final number,18,10.0,stop,93,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_deepinfra,2,gsm-112,wrong final number,1,2.0,stop,147,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_deepinfra,2,gsm-121,wrong final number,3,5.0,stop,234,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_deepinfra,2,gsm-124,wrong final number,79,97.0,stop,184,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_deepinfra,2,gsm-127,wrong final number,8,12.0,stop,74,runs/api_deepinfra/20261023-061116_quality_main.jsonl
+api_cloudflare,1,gsm-038,no Answer line (last number taken),25,9.0,stop,400,runs/api_cloudflare/20261023-040333_quality_main.jsonl
+api_cloudflare,1,gsm-042,wrong final number,150,240.0,stop,86,runs/api_cloudflare/20261023-040333_quality_main.jsonl
+api_cloudflare,1,gsm-045,wrong final number,2,4.0,stop,204,runs/api_cloudflare/20261023-040333_quality_main.jsonl
+api_cloudflare,1,gsm-047,wrong final number,2,5.0,stop,227,runs/api_cloudflare/20261023-040333_quality_main.jsonl
+api_cloudflare,1,gsm-048,wrong final number,14,11.0,stop,230,runs/api_cloudflare/20261023-040333_quality_main.jsonl
+api_cloudflare,1,gsm-069,wrong final number,2,4.5,stop,178,runs/api_cloudflare/20261023-040333_quality_main.jsonl
+api_cloudflare,1,gsm-076,wrong final number,50,100.0,stop,177,runs/api_cloudflare/20261023-040333_quality_main.jsonl
+api_cloudflare,1,gsm-080,wrong final number,1300,2040.0,stop,285,runs/api_cloudflare/20261023-040333_quality_main.jsonl
+api_cloudflare,1,gsm-085,wrong final number,5,1.0,stop,213,runs/api_cloudflare/20261023-040333_quality_main.jsonl
+api_cloudflare,1,gsm-088,wrong final number,60,84.0,stop,121,runs/api_cloudflare/20261023-040333_quality_main.jsonl
+api_cloudflare,1,gsm-092,wrong final number,70000,50000.0,stop,251,runs/api_cloudflare/20261023-040333_quality_main.jsonl
+api_cloudflare,1,gsm-094,wrong final number,13,19.5,stop,162,runs/api_cloudflare/20261023-040333_quality_main.jsonl
+api_cloudflare,1,gsm-096,no Answer line (last number taken),55,41.0,stop,400,runs/api_cloudflare/20261023-040333_quality_main.jsonl
+api_cloudflare,1,gsm-099,wrong final number,24,21.0,stop,111,runs/api_cloudflare/20261023-040333_quality_main.jsonl
+api_cloudflare,1,gsm-102,wrong final number,452,432.0,stop,192,runs/api_cloudflare/20261023-040333_quality_main.jsonl
+api_cloudflare,1,gsm-107,wrong final number,172,152.0,stop,143,runs/api_cloudflare/20261023-040333_quality_main.jsonl
+api_cloudflare,1,gsm-119,wrong final number,9,8.0,stop,173,runs/api_cloudflare/20261023-040333_quality_main.jsonl
+api_cloudflare,1,gsm-121,wrong final number,3,6.0,stop,264,runs/api_cloudflare/20261023-040333_quality_main.jsonl
+api_cloudflare,1,gsm-124,wrong final number,79,97.0,stop,166,runs/api_cloudflare/20261023-040333_quality_main.jsonl
+api_cloudflare,1,gsm-126,wrong final number,91,56.0,stop,165,runs/api_cloudflare/20261023-040333_quality_main.jsonl
+api_cloudflare,1,gsm-127,wrong final number,8,20.0,stop,74,runs/api_cloudflare/20261023-040333_quality_main.jsonl
+api_cloudflare,1,gsm-129,wrong final number,350,420.0,stop,136,runs/api_cloudflare/20261023-040333_quality_main.jsonl
+api_cloudflare,2,gsm-042,wrong final number,150,240.0,stop,86,runs/api_cloudflare/20261023-040333_quality_main.jsonl
+api_cloudflare,2,gsm-045,wrong final number,2,4.0,stop,204,runs/api_cloudflare/20261023-040333_quality_main.jsonl
+api_cloudflare,2,gsm-047,wrong final number,2,5.0,stop,227,runs/api_cloudflare/20261023-040333_quality_main.jsonl
+api_cloudflare,2,gsm-048,wrong final number,14,11.0,stop,230,runs/api_cloudflare/20261023-040333_quality_main.jsonl
+api_cloudflare,2,gsm-057,wrong final number,49,54.0,stop,90,runs/api_cloudflare/20261023-040333_quality_main.jsonl
+api_cloudflare,2,gsm-069,wrong final number,2,4.5,stop,182,runs/api_cloudflare/20261023-040333_quality_main.jsonl
+api_cloudflare,2,gsm-080,wrong final number,1300,2040.0,stop,285,runs/api_cloudflare/20261023-040333_quality_main.jsonl
+api_cloudflare,2,gsm-085,wrong final number,5,1.0,stop,213,runs/api_cloudflare/20261023-040333_quality_main.jsonl
+api_cloudflare,2,gsm-088,wrong final number,60,84.0,stop,121,runs/api_cloudflare/20261023-040333_quality_main.jsonl
+api_cloudflare,2,gsm-092,wrong final number,70000,50000.0,stop,279,runs/api_cloudflare/20261023-040333_quality_main.jsonl
+api_cloudflare,2,gsm-094,wrong final number,13,19.5,stop,162,runs/api_cloudflare/20261023-040333_quality_main.jsonl
+api_cloudflare,2,gsm-096,wrong final number,55,7.0,stop,250,runs/api_cloudflare/20261023-040333_quality_main.jsonl
+api_cloudflare,2,gsm-099,wrong final number,24,21.0,stop,111,runs/api_cloudflare/20261023-040333_quality_main.jsonl
+api_cloudflare,2,gsm-102,wrong final number,452,432.0,stop,192,runs/api_cloudflare/20261023-040333_quality_main.jsonl
+api_cloudflare,2,gsm-105,wrong final number,3,4.75,stop,204,runs/api_cloudflare/20261023-040333_quality_main.jsonl
+api_cloudflare,2,gsm-107,wrong final number,172,152.0,stop,143,runs/api_cloudflare/20261023-040333_quality_main.jsonl
+api_cloudflare,2,gsm-119,wrong final number,9,8.0,stop,173,runs/api_cloudflare/20261023-040333_quality_main.jsonl
+api_cloudflare,2,gsm-121,wrong final number,3,6.0,stop,264,runs/api_cloudflare/20261023-040333_quality_main.jsonl
+api_cloudflare,2,gsm-124,wrong final number,79,100.0,stop,144,runs/api_cloudflare/20261023-040333_quality_main.jsonl
+api_cloudflare,2,gsm-126,wrong final number,91,56.0,stop,165,runs/api_cloudflare/20261023-040333_quality_main.jsonl
+api_cloudflare,2,gsm-127,wrong final number,8,20.0,stop,74,runs/api_cloudflare/20261023-040333_quality_main.jsonl
+api_cloudflare,2,gsm-129,wrong final number,350,420.0,stop,136,runs/api_cloudflare/20261023-040333_quality_main.jsonl
+api_groq,1,gsm-042,wrong final number,150,240.0,stop,96,runs/api_groq/20261023-024800_quality_main.jsonl
+api_groq,1,gsm-045,wrong final number,2,4.0,stop,204,runs/api_groq/20261023-024800_quality_main.jsonl
+api_groq,1,gsm-047,wrong final number,2,10.0,stop,313,runs/api_groq/20261023-024800_quality_main.jsonl
+api_groq,1,gsm-048,wrong final number,14,17.0,stop,158,runs/api_groq/20261023-024800_quality_main.jsonl
+api_groq,1,gsm-055,wrong final number,27,35.0,stop,110,runs/api_groq/20261023-024800_quality_main.jsonl
+api_groq,1,gsm-056,wrong final number,16,17.6,stop,264,runs/api_groq/20261023-024800_quality_main.jsonl
+api_groq,1,gsm-063,wrong final number,45,30.0,stop,154,runs/api_groq/20261023-024800_quality_main.jsonl
+api_groq,1,gsm-077,wrong final number,3,1.0,stop,140,runs/api_groq/20261023-024800_quality_main.jsonl
+api_groq,1,gsm-078,wrong final number,5,7.0,stop,99,runs/api_groq/20261023-024800_quality_main.jsonl
+api_groq,1,gsm-080,wrong final number,1300,900.0,stop,162,runs/api_groq/20261023-024800_quality_main.jsonl
+api_groq,1,gsm-088,wrong final number,60,84.0,stop,126,runs/api_groq/20261023-024800_quality_main.jsonl
+api_groq,1,gsm-092,wrong final number,70000,75000.0,stop,122,runs/api_groq/20261023-024800_quality_main.jsonl
+api_groq,1,gsm-096,cut at 400 tokens before the answer line,55,2.0,length,400,runs/api_groq/20261023-024800_quality_main.jsonl
+api_groq,1,gsm-102,wrong final number,452,432.0,stop,222,runs/api_groq/20261023-024800_quality_main.jsonl
+api_groq,1,gsm-107,wrong final number,172,152.0,stop,197,runs/api_groq/20261023-024800_quality_main.jsonl
+api_groq,1,gsm-111,wrong final number,18,10.5,stop,245,runs/api_groq/20261023-024800_quality_main.jsonl
+api_groq,1,gsm-112,wrong final number,1,2.0,stop,224,runs/api_groq/20261023-024800_quality_main.jsonl
+api_groq,1,gsm-119,wrong final number,9,8.0,stop,116,runs/api_groq/20261023-024800_quality_main.jsonl
+api_groq,1,gsm-121,wrong final number,3,6.0,stop,278,runs/api_groq/20261023-024800_quality_main.jsonl
+api_groq,2,gsm-035,cut at 400 tokens before the answer line,51,19.0,length,400,runs/api_groq/20261023-024800_quality_main.jsonl
+api_groq,2,gsm-042,wrong final number,150,240.0,stop,96,runs/api_groq/20261023-024800_quality_main.jsonl
+api_groq,2,gsm-045,wrong final number,2,4.0,stop,204,runs/api_groq/20261023-024800_quality_main.jsonl
+api_groq,2,gsm-047,wrong final number,2,10.0,stop,313,runs/api_groq/20261023-024800_quality_main.jsonl
+api_groq,2,gsm-048,wrong final number,14,17.0,stop,158,runs/api_groq/20261023-024800_quality_main.jsonl
+api_groq,2,gsm-055,wrong final number,27,35.0,stop,110,runs/api_groq/20261023-024800_quality_main.jsonl
+api_groq,2,gsm-063,wrong final number,45,30.0,stop,154,runs/api_groq/20261023-024800_quality_main.jsonl
+api_groq,2,gsm-077,wrong final number,3,1.0,stop,140,runs/api_groq/20261023-024800_quality_main.jsonl
+api_groq,2,gsm-078,wrong final number,5,7.0,stop,99,runs/api_groq/20261023-024800_quality_main.jsonl
+api_groq,2,gsm-080,wrong final number,1300,900.0,stop,162,runs/api_groq/20261023-024800_quality_main.jsonl
+api_groq,2,gsm-088,wrong final number,60,84.0,stop,126,runs/api_groq/20261023-024800_quality_main.jsonl
+api_groq,2,gsm-092,wrong final number,70000,75000.0,stop,122,runs/api_groq/20261023-024800_quality_main.jsonl
+api_groq,2,gsm-096,cut at 400 tokens before the answer line,55,2.0,length,400,runs/api_groq/20261023-024800_quality_main.jsonl
+api_groq,2,gsm-102,wrong final number,452,432.0,stop,222,runs/api_groq/20261023-024800_quality_main.jsonl
+api_groq,2,gsm-107,wrong final number,172,152.0,stop,197,runs/api_groq/20261023-024800_quality_main.jsonl
+api_groq,2,gsm-111,wrong final number,18,10.5,stop,245,runs/api_groq/20261023-024800_quality_main.jsonl
+api_groq,2,gsm-112,wrong final number,1,2.0,stop,224,runs/api_groq/20261023-024800_quality_main.jsonl
+api_groq,2,gsm-119,wrong final number,9,8.0,stop,116,runs/api_groq/20261023-024800_quality_main.jsonl
+api_groq,2,gsm-121,wrong final number,3,6.0,stop,278,runs/api_groq/20261023-024800_quality_main.jsonl
+api_coreweave,1,gsm-034,wrong final number,2,1.0,stop,165,runs/api_coreweave/20261023-025743_quality_main.jsonl
+api_coreweave,1,gsm-038,wrong final number,25,1250.0,stop,263,runs/api_coreweave/20261023-025743_quality_main.jsonl
+api_coreweave,1,gsm-042,wrong final number,150,240.0,stop,66,runs/api_coreweave/20261023-025743_quality_main.jsonl
+api_coreweave,1,gsm-045,wrong final number,2,9.0,stop,120,runs/api_coreweave/20261023-025743_quality_main.jsonl
+api_coreweave,1,gsm-047,wrong final number,2,2.75,stop,183,runs/api_coreweave/20261023-025743_quality_main.jsonl
+api_coreweave,1,gsm-048,wrong final number,14,0.0,stop,169,runs/api_coreweave/20261023-025743_quality_main.jsonl
+api_coreweave,1,gsm-056,wrong final number,16,16.3,stop,109,runs/api_coreweave/20261023-025743_quality_main.jsonl
+api_coreweave,1,gsm-059,wrong final number,32,21.33,stop,145,runs/api_coreweave/20261023-025743_quality_main.jsonl
+api_coreweave,1,gsm-065,wrong final number,800,8.0,stop,107,runs/api_coreweave/20261023-025743_quality_main.jsonl
+api_coreweave,1,gsm-069,wrong final number,2,4.5,stop,162,runs/api_coreweave/20261023-025743_quality_main.jsonl
+api_coreweave,1,gsm-076,wrong final number,50,100.0,stop,187,runs/api_coreweave/20261023-025743_quality_main.jsonl
+api_coreweave,1,gsm-080,wrong final number,1300,900.0,stop,235,runs/api_coreweave/20261023-025743_quality_main.jsonl
+api_coreweave,1,gsm-092,wrong final number,70000,28000.0,stop,226,runs/api_coreweave/20261023-025743_quality_main.jsonl
+api_coreweave,1,gsm-097,wrong final number,24,12.0,stop,85,runs/api_coreweave/20261023-025743_quality_main.jsonl
+api_coreweave,1,gsm-102,wrong final number,452,457.0,stop,185,runs/api_coreweave/20261023-025743_quality_main.jsonl
+api_coreweave,1,gsm-112,wrong final number,1,2.0,stop,133,runs/api_coreweave/20261023-025743_quality_main.jsonl
+api_coreweave,1,gsm-119,wrong final number,9,8.0,stop,172,runs/api_coreweave/20261023-025743_quality_main.jsonl
+api_coreweave,1,gsm-121,wrong final number,3,6.0,stop,154,runs/api_coreweave/20261023-025743_quality_main.jsonl
+api_coreweave,1,gsm-124,wrong final number,79,100.0,stop,141,runs/api_coreweave/20261023-025743_quality_main.jsonl
+api_coreweave,1,gsm-127,wrong final number,8,20.0,stop,58,runs/api_coreweave/20261023-025743_quality_main.jsonl
+api_coreweave,2,gsm-034,wrong final number,2,1.0,stop,165,runs/api_coreweave/20261023-025743_quality_main.jsonl
+api_coreweave,2,gsm-038,wrong final number,25,1250.0,stop,263,runs/api_coreweave/20261023-025743_quality_main.jsonl
+api_coreweave,2,gsm-042,wrong final number,150,240.0,stop,66,runs/api_coreweave/20261023-025743_quality_main.jsonl
+api_coreweave,2,gsm-045,wrong final number,2,9.0,stop,120,runs/api_coreweave/20261023-025743_quality_main.jsonl
+api_coreweave,2,gsm-047,wrong final number,2,2.75,stop,183,runs/api_coreweave/20261023-025743_quality_main.jsonl
+api_coreweave,2,gsm-048,wrong final number,14,0.0,stop,169,runs/api_coreweave/20261023-025743_quality_main.jsonl
+api_coreweave,2,gsm-059,wrong final number,32,21.33,stop,145,runs/api_coreweave/20261023-025743_quality_main.jsonl
+api_coreweave,2,gsm-065,wrong final number,800,8.0,stop,107,runs/api_coreweave/20261023-025743_quality_main.jsonl
+api_coreweave,2,gsm-069,wrong final number,2,4.5,stop,162,runs/api_coreweave/20261023-025743_quality_main.jsonl
+api_coreweave,2,gsm-076,wrong final number,50,100.0,stop,187,runs/api_coreweave/20261023-025743_quality_main.jsonl
+api_coreweave,2,gsm-077,cut at 400 tokens before the answer line,3,420.0,length,400,runs/api_coreweave/20261023-025743_quality_main.jsonl
+api_coreweave,2,gsm-080,wrong final number,1300,900.0,stop,235,runs/api_coreweave/20261023-025743_quality_main.jsonl
+api_coreweave,2,gsm-092,wrong final number,70000,28000.0,stop,226,runs/api_coreweave/20261023-025743_quality_main.jsonl
+api_coreweave,2,gsm-097,wrong final number,24,12.0,stop,85,runs/api_coreweave/20261023-025743_quality_main.jsonl
+api_coreweave,2,gsm-102,wrong final number,452,457.0,stop,185,runs/api_coreweave/20261023-025743_quality_main.jsonl
+api_coreweave,2,gsm-112,wrong final number,1,2.0,stop,133,runs/api_coreweave/20261023-025743_quality_main.jsonl
+api_coreweave,2,gsm-119,wrong final number,9,8.0,stop,172,runs/api_coreweave/20261023-025743_quality_main.jsonl
+api_coreweave,2,gsm-121,wrong final number,3,6.0,stop,154,runs/api_coreweave/20261023-025743_quality_main.jsonl
+api_coreweave,2,gsm-124,wrong final number,79,100.0,stop,141,runs/api_coreweave/20261023-025743_quality_main.jsonl
+api_coreweave,2,gsm-127,wrong final number,8,20.0,stop,58,runs/api_coreweave/20261023-025743_quality_main.jsonl
+api_claude_haiku,1,gsm-042,wrong final number,150,240.0,end_turn,83,runs/api_claude_haiku/20261023-030416_quality_main.jsonl
+api_claude_haiku,1,gsm-047,wrong final number,2,0.0,end_turn,279,runs/api_claude_haiku/20261023-030416_quality_main.jsonl
+api_claude_haiku,1,gsm-085,cut at 400 tokens before the answer line,5,500.0,max_tokens,400,runs/api_claude_haiku/20261023-030416_quality_main.jsonl
+api_claude_haiku,1,gsm-111,wrong final number,18,10.0,end_turn,70,runs/api_claude_haiku/20261023-030416_quality_main.jsonl
+api_claude_haiku,1,gsm-112,wrong final number,1,14.0,end_turn,349,runs/api_claude_haiku/20261023-030416_quality_main.jsonl
+api_claude_haiku,1,gsm-121,wrong final number,3,6.0,end_turn,86,runs/api_claude_haiku/20261023-030416_quality_main.jsonl
+api_claude_haiku,2,gsm-042,wrong final number,150,240.0,end_turn,83,runs/api_claude_haiku/20261023-030416_quality_main.jsonl
+api_claude_haiku,2,gsm-047,wrong final number,2,0.0,end_turn,243,runs/api_claude_haiku/20261023-030416_quality_main.jsonl
+api_claude_haiku,2,gsm-059,wrong final number,32,21.33,end_turn,143,runs/api_claude_haiku/20261023-030416_quality_main.jsonl
+api_claude_haiku,2,gsm-076,wrong final number,50,100.0,end_turn,171,runs/api_claude_haiku/20261023-030416_quality_main.jsonl
+api_claude_haiku,2,gsm-111,wrong final number,18,10.0,end_turn,75,runs/api_claude_haiku/20261023-030416_quality_main.jsonl
+api_claude_haiku,2,gsm-121,wrong final number,3,6.0,end_turn,86,runs/api_claude_haiku/20261023-030416_quality_main.jsonl

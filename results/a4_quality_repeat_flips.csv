@@ -1,0 +1,11 @@
+condition,items,items_changed_between_repeats,correct_in_both,wrong_in_both
+mac_m4pro,100,2,84,14
+mac_m4pro_q8,100,0,84,16
+pc_rtx4060,100,3,82,15
+rented_colab_gpu,100,5,83,12
+rented_colab_t4_run2,100,3,82,15
+api_deepinfra,100,6,69,25
+api_cloudflare,100,4,76,20
+api_groq,100,2,80,18
+api_coreweave,100,2,79,19
+api_claude_haiku,100,4,92,4
